@@ -9,7 +9,7 @@ wavscp = open('wav.scp', 'w')
 utt2spk = open('utt2spk', 'w')
 text = open('text', 'w')
 
-FOLDER = 'augmented-data-big'
+FOLDER = 'augmented-data'
 
 i = 0
 
