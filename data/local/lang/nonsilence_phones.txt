@@ -1,6 +1,5 @@
-
-v>
-A	A(2)
+A	
+A(2)
 A.
 AA
 AE
@@ -13,8 +12,10 @@ AU
 AUE
 AUX
 AW
-AWE	AWE(2)
-AY	AY(2)
+AWE
+AWE(2)
+AY
+AY(2)
 AYE
 B
 CH
@@ -54,7 +55,8 @@ OOH
 OOOH
 OR(2)
 OU
-OW	OW(2)
+OW
+OW(2)
 OWE
 OY
 OYE
