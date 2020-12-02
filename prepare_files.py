@@ -4,10 +4,11 @@
 import os, re, pandas as pd
 from os.path import join
 
+OUTPUT_FOLDER = 'data/orig/'
 
-wavscp = open('wav.scp', 'w')
-utt2spk = open('utt2spk', 'w')
-text = open('text', 'w')
+wavscp = open(OUTPUT_FOLDER+'wav.scp', 'w')
+utt2spk = open(OUTPUT_FOLDER+'utt2spk', 'w')
+text = open(OUTPUT_FOLDER+'text', 'w')
 
 FOLDER = 'augmented-data'
 
@@ -24,7 +25,7 @@ for speaker in [x for x in os.listdir(FOLDER) if not x.startswith('.')]:
 		utt = wavfile[:-4] # utterance id
 	
 		# write file info to wav.scp
-		wavscp.write(utt + ' ' + join(FOLDER, speaker, wavfile) + '\n')
+		wavscp.write(utt + ' ' + join(os.listdir(), speaker, wavfile) + '\n')
 		# write speaker info to utt2spk
 		utt2spk.write(utt + ' ' + speaker + '\n')
 		# write transcription to text
