@@ -4,7 +4,7 @@
 import os, re
 from os.path import join
 
-OUTPUT_FOLDER = 'data/orig/'
+OUTPUT_FOLDER = 'data/train/'
 
 wavscp = open(OUTPUT_FOLDER+'wav.scp', 'w')
 utt2spk = open(OUTPUT_FOLDER+'utt2spk', 'w')
