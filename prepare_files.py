@@ -1,7 +1,7 @@
 #!/Users/christine/anaconda3/bin/python
 # -*- coding: utf-8 -*-
 
-import os, re, pandas as pd
+import os, re
 from os.path import join
 
 OUTPUT_FOLDER = 'data/orig/'
@@ -25,7 +25,7 @@ for speaker in [x for x in os.listdir(FOLDER) if not x.startswith('.')]:
 		utt = wavfile[:-4] # utterance id
 	
 		# write file info to wav.scp
-		wavscp.write(utt + ' ' + join(os.listdir(), speaker, wavfile) + '\n')
+		wavscp.write(utt + ' ' + join(os.getcwd(), FOLDER, speaker, wavfile) + '\n')
 		# write speaker info to utt2spk
 		utt2spk.write(utt + ' ' + speaker + '\n')
 		# write transcription to text
