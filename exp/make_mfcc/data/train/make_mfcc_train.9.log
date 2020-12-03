@@ -1,0 +1,18 @@
+# compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/data/train/utt2dur.9 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/data/train/wav_train.9.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/data/train/utt2num_frames.9 --compress=true ark:- ark,scp:/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.9.ark,/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.9.scp 
+# Started at Thu Dec  3 01:17:00 UTC 2020
+#
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:ReadConfigFile():parse-options.cc:479) Reading config file conf/mfcc.conf: line 1 does not look like a line from a Kaldi command-line program's config file: should be of the form --x=y.  Note: config files intended to be sourced by shell scripts lack the '--'.
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fb72b68d50f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55a6eb569343]
+/opt/kaldi/src/lib/libkaldi-util.so(kaldi::ParseOptions::ReadConfigFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x540) [0x7fb72bb60438]
+/opt/kaldi/src/lib/libkaldi-util.so(kaldi::ParseOptions::Read(int, char const* const*)+0x13a) [0x7fb72bb607fa]
+compute-mfcc-feats(main+0x669) [0x55a6eb5664e9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fb723e642e1]
+compute-mfcc-feats(_start+0x2a) [0x55a6eb565d7a]
+
+kaldi::KaldiFatalErrorcopy-feats --write-num-frames=ark,t:exp/make_mfcc/data/train/utt2num_frames.9 --compress=true ark:- ark,scp:/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.9.ark,/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.9.scp 
+LOG (copy-feats[5.5.0~1-40c7]:main():copy-feats.cc:143) Copied 0 feature matrices.
+# Accounting: time=0 threads=1
+# Ended (code 1) at Thu Dec  3 01:17:00 UTC 2020, elapsed time 0 seconds
