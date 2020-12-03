@@ -1,7 +1,7 @@
-26-496-0020 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.13.ark:12
-26-496-0021 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.13.ark:25746
-26-496-0022 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.13.ark:51961
-26-496-0023 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.13.ark:76759
-26-496-0024 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.13.ark:98385
-26-496-0025 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.13.ark:122156
-26-496-0026 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.13.ark:140922
+26-495-0089 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.13.ark:12
+26-495-0090 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.13.ark:26136
+26-496-0000 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.13.ark:49296
+26-496-0002 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.13.ark:72963
+26-496-0003 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.13.ark:99022
+26-496-0004 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.13.ark:124353
+26-496-0005 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.13.ark:144445
