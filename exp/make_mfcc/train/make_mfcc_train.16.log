@@ -1,0 +1,351 @@
+# compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.16 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train/wav_train.16.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.16 --compress=true ark:- ark,scp:/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.16.ark,/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.16.scp 
+# Started at Thu Dec  3 01:48:02 UTC 2020
+#
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.16 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train/wav_train.16.scp ark:- 
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fbb0720d50f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55bed19a7343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7fbb07fd3449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7fbb07fd4262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x55bed19ad0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x55bed19b427f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x55bed19b4b67]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x29d) [0x55bed19aa361]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1ed) [0x55bed19ad843]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x3e) [0x55bed19adb54]
+compute-mfcc-feats(main+0x824) [0x55bed19a46a4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fbaff9e42e1]
+compute-mfcc-feats(_start+0x2a) [0x55bed19a3d7a]
+
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-123349-0048.wav
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fbb0720d50f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55bed19a7343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7fbb07fd3449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7fbb07fd4262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x55bed19ad0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x55bed19b427f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x55bed19b4b67]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x29d) [0x55bed19aa361]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1ed) [0x55bed19ad843]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x3e) [0x55bed19adb54]
+compute-mfcc-feats(main+0x824) [0x55bed19a46a4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fbaff9e42e1]
+compute-mfcc-feats(_start+0x2a) [0x55bed19a3d7a]
+
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-123349-0049.wav
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fbb0720d50f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55bed19a7343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7fbb07fd3449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7fbb07fd4262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x55bed19ad0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x55bed19b427f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x55bed19b4b67]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x29d) [0x55bed19aa361]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1ed) [0x55bed19ad843]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x3e) [0x55bed19adb54]
+compute-mfcc-feats(main+0x824) [0x55bed19a46a4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fbaff9e42e1]
+compute-mfcc-feats(_start+0x2a) [0x55bed19a3d7a]
+
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-123349-0050.wav
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fbb0720d50f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55bed19a7343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7fbb07fd3449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7fbb07fd4262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x55bed19ad0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x55bed19b427f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x55bed19b4b67]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x29d) [0x55bed19aa361]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1ed) [0x55bed19ad843]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x3e) [0x55bed19adb54]
+compute-mfcc-feats(main+0x824) [0x55bed19a46a4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fbaff9e42e1]
+compute-mfcc-feats(_start+0x2a) [0x55bed19a3d7a]
+
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-123349-0051.wav
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fbb0720d50f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55bed19a7343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7fbb07fd3449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7fbb07fd4262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x55bed19ad0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x55bed19b427f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x55bed19b4b67]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x29d) [0x55bed19aa361]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1ed) [0x55bed19ad843]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x3e) [0x55bed19adb54]
+compute-mfcc-feats(main+0x824) [0x55bed19a46a4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fbaff9e42e1]
+compute-mfcc-feats(_start+0x2a) [0x55bed19a3d7a]
+
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-123349-0052.wav
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fbb0720d50f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55bed19a7343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7fbb07fd3449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7fbb07fd4262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x55bed19ad0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x55bed19b427f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x55bed19b4b67]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x29d) [0x55bed19aa361]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1ed) [0x55bed19ad843]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x3e) [0x55bed19adb54]
+compute-mfcc-feats(main+0x824) [0x55bed19a46a4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fbaff9e42e1]
+compute-mfcc-feats(_start+0x2a) [0x55bed19a3d7a]
+
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-123349-0053.wav
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fbb0720d50f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55bed19a7343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7fbb07fd3449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7fbb07fd4262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x55bed19ad0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x55bed19b427f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x55bed19b4b67]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x29d) [0x55bed19aa361]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1ed) [0x55bed19ad843]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x3e) [0x55bed19adb54]
+compute-mfcc-feats(main+0x824) [0x55bed19a46a4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fbaff9e42e1]
+compute-mfcc-feats(_start+0x2a) [0x55bed19a3d7a]
+
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-123349-0054.wav
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fbb0720d50f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55bed19a7343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7fbb07fd3449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7fbb07fd4262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x55bed19ad0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x55bed19b427f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x55bed19b4b67]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x29d) [0x55bed19aa361]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1ed) [0x55bed19ad843]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x3e) [0x55bed19adb54]
+compute-mfcc-feats(main+0x824) [0x55bed19a46a4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fbaff9e42e1]
+compute-mfcc-feats(_start+0x2a) [0x55bed19a3d7a]
+
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-123349-0055.wav
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fbb0720d50f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55bed19a7343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7fbb07fd3449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7fbb07fd4262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x55bed19ad0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x55bed19b427f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x55bed19b4b67]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x29d) [0x55bed19aa361]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1ed) [0x55bed19ad843]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x3e) [0x55bed19adb54]
+compute-mfcc-feats(main+0x824) [0x55bed19a46a4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fbaff9e42e1]
+compute-mfcc-feats(_start+0x2a) [0x55bed19a3d7a]
+
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-123349-0056.wav
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fbb0720d50f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55bed19a7343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7fbb07fd3449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7fbb07fd4262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x55bed19ad0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x55bed19b427f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x55bed19b4b67]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x29d) [0x55bed19aa361]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1ed) [0x55bed19ad843]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x3e) [0x55bed19adb54]
+compute-mfcc-feats(main+0x824) [0x55bed19a46a4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fbaff9e42e1]
+compute-mfcc-feats(_start+0x2a) [0x55bed19a3d7a]
+
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-123349-0057.wav
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fbb0720d50f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55bed19a7343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7fbb07fd3449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7fbb07fd4262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x55bed19ad0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x55bed19b427f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x55bed19b4b67]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x29d) [0x55bed19aa361]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1ed) [0x55bed19ad843]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x3e) [0x55bed19adb54]
+compute-mfcc-feats(main+0x824) [0x55bed19a46a4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fbaff9e42e1]
+compute-mfcc-feats(_start+0x2a) [0x55bed19a3d7a]
+
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-123349-0058.wav
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fbb0720d50f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55bed19a7343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7fbb07fd3449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7fbb07fd4262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x55bed19ad0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x55bed19b427f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x55bed19b4b67]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x29d) [0x55bed19aa361]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1ed) [0x55bed19ad843]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x3e) [0x55bed19adb54]
+compute-mfcc-feats(main+0x824) [0x55bed19a46a4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fbaff9e42e1]
+compute-mfcc-feats(_start+0x2a) [0x55bed19a3d7a]
+
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-124992-0000.wav
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fbb0720d50f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55bed19a7343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7fbb07fd3449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7fbb07fd4262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x55bed19ad0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x55bed19b427f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x55bed19b4b67]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x29d) [0x55bed19aa361]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1ed) [0x55bed19ad843]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x3e) [0x55bed19adb54]
+compute-mfcc-feats(main+0x824) [0x55bed19a46a4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fbaff9e42e1]
+compute-mfcc-feats(_start+0x2a) [0x55bed19a3d7a]
+
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-124992-0001.wav
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fbb0720d50f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55bed19a7343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7fbb07fd3449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7fbb07fd4262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x55bed19ad0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x55bed19b427f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x55bed19b4b67]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x29d) [0x55bed19aa361]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1ed) [0x55bed19ad843]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x3e) [0x55bed19adb54]
+compute-mfcc-feats(main+0x824) [0x55bed19a46a4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fbaff9e42e1]
+compute-mfcc-feats(_start+0x2a) [0x55bed19a3d7a]
+
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-124992-0002.wav
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fbb0720d50f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55bed19a7343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7fbb07fd3449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7fbb07fd4262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x55bed19ad0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x55bed19b427f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x55bed19b4b67]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x29d) [0x55bed19aa361]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1ed) [0x55bed19ad843]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x3e) [0x55bed19adb54]
+compute-mfcc-feats(main+0x824) [0x55bed19a46a4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fbaff9e42e1]
+compute-mfcc-feats(_start+0x2a) [0x55bed19a3d7a]
+
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-124992-0003.wav
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fbb0720d50f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55bed19a7343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7fbb07fd3449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7fbb07fd4262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x55bed19ad0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x55bed19b427f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x55bed19b4b67]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x29d) [0x55bed19aa361]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1ed) [0x55bed19ad843]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x3e) [0x55bed19adb54]
+compute-mfcc-feats(main+0x824) [0x55bed19a46a4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fbaff9e42e1]
+compute-mfcc-feats(_start+0x2a) [0x55bed19a3d7a]
+
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-124992-0004.wav
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fbb0720d50f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55bed19a7343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7fbb07fd3449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7fbb07fd4262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x55bed19ad0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x55bed19b427f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x55bed19b4b67]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x29d) [0x55bed19aa361]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1ed) [0x55bed19ad843]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x3e) [0x55bed19adb54]
+compute-mfcc-feats(main+0x824) [0x55bed19a46a4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fbaff9e42e1]
+compute-mfcc-feats(_start+0x2a) [0x55bed19a3d7a]
+
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-124992-0005.wav
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fbb0720d50f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55bed19a7343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7fbb07fd3449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7fbb07fd4262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x55bed19ad0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x55bed19b427f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x55bed19b4b67]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x29d) [0x55bed19aa361]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::Open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1ed) [0x55bed19ad843]
+compute-mfcc-feats(kaldi::SequentialTableReader<kaldi::WaveHolder>::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x3e) [0x55bed19adb54]
+compute-mfcc-feats(main+0x824) [0x55bed19a46a4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fbaff9e42e1]
+compute-mfcc-feats(_start+0x2a) [0x55bed19a3d7a]
+
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-124992-0006.wav
+LOG (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:185)  Done 0 out of 0 utterances.
+copy-feats --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.16 --compress=true ark:- ark,scp:/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.16.ark,/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.16.scp 
+LOG (copy-feats[5.5.0~1-40c7]:main():copy-feats.cc:143) Copied 0 feature matrices.
+# Accounting: time=0 threads=1
+# Ended (code 1) at Thu Dec  3 01:48:02 UTC 2020, elapsed time 0 seconds

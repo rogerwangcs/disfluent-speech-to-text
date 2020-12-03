@@ -1,0 +1,28 @@
+# compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.12 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train/wav_train.12.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.12 --compress=true ark:- ark,scp:/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.12.ark,/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.12.scp 
+# Started at Thu Dec  3 01:47:59 UTC 2020
+#
+copy-feats --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.12 --compress=true ark:- ark,scp:/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.12.ark,/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.12.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.12 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train/wav_train.12.scp ark:- 
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0002
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0003
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0004
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0005
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0006
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0007
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0008
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0009
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0010
+LOG (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0011
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0012
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0013
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0014
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0015
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0016
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0017
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0018
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0019
+LOG (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:185)  Done 18 out of 18 utterances.
+LOG (copy-feats[5.5.0~1-40c7]:main():copy-feats.cc:143) Copied 18 feature matrices.
+# Accounting: time=2 threads=1
+# Ended (code 0) at Thu Dec  3 01:48:01 UTC 2020, elapsed time 2 seconds

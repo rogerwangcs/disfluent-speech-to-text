@@ -1,18 +1,34 @@
 # compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/data/train/utt2dur.7 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/data/train/wav_train.7.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/data/train/utt2num_frames.7 --compress=true ark:- ark,scp:/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.7.ark,/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.7.scp 
-# Started at Thu Dec  3 01:17:00 UTC 2020
+# Started at Thu Dec  3 01:37:08 UTC 2020
 #
 copy-feats --write-num-frames=ark,t:exp/make_mfcc/data/train/utt2num_frames.7 --compress=true ark:- ark,scp:/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.7.ark,/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.7.scp 
-ERROR (compute-mfcc-feats[5.5.0~1-40c7]:ReadConfigFile():parse-options.cc:479) Reading config file conf/mfcc.conf: line 1 does not look like a line from a Kaldi command-line program's config file: should be of the form --x=y.  Note: config files intended to be sourced by shell scripts lack the '--'.
-
-[ Stack-Trace: ]
-/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7f8a54d8e50f]
-compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x556531491343]
-/opt/kaldi/src/lib/libkaldi-util.so(kaldi::ParseOptions::ReadConfigFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x540) [0x7f8a55261438]
-/opt/kaldi/src/lib/libkaldi-util.so(kaldi::ParseOptions::Read(int, char const* const*)+0x13a) [0x7f8a552617fa]
-compute-mfcc-feats(main+0x669) [0x55653148e4e9]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7f8a4d5652e1]
-compute-mfcc-feats(_start+0x2a) [0x55653148dd7a]
-
-kaldi::KaldiFatalErrorLOG (copy-feats[5.5.0~1-40c7]:main():copy-feats.cc:143) Copied 0 feature matrices.
-# Accounting: time=0 threads=1
-# Ended (code 1) at Thu Dec  3 01:17:00 UTC 2020, elapsed time 0 seconds
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/data/train/utt2dur.7 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/data/train/wav_train.7.scp ark:- 
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0028
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0029
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0030
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0031
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0032
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0033
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0034
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0035
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0036
+LOG (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0037
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0038
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0039
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0040
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0041
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0042
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0043
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0044
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0045
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0046
+LOG (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:181) Processed 20 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0047
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0048
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0049
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-495-0050
+LOG (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:185)  Done 23 out of 23 utterances.
+LOG (copy-feats[5.5.0~1-40c7]:main():copy-feats.cc:143) Copied 23 feature matrices.
+# Accounting: time=3 threads=1
+# Ended (code 0) at Thu Dec  3 01:37:11 UTC 2020, elapsed time 3 seconds

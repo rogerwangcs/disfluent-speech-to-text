@@ -1,18 +1,64 @@
 # compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/data/train/utt2dur.10 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/data/train/wav_train.10.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/data/train/utt2num_frames.10 --compress=true ark:- ark,scp:/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.10.ark,/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.10.scp 
-# Started at Thu Dec  3 01:17:00 UTC 2020
+# Started at Thu Dec  3 01:37:14 UTC 2020
 #
-ERROR (compute-mfcc-feats[5.5.0~1-40c7]:ReadConfigFile():parse-options.cc:479) Reading config file conf/mfcc.conf: line 1 does not look like a line from a Kaldi command-line program's config file: should be of the form --x=y.  Note: config files intended to be sourced by shell scripts lack the '--'.
+copy-feats --write-num-frames=ark,t:exp/make_mfcc/data/train/utt2num_frames.10 --compress=true ark:- ark,scp:/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.10.ark,/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.10.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/data/train/utt2dur.10 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/data/train/wav_train.10.scp ark:- 
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0006
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0007
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0008
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0009
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0010
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0011
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0012
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0013
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0014
+LOG (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0015
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0016
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0017
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0018
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0019
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0020
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0021
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0022
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0023
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0024
+LOG (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:181) Processed 20 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0025
+VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Processed features for key 26-496-0026
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
 
 [ Stack-Trace: ]
-/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7f603f95a50f]
-compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55db49443343]
-/opt/kaldi/src/lib/libkaldi-util.so(kaldi::ParseOptions::ReadConfigFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x540) [0x7f603fe2d438]
-/opt/kaldi/src/lib/libkaldi-util.so(kaldi::ParseOptions::Read(int, char const* const*)+0x13a) [0x7f603fe2d7fa]
-compute-mfcc-feats(main+0x669) [0x55db494404e9]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7f60381312e1]
-compute-mfcc-feats(_start+0x2a) [0x55db4943fd7a]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7f58ecc4250f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x5617467e4343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7f58eda08449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7f58eda09262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x5617467ea0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x5617467f127f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x5617467f1b67]
+compute-mfcc-feats(main+0x18f9) [0x5617467e2779]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7f58e54192e1]
+compute-mfcc-feats(_start+0x2a) [0x5617467e0d7a]
 
-kaldi::KaldiFatalErrorcopy-feats --write-num-frames=ark,t:exp/make_mfcc/data/train/utt2num_frames.10 --compress=true ark:- ark,scp:/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.10.ark,/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.10.scp 
-LOG (copy-feats[5.5.0~1-40c7]:main():copy-feats.cc:143) Copied 0 feature matrices.
-# Accounting: time=0 threads=1
-# Ended (code 1) at Thu Dec  3 01:17:00 UTC 2020, elapsed time 0 seconds
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-123349-0001.wav
+ERROR (compute-mfcc-feats[5.5.0~1-40c7]:Read():wave-reader.cc:190) WaveData: can read only PCM data, format id in file is: 3
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7f58ecc4250f]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x5617467e4343]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveInfo::Read(std::istream&)+0x12d3) [0x7f58eda08449]
+/opt/kaldi/src/lib/libkaldi-feat.so(kaldi::WaveData::Read(std::istream&)+0x4a) [0x7f58eda09262]
+compute-mfcc-feats(kaldi::WaveHolder::Read(std::istream&)+0xd) [0x5617467ea0e9]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::EnsureObjectLoaded()+0x161) [0x5617467f127f]
+compute-mfcc-feats(kaldi::SequentialTableReaderScriptImpl<kaldi::WaveHolder>::Next()+0x27) [0x5617467f1b67]
+compute-mfcc-feats(main+0x18f9) [0x5617467e2779]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7f58e54192e1]
+compute-mfcc-feats(_start+0x2a) [0x5617467e0d7a]
+
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:Read():feat/wave-reader.h:197) Exception caught in WaveHolder::Read(). kaldi::KaldiFatalError
+WARNING (compute-mfcc-feats[5.5.0~1-40c7]:EnsureObjectLoaded():util/kaldi-table-inl.h:317) Failed to load object from /opt/kaldi/egs/disfluent-speech-to-text/augmented-data/27/27-123349-0002.wav
+LOG (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:185)  Done 21 out of 21 utterances.
+LOG (copy-feats[5.5.0~1-40c7]:main():copy-feats.cc:143) Copied 21 feature matrices.
+# Accounting: time=3 threads=1
+# Ended (code 0) at Thu Dec  3 01:37:17 UTC 2020, elapsed time 3 seconds
