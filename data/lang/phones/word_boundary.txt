@@ -8,6 +8,10 @@ oov_B begin
 oov_E end
 oov_I internal
 oov_S singleton
+A_B begin
+A_E end
+A_I internal
+A_S singleton
 A(2)_B begin
 A(2)_E end
 A(2)_I internal

@@ -1,5 +1,5 @@
 # compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/data/train/utt2dur.5 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/data/train/wav_train.5.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/data/train/utt2num_frames.5 --compress=true ark:- ark,scp:/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.5.ark,/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.5.scp 
-# Started at Thu Dec  3 18:28:31 UTC 2020
+# Started at Thu Dec  3 18:48:24 UTC 2020
 #
 copy-feats --write-num-frames=ark,t:exp/make_mfcc/data/train/utt2num_frames.5 --compress=true ark:- ark,scp:/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.5.ark,/opt/kaldi/egs/disfluent-speech-to-text/mfcc/raw_mfcc_train.5.scp 
 compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/data/train/utt2dur.5 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/data/train/wav_train.5.scp ark:- 
@@ -14,4 +14,4 @@ VLOG[2] (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:182) Proc
 LOG (compute-mfcc-feats[5.5.0~1-40c7]:main():compute-mfcc-feats.cc:185)  Done 8 out of 8 utterances.
 LOG (copy-feats[5.5.0~1-40c7]:main():copy-feats.cc:143) Copied 8 feature matrices.
 # Accounting: time=1 threads=1
-# Ended (code 0) at Thu Dec  3 18:28:32 UTC 2020, elapsed time 1 seconds
+# Ended (code 0) at Thu Dec  3 18:48:25 UTC 2020, elapsed time 1 seconds

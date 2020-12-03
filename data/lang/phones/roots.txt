@@ -1,5 +1,6 @@
 shared split SIL SIL_B SIL_E SIL_I SIL_S
 shared split oov oov_B oov_E oov_I oov_S
+shared split A_B A_E A_I A_S
 shared split A(2)_B A(2)_E A(2)_I A(2)_S
 shared split A._B A._E A._I A._S
 shared split AA_B AA_E AA_I AA_S
