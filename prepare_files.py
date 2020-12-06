@@ -10,14 +10,14 @@ wavscp = open(OUTPUT_FOLDER+'wav.scp', 'w')
 utt2spk = open(OUTPUT_FOLDER+'utt2spk', 'w')
 text = open(OUTPUT_FOLDER+'text', 'w')
 
-FOLDER = 'augmented-data'
+FOLDER = 'augmented-data-big'
 
 i = 0
 
 # for each speaker
-for speaker in [x for x in os.listdir(FOLDER) if not x.startswith('.')]:
+for speaker in sorted([x for x in os.listdir(FOLDER) if not x.startswith('.')]):
 	
-	wavfiles = [x for x in os.listdir(join(FOLDER, speaker)) if x.endswith('.wav')]
+	wavfiles = sorted([x for x in os.listdir(join(FOLDER, speaker)) if x.endswith('.wav')])
 	
 	# for each .wav file
 	for wavfile in wavfiles:
