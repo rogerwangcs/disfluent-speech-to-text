@@ -16,7 +16,7 @@ FOLDER = 'augmented-data-big'
 i = 0
 
 # for each speaker
-for speaker in sorted([x for x in os.listdir(FOLDER) if not x.startswith('.')]):
+for speaker in sorted([x for x in os.listdir(FOLDER) if '.' not in x]):
 	
 	wavfiles = sorted([x for x in os.listdir(join(FOLDER, speaker)) if x.endswith('.wav')])
 	
