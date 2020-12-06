@@ -1,0 +1,15 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono_1k/tree exp/mono_1k/0.mdl data/lang/L.fst "ark:sym2int.pl --map-oov  -f 2- data/lang/words.txt < data/train_1k/split10/1/text|" "ark:|gzip -c >exp/mono_1k/fsts.1.gz" 
+# Started at Sun Dec  6 22:08:48 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono_1k/tree exp/mono_1k/0.mdl data/lang/L.fst 'ark:sym2int.pl --map-oov  -f 2- data/lang/words.txt < data/train_1k/split10/1/text|' 'ark:|gzip -c >exp/mono_1k/fsts.1.gz' 
+ERROR (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:86) fstcomposecontext: Could not read disambiguation symbols from data/lang/phones/disambig.int
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fe1b959850f]
+compile-train-graphs(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55cf67ed2e31]
+compile-train-graphs(main+0x644) [0x55cf67ed0fe4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fe1b1d6f2e1]
+compile-train-graphs(_start+0x2a) [0x55cf67ed089a]
+
+kaldi::KaldiFatalError# Accounting: time=1 threads=1
+# Ended (code 255) at Sun Dec  6 22:08:49 UTC 2020, elapsed time 1 seconds
