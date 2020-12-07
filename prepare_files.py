@@ -31,11 +31,11 @@ for speaker in sorted([x for x in os.listdir(FOLDER) if '.' not in x]):
 		utt2spk.write(utt + ' ' + speaker + '\n')
 		# write transcription to text
 		with open(join(FOLDER, speaker, utt+'.lab')) as ein:
-                    utt_text = ein.read().strip()
-		    text.write(utt + ' ' + utt_text + '\n')
-                    # write transcription to corpus.txt
-                    corpus.write(utt_text + '\n')
-		    
+			utt_text = ein.read().strip()
+			text.write(utt + ' ' + utt_text + '\n')
+			# write transcription to corpus.txt
+			corpus.write(utt_text + '\n')
+			
 		# print(wavfile)
 		i += 1
 	
