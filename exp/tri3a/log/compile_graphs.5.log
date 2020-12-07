@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a/tree exp/tri3a/1.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split24/5/text |" "ark:|gzip -c >exp/tri3a/fsts.5.gz" 
+# Started at Mon Dec  7 01:39:06 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a/tree exp/tri3a/1.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split24/5/text |' 'ark:|gzip -c >exp/tri3a/fsts.5.gz' 
+sym2int.pl: replacing TELEGRAPHIC with 133027
+sym2int.pl: replacing SUPERNATURALLY with 133027
+sym2int.pl: replacing SUPERNATURALLY with 133027
+sym2int.pl: replacing AGREEABLY with 133027
+sym2int.pl: replacing VERILY with 133027
+sym2int.pl: replacing HUMMED with 133027
+sym2int.pl: replacing BRUMMAGEM with 133027
+sym2int.pl: replacing GENIALLY with 133027
+sym2int.pl: replacing FAVOURITE with 133027
+sym2int.pl: replacing DENSHER with 133027
+sym2int.pl: replacing CONSUMMATELY with 133027
+sym2int.pl: replacing FESTAL with 133027
+sym2int.pl: replacing RECOGNISED with 133027
+sym2int.pl: replacing PONDERABLE with 133027
+sym2int.pl: replacing MAUD'S with 133027
+sym2int.pl: replacing PERFORMER'S with 133027
+sym2int.pl: replacing FAULTLESS with 133027
+sym2int.pl: replacing DENSHER with 133027
+sym2int.pl: replacing DENSHER with 133027
+sym2int.pl: replacing PREPONDERANTLY with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 128 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 194 graphs, failed for 0
+# Accounting: time=3 threads=1
+# Ended (code 0) at Mon Dec  7 01:39:09 UTC 2020, elapsed time 3 seconds

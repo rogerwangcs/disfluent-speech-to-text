@@ -1,0 +1,17 @@
+# gmm-acc-stats-ali exp/tri2a/7.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split24/1/utt2spk scp:data/train/split24/1/cmvn.scp scp:data/train/split24/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark,s,cs:gunzip -c exp/tri2a/ali.1.gz|" exp/tri2a/7.1.acc 
+# Started at Mon Dec  7 01:29:54 UTC 2020
+#
+gmm-acc-stats-ali exp/tri2a/7.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split24/1/utt2spk scp:data/train/split24/1/cmvn.scp scp:data/train/split24/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark,s,cs:gunzip -c exp/tri2a/ali.1.gz|' exp/tri2a/7.1.acc 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split24/1/utt2spk scp:data/train/split24/1/cmvn.scp scp:data/train/split24/1/feats.scp ark:- 
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 1624-142933-0013
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance 1624-168623-0003 avg. like is -102.272 over 2020 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance 1624-168623-0053 avg. like is -96.0216 over 510 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance 1841-159771-0016 avg. like is -108.193 over 831 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance 1841-179183-0023 avg. like is -108.974 over 1959 frames.
+LOG (apply-cmvn[5.5.0~1-40c7]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 216 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:112) Done 215 files, 1 with errors.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -105.269 over 397153 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=2 threads=1
+# Ended (code 0) at Mon Dec  7 01:29:56 UTC 2020, elapsed time 2 seconds

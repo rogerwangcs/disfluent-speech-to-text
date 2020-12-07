@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri1/tree exp/tri1/1.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split4/1/text |" "ark:|gzip -c >exp/tri1/fsts.1.gz" 
+# Started at Mon Dec  7 01:15:59 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri1/tree exp/tri1/1.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split4/1/text |' 'ark:|gzip -c >exp/tri1/fsts.1.gz' 
+sym2int.pl: replacing ROSEBREAST with 133027
+sym2int.pl: replacing ROSEBREAST with 133027
+sym2int.pl: replacing ROSEBREAST with 133027
+sym2int.pl: replacing ROSEBREAST with 133027
+sym2int.pl: replacing ROSEBREAST with 133027
+sym2int.pl: replacing ROSEBREAST with 133027
+sym2int.pl: replacing WREN'S with 133027
+sym2int.pl: replacing CROSSLY with 133027
+sym2int.pl: replacing ROSEBREAST with 133027
+sym2int.pl: replacing ROSEBREAST with 133027
+sym2int.pl: replacing CROSSLY with 133027
+sym2int.pl: replacing ROSEBREAST with 133027
+sym2int.pl: replacing ROSEBREAST with 133027
+sym2int.pl: replacing LIPPERTY with 133027
+sym2int.pl: replacing LIPPERTY with 133027
+sym2int.pl: replacing REDWING with 133027
+sym2int.pl: replacing TANAGER with 133027
+sym2int.pl: replacing BROADWING with 133027
+sym2int.pl: replacing TANAGER with 133027
+sym2int.pl: replacing THENARDIER with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 757 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 1226 graphs, failed for 0
+# Accounting: time=14 threads=1
+# Ended (code 0) at Mon Dec  7 01:16:13 UTC 2020, elapsed time 14 seconds

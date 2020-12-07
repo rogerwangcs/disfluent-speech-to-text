@@ -1,0 +1,45 @@
+gmm-init-model --write-occs=exp/tri3a/1.occs exp/tri3a/tree exp/tri3a/treeacc data/lang/topo exp/tri3a/1.mdl 
+LOG (gmm-init-model[5.5.0~1-40c7]:main():gmm-init-model.cc:271) Number of separate statistics is 84349
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 2 with no stats; corresponding phone list: 11 12 13 14 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 3 with no stats; corresponding phone list: 15 16 17 18 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 4 with no stats; corresponding phone list: 19 20 21 22 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 8 with no stats; corresponding phone list: 35 36 37 38 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 9 with no stats; corresponding phone list: 39 40 41 42 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 11 with no stats; corresponding phone list: 47 48 49 50 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 12 with no stats; corresponding phone list: 51 52 53 54 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 13 with no stats; corresponding phone list: 55 56 57 58 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 14 with no stats; corresponding phone list: 59 60 61 62 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 16 with no stats; corresponding phone list: 67 68 69 70 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 17 with no stats; corresponding phone list: 71 72 73 74 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 19 with no stats; corresponding phone list: 79 80 81 82 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 20 with no stats; corresponding phone list: 83 84 85 86 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 25 with no stats; corresponding phone list: 103 104 105 106 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 26 with no stats; corresponding phone list: 107 108 109 110 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 27 with no stats; corresponding phone list: 111 112 113 114 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 28 with no stats; corresponding phone list: 115 116 117 118 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 29 with no stats; corresponding phone list: 119 120 121 122 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 32 with no stats; corresponding phone list: 131 132 133 134 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 33 with no stats; corresponding phone list: 135 136 137 138 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 35 with no stats; corresponding phone list: 143 144 145 146 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 39 with no stats; corresponding phone list: 159 160 161 162 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 40 with no stats; corresponding phone list: 163 164 165 166 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 49 with no stats; corresponding phone list: 199 200 201 202 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 50 with no stats; corresponding phone list: 203 204 205 206 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 51 with no stats; corresponding phone list: 207 208 209 210 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 52 with no stats; corresponding phone list: 211 212 213 214 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 53 with no stats; corresponding phone list: 215 216 217 218 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 54 with no stats; corresponding phone list: 219 220 221 222 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 55 with no stats; corresponding phone list: 223 224 225 226 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 56 with no stats; corresponding phone list: 227 228 229 230 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 57 with no stats; corresponding phone list: 231 232 233 234 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 58 with no stats; corresponding phone list: 235 236 237 238 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 60 with no stats; corresponding phone list: 243 244 245 246 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 61 with no stats; corresponding phone list: 247 248 249 250 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 63 with no stats; corresponding phone list: 255 256 257 258 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 71 with no stats; corresponding phone list: 287 288 289 290 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 72 with no stats; corresponding phone list: 291 292 293 294 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:83) Very small count for state 637: 76; corresponding phone list: 23 24 25 26 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:83) Very small count for state 1151: 81; corresponding phone list: 283 284 285 286 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:83) Very small count for state 1431: 64; corresponding phone list: 31 32 33 34 
+WARNING (gmm-init-model[5.5.0~1-40c7]:InitAmGmm():gmm-init-model.cc:83) Very small count for state 1584: 93; corresponding phone list: 27 28 29 30 
+LOG (gmm-init-model[5.5.0~1-40c7]:main():gmm-init-model.cc:306) Wrote model.

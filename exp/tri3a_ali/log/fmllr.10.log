@@ -1,0 +1,22 @@
+# ali-to-post "ark:gunzip -c exp/tri3a_ali/pre_ali.10.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3a/final.mdl ark:- ark:- | gmm-est-fmllr --fmllr-update-type=full --spk2utt=ark:data/train/split32/10/spk2utt exp/tri3a/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split32/10/utt2spk scp:data/train/split32/10/cmvn.scp scp:data/train/split32/10/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |" ark,s,cs:- ark:exp/tri3a_ali/trans.10 
+# Started at Mon Dec  7 01:50:43 UTC 2020
+#
+gmm-est-fmllr --fmllr-update-type=full --spk2utt=ark:data/train/split32/10/spk2utt exp/tri3a/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split32/10/utt2spk scp:data/train/split32/10/cmvn.scp scp:data/train/split32/10/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |' ark,s,cs:- ark:exp/tri3a_ali/trans.10 
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3a/final.mdl ark:- ark:- 
+ali-to-post 'ark:gunzip -c exp/tri3a_ali/pre_ali.10.gz|' ark:- 
+transform-feats exp/tri3a/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split32/10/utt2spk scp:data/train/split32/10/cmvn.scp scp:data/train/split32/10/feats.scp ark:- 
+LOG (gmm-est-fmllr[5.5.0~1-40c7]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 3.32487 per frame over 91878 frames.
+LOG (gmm-est-fmllr[5.5.0~1-40c7]:main():gmm-est-fmllr.cc:143) For speaker 328, auxf-impr from fMLLR is 3.32487, over 91878 frames.
+LOG (ali-to-post[5.5.0~1-40c7]:main():ali-to-post.cc:73) Converted 188 alignments.
+LOG (apply-cmvn[5.5.0~1-40c7]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 188 utterances, errors on 0
+LOG (weight-silence-post[5.5.0~1-40c7]:main():weight-silence-post.cc:95) Done 188 posteriors.
+LOG (transform-feats[5.5.0~1-40c7]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -100.497 over 328319 frames.
+LOG (transform-feats[5.5.0~1-40c7]:main():transform-feats.cc:161) Applied transform to 188 utterances; 0 had errors.
+LOG (gmm-est-fmllr[5.5.0~1-40c7]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 2.66272 per frame over 92861 frames.
+LOG (gmm-est-fmllr[5.5.0~1-40c7]:main():gmm-est-fmllr.cc:143) For speaker 332, auxf-impr from fMLLR is 2.66272, over 92861 frames.
+LOG (gmm-est-fmllr[5.5.0~1-40c7]:main():gmm-est-fmllr.cc:188) Done 188 files, 0 with no posts, 0 with other errors.
+LOG (gmm-est-fmllr[5.5.0~1-40c7]:main():gmm-est-fmllr.cc:190) Overall fMLLR auxf impr per frame is 2.99204 over 184739 frames.
+# Accounting: time=10 threads=1
+# Ended (code 0) at Mon Dec  7 01:50:53 UTC 2020, elapsed time 10 seconds

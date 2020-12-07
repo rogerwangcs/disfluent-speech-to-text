@@ -1,0 +1,20 @@
+# ali-to-post "ark:gunzip -c exp/tri3a_ali/pre_ali.2.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3a/final.mdl ark:- ark:- | gmm-est-fmllr --fmllr-update-type=full --spk2utt=ark:data/train/split32/2/spk2utt exp/tri3a/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split32/2/utt2spk scp:data/train/split32/2/cmvn.scp scp:data/train/split32/2/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |" ark,s,cs:- ark:exp/tri3a_ali/trans.2 
+# Started at Mon Dec  7 01:50:38 UTC 2020
+#
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri3a/final.mdl ark:- ark:- 
+gmm-est-fmllr --fmllr-update-type=full --spk2utt=ark:data/train/split32/2/spk2utt exp/tri3a/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split32/2/utt2spk scp:data/train/split32/2/cmvn.scp scp:data/train/split32/2/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3a/final.mat ark:- ark:- |' ark,s,cs:- ark:exp/tri3a_ali/trans.2 
+ali-to-post 'ark:gunzip -c exp/tri3a_ali/pre_ali.2.gz|' ark:- 
+apply-cmvn --utt2spk=ark:data/train/split32/2/utt2spk scp:data/train/split32/2/cmvn.scp scp:data/train/split32/2/feats.scp ark:- 
+transform-feats exp/tri3a/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+LOG (ali-to-post[5.5.0~1-40c7]:main():ali-to-post.cc:73) Converted 129 alignments.
+LOG (weight-silence-post[5.5.0~1-40c7]:main():weight-silence-post.cc:95) Done 129 posteriors.
+LOG (apply-cmvn[5.5.0~1-40c7]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 129 utterances, errors on 0
+LOG (transform-feats[5.5.0~1-40c7]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -100.497 over 211428 frames.
+LOG (transform-feats[5.5.0~1-40c7]:main():transform-feats.cc:161) Applied transform to 129 utterances; 0 had errors.
+LOG (gmm-est-fmllr[5.5.0~1-40c7]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 2.89339 per frame over 124184 frames.
+LOG (gmm-est-fmllr[5.5.0~1-40c7]:main():gmm-est-fmllr.cc:143) For speaker 1963, auxf-impr from fMLLR is 2.89339, over 124184 frames.
+LOG (gmm-est-fmllr[5.5.0~1-40c7]:main():gmm-est-fmllr.cc:188) Done 129 files, 0 with no posts, 0 with other errors.
+LOG (gmm-est-fmllr[5.5.0~1-40c7]:main():gmm-est-fmllr.cc:190) Overall fMLLR auxf impr per frame is 2.89339 over 124184 frames.
+# Accounting: time=6 threads=1
+# Ended (code 0) at Mon Dec  7 01:50:44 UTC 2020, elapsed time 6 seconds

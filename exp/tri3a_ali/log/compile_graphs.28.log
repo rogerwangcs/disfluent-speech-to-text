@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a_ali/tree exp/tri3a_ali/final.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt data/train/split32/28/text|" "ark:|gzip -c >exp/tri3a_ali/fsts.28.gz" 
+# Started at Mon Dec  7 01:49:48 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a_ali/tree exp/tri3a_ali/final.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt data/train/split32/28/text|' 'ark:|gzip -c >exp/tri3a_ali/fsts.28.gz' 
+sym2int.pl: replacing UNCALCULATED with 133027
+sym2int.pl: replacing MARVELLOUSLY with 133027
+sym2int.pl: replacing MEOWED with 133027
+sym2int.pl: replacing PITEOUSLY with 133027
+sym2int.pl: replacing RECOGNISED with 133027
+sym2int.pl: replacing DEEPS with 133027
+sym2int.pl: replacing REALISED with 133027
+sym2int.pl: replacing VISAGES with 133027
+sym2int.pl: replacing UNSELFISH with 133027
+sym2int.pl: replacing DISCARNATE with 133027
+sym2int.pl: replacing RECOGNISED with 133027
+sym2int.pl: replacing DIABOLICALLY with 133027
+sym2int.pl: replacing UNSELFISH with 133027
+sym2int.pl: replacing RADIATIONS with 133027
+sym2int.pl: replacing UNSELFISHNESS with 133027
+sym2int.pl: replacing SIGILS with 133027
+sym2int.pl: replacing TRANSMUTE with 133027
+sym2int.pl: replacing RECOGNISE with 133027
+sym2int.pl: replacing COLLIE'S with 133027
+sym2int.pl: replacing PURRINGS with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 120 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 225 graphs, failed for 0
+# Accounting: time=4 threads=1
+# Ended (code 0) at Mon Dec  7 01:49:52 UTC 2020, elapsed time 4 seconds

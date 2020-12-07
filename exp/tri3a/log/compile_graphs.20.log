@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a/tree exp/tri3a/1.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split24/20/text |" "ark:|gzip -c >exp/tri3a/fsts.20.gz" 
+# Started at Mon Dec  7 01:39:13 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a/tree exp/tri3a/1.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split24/20/text |' 'ark:|gzip -c >exp/tri3a/fsts.20.gz' 
+sym2int.pl: replacing MOUSING with 133027
+sym2int.pl: replacing BUTTERNUT with 133027
+sym2int.pl: replacing CLEARINGS with 133027
+sym2int.pl: replacing BUTTERNUT with 133027
+sym2int.pl: replacing ROOSTS with 133027
+sym2int.pl: replacing MOUSEY with 133027
+sym2int.pl: replacing MOUSING with 133027
+sym2int.pl: replacing D'YE with 133027
+sym2int.pl: replacing OFTENEST with 133027
+sym2int.pl: replacing BRIARS with 133027
+sym2int.pl: replacing BUTTERNUT with 133027
+sym2int.pl: replacing A'RONY with 133027
+sym2int.pl: replacing SCAMP with 133027
+sym2int.pl: replacing HOSPITABLY with 133027
+sym2int.pl: replacing KINDNESSES with 133027
+sym2int.pl: replacing HOSTELRY with 133027
+sym2int.pl: replacing GREYS with 133027
+sym2int.pl: replacing MASSILLON with 133027
+sym2int.pl: replacing KINLEY'S with 133027
+sym2int.pl: replacing HURRAHED with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 60 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 116 graphs, failed for 0
+# Accounting: time=3 threads=1
+# Ended (code 0) at Mon Dec  7 01:39:16 UTC 2020, elapsed time 3 seconds

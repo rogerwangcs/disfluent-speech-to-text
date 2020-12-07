@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri2a/tree exp/tri2a/1.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split24/6/text |" "ark:|gzip -c >exp/tri2a/fsts.6.gz" 
+# Started at Mon Dec  7 01:29:10 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri2a/tree exp/tri2a/1.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split24/6/text |' 'ark:|gzip -c >exp/tri2a/fsts.6.gz' 
+sym2int.pl: replacing PINIONED with 133027
+sym2int.pl: replacing JABBERED with 133027
+sym2int.pl: replacing GESTICULATED with 133027
+sym2int.pl: replacing LATERALLY with 133027
+sym2int.pl: replacing VOUCHSAFED with 133027
+sym2int.pl: replacing APE'S with 133027
+sym2int.pl: replacing FROTHING with 133027
+sym2int.pl: replacing FOREBODINGS with 133027
+sym2int.pl: replacing ALIGHTING with 133027
+sym2int.pl: replacing BEHELD with 133027
+sym2int.pl: replacing TARS with 133027
+sym2int.pl: replacing TARKAS with 133027
+sym2int.pl: replacing TARS with 133027
+sym2int.pl: replacing TARKAS with 133027
+sym2int.pl: replacing TARS with 133027
+sym2int.pl: replacing TARKAS with 133027
+sym2int.pl: replacing TARS with 133027
+sym2int.pl: replacing TARKAS with 133027
+sym2int.pl: replacing WARHOON with 133027
+sym2int.pl: replacing THARK with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 169 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 237 graphs, failed for 0
+# Accounting: time=4 threads=1
+# Ended (code 0) at Mon Dec  7 01:29:14 UTC 2020, elapsed time 4 seconds

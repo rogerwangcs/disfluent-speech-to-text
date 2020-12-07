@@ -1,0 +1,7 @@
+# sum-tree-stats exp/tri3a/treeacc exp/tri3a/1.treeacc exp/tri3a/10.treeacc exp/tri3a/11.treeacc exp/tri3a/12.treeacc exp/tri3a/13.treeacc exp/tri3a/14.treeacc exp/tri3a/15.treeacc exp/tri3a/16.treeacc exp/tri3a/17.treeacc exp/tri3a/18.treeacc exp/tri3a/19.treeacc exp/tri3a/2.treeacc exp/tri3a/20.treeacc exp/tri3a/21.treeacc exp/tri3a/22.treeacc exp/tri3a/23.treeacc exp/tri3a/24.treeacc exp/tri3a/3.treeacc exp/tri3a/4.treeacc exp/tri3a/5.treeacc exp/tri3a/6.treeacc exp/tri3a/7.treeacc exp/tri3a/8.treeacc exp/tri3a/9.treeacc 
+# Started at Mon Dec  7 01:38:50 UTC 2020
+#
+sum-tree-stats exp/tri3a/treeacc exp/tri3a/1.treeacc exp/tri3a/10.treeacc exp/tri3a/11.treeacc exp/tri3a/12.treeacc exp/tri3a/13.treeacc exp/tri3a/14.treeacc exp/tri3a/15.treeacc exp/tri3a/16.treeacc exp/tri3a/17.treeacc exp/tri3a/18.treeacc exp/tri3a/19.treeacc exp/tri3a/2.treeacc exp/tri3a/20.treeacc exp/tri3a/21.treeacc exp/tri3a/22.treeacc exp/tri3a/23.treeacc exp/tri3a/24.treeacc exp/tri3a/3.treeacc exp/tri3a/4.treeacc exp/tri3a/5.treeacc exp/tri3a/6.treeacc exp/tri3a/7.treeacc exp/tri3a/8.treeacc exp/tri3a/9.treeacc 
+LOG (sum-tree-stats[5.5.0~1-40c7]:main():sum-tree-stats.cc:88) Wrote summed accs ( 84349 individual stats)
+# Accounting: time=3 threads=1
+# Ended (code 0) at Mon Dec  7 01:38:53 UTC 2020, elapsed time 3 seconds

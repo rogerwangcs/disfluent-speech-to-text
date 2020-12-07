@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a_ali/tree exp/tri3a_ali/final.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt data/train/split32/5/text|" "ark:|gzip -c >exp/tri3a_ali/fsts.5.gz" 
+# Started at Mon Dec  7 01:49:40 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a_ali/tree exp/tri3a_ali/final.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt data/train/split32/5/text|' 'ark:|gzip -c >exp/tri3a_ali/fsts.5.gz' 
+sym2int.pl: replacing PENNICOTE with 133027
+sym2int.pl: replacing GWENDOLEN with 133027
+sym2int.pl: replacing MAIDENHOOD with 133027
+sym2int.pl: replacing GASCOIGNE'S with 133027
+sym2int.pl: replacing GWENDOLEN with 133027
+sym2int.pl: replacing GWENDOLEN'S with 133027
+sym2int.pl: replacing UNARGUMENTATIVELY with 133027
+sym2int.pl: replacing WOMANLY with 133027
+sym2int.pl: replacing GWENDOLEN'S with 133027
+sym2int.pl: replacing THITHER with 133027
+sym2int.pl: replacing ARROWPOINTS with 133027
+sym2int.pl: replacing GWENDOLEN'S with 133027
+sym2int.pl: replacing LIMPNESS with 133027
+sym2int.pl: replacing KNOWABLE with 133027
+sym2int.pl: replacing GWENDOLEN with 133027
+sym2int.pl: replacing GWENDOLEN with 133027
+sym2int.pl: replacing LAUNDRESS'S with 133027
+sym2int.pl: replacing HARLETH with 133027
+sym2int.pl: replacing DAVILOW with 133027
+sym2int.pl: replacing GWENDOLEN with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 112 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 114 graphs, failed for 0
+# Accounting: time=3 threads=1
+# Ended (code 0) at Mon Dec  7 01:49:43 UTC 2020, elapsed time 3 seconds

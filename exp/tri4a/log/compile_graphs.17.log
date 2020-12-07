@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri4a/tree exp/tri4a/1.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split32/17/text |" "ark:|gzip -c >exp/tri4a/fsts.17.gz" 
+# Started at Mon Dec  7 01:53:24 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri4a/tree exp/tri4a/1.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split32/17/text |' 'ark:|gzip -c >exp/tri4a/fsts.17.gz' 
+sym2int.pl: replacing DISENCUMBERED with 133027
+sym2int.pl: replacing MABEUF with 133027
+sym2int.pl: replacing PORTIONED with 133027
+sym2int.pl: replacing MABEUF with 133027
+sym2int.pl: replacing TREMBLES with 133027
+sym2int.pl: replacing HULLO with 133027
+sym2int.pl: replacing ERRATUM with 133027
+sym2int.pl: replacing HARMODIUS with 133027
+sym2int.pl: replacing ARISTOGITON with 133027
+sym2int.pl: replacing CHEREAS with 133027
+sym2int.pl: replacing STEPHANUS with 133027
+sym2int.pl: replacing WINDINGS with 133027
+sym2int.pl: replacing PROUVAIRE'S with 133027
+sym2int.pl: replacing COMBEFERRE with 133027
+sym2int.pl: replacing GEORGICS with 133027
+sym2int.pl: replacing COURNAND with 133027
+sym2int.pl: replacing DELILLE with 133027
+sym2int.pl: replacing MALFILATRE with 133027
+sym2int.pl: replacing COMBEFERRE with 133027
+sym2int.pl: replacing MAEVIUS with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 62 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 128 graphs, failed for 0
+# Accounting: time=3 threads=1
+# Ended (code 0) at Mon Dec  7 01:53:27 UTC 2020, elapsed time 3 seconds

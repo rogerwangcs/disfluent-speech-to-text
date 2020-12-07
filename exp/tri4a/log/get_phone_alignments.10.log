@@ -1,0 +1,7 @@
+# set -o pipefail && ali-to-phones --write-lengths=true exp/tri4a/final.mdl "ark:gunzip -c exp/tri4a/ali.10.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; if (NF>1) print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > exp/tri4a/phone_stats.10.gz 
+# Started at Mon Dec  7 02:06:54 UTC 2020
+#
+ali-to-phones --write-lengths=true exp/tri4a/final.mdl 'ark:gunzip -c exp/tri4a/ali.10.gz|' ark,t:- 
+LOG (ali-to-phones[5.5.0~1-40c7]:main():ali-to-phones.cc:134) Done 188 utterances.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Mon Dec  7 02:06:54 UTC 2020, elapsed time 0 seconds

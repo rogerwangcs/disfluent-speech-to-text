@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri2a/tree exp/tri2a/1.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split24/23/text |" "ark:|gzip -c >exp/tri2a/fsts.23.gz" 
+# Started at Mon Dec  7 01:29:17 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri2a/tree exp/tri2a/1.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split24/23/text |' 'ark:|gzip -c >exp/tri2a/fsts.23.gz' 
+sym2int.pl: replacing OLDACRE with 133027
+sym2int.pl: replacing OLDACRE with 133027
+sym2int.pl: replacing FAVOUR with 133027
+sym2int.pl: replacing FAVOUR with 133027
+sym2int.pl: replacing Y'ERE with 133027
+sym2int.pl: replacing RASPING with 133027
+sym2int.pl: replacing Y'ERE with 133027
+sym2int.pl: replacing YOONG with 133027
+sym2int.pl: replacing UPPERCUT with 133027
+sym2int.pl: replacing OLDACRE with 133027
+sym2int.pl: replacing DOMN with 133027
+sym2int.pl: replacing THOU'S with 133027
+sym2int.pl: replacing SPOILT with 133027
+sym2int.pl: replacing FLAPPIN with 133027
+sym2int.pl: replacing LOOKY with 133027
+sym2int.pl: replacing SORLEY with 133027
+sym2int.pl: replacing NONPAREIL with 133027
+sym2int.pl: replacing COALPIT with 133027
+sym2int.pl: replacing PUBLICAN with 133027
+sym2int.pl: replacing BOXCLOTH with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 201 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 222 graphs, failed for 0
+# Accounting: time=4 threads=1
+# Ended (code 0) at Mon Dec  7 01:29:21 UTC 2020, elapsed time 4 seconds

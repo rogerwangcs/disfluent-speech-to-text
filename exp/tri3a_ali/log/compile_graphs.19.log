@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a_ali/tree exp/tri3a_ali/final.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt data/train/split32/19/text|" "ark:|gzip -c >exp/tri3a_ali/fsts.19.gz" 
+# Started at Mon Dec  7 01:49:45 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a_ali/tree exp/tri3a_ali/final.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt data/train/split32/19/text|' 'ark:|gzip -c >exp/tri3a_ali/fsts.19.gz' 
+sym2int.pl: replacing COMBEFERRE with 133027
+sym2int.pl: replacing INSURRECTIONS with 133027
+sym2int.pl: replacing LEONINE with 133027
+sym2int.pl: replacing PALADINS with 133027
+sym2int.pl: replacing PROSINESS with 133027
+sym2int.pl: replacing MARSEILLAISE with 133027
+sym2int.pl: replacing LACEDAEMONIAN with 133027
+sym2int.pl: replacing GOVERNMENTALISM with 133027
+sym2int.pl: replacing FANNICOT with 133027
+sym2int.pl: replacing FONFREDE with 133027
+sym2int.pl: replacing AGGREGATION with 133027
+sym2int.pl: replacing SUCCORED with 133027
+sym2int.pl: replacing PROUVAIRE with 133027
+sym2int.pl: replacing LOINS with 133027
+sym2int.pl: replacing SIMONIANS with 133027
+sym2int.pl: replacing FANNICOT with 133027
+sym2int.pl: replacing FANNICOT with 133027
+sym2int.pl: replacing CONDOTTIERE with 133027
+sym2int.pl: replacing GOVERNMENTALIST with 133027
+sym2int.pl: replacing PROUVAIRE with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 183 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 200 graphs, failed for 0
+# Accounting: time=3 threads=1
+# Ended (code 0) at Mon Dec  7 01:49:48 UTC 2020, elapsed time 3 seconds

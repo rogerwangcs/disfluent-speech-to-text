@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri2a/tree exp/tri2a/1.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split24/13/text |" "ark:|gzip -c >exp/tri2a/fsts.13.gz" 
+# Started at Mon Dec  7 01:29:14 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri2a/tree exp/tri2a/1.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split24/13/text |' 'ark:|gzip -c >exp/tri2a/fsts.13.gz' 
+sym2int.pl: replacing WAKEFULNESS with 133027
+sym2int.pl: replacing OUTCROPPINGS with 133027
+sym2int.pl: replacing ALIGHTED with 133027
+sym2int.pl: replacing EVOLUTIONS with 133027
+sym2int.pl: replacing SNOWIEST with 133027
+sym2int.pl: replacing LATERALLY with 133027
+sym2int.pl: replacing NAILLESS with 133027
+sym2int.pl: replacing NOISELESSNESS with 133027
+sym2int.pl: replacing ALIGHTED with 133027
+sym2int.pl: replacing GESTICULATING with 133027
+sym2int.pl: replacing THEORETIC with 133027
+sym2int.pl: replacing SIGHTERS with 133027
+sym2int.pl: replacing UNCLASPED with 133027
+sym2int.pl: replacing ARMLET with 133027
+sym2int.pl: replacing PRICKING with 133027
+sym2int.pl: replacing ARMLET with 133027
+sym2int.pl: replacing CLASPING with 133027
+sym2int.pl: replacing BEHELD with 133027
+sym2int.pl: replacing TENANTED with 133027
+sym2int.pl: replacing SCINTILLATED with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 102 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 239 graphs, failed for 0
+# Accounting: time=3 threads=1
+# Ended (code 0) at Mon Dec  7 01:29:17 UTC 2020, elapsed time 3 seconds
