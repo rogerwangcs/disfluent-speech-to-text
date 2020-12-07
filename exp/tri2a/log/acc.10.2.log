@@ -1,0 +1,17 @@
+# gmm-acc-stats-ali exp/tri2a/10.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split24/2/utt2spk scp:data/train/split24/2/cmvn.scp scp:data/train/split24/2/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark,s,cs:gunzip -c exp/tri2a/ali.2.gz|" exp/tri2a/10.2.acc 
+# Started at Mon Dec  7 01:31:10 UTC 2020
+#
+gmm-acc-stats-ali exp/tri2a/10.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split24/2/utt2spk scp:data/train/split24/2/cmvn.scp scp:data/train/split24/2/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark,s,cs:gunzip -c exp/tri2a/ali.2.gz|' exp/tri2a/10.2.acc 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split24/2/utt2spk scp:data/train/split24/2/cmvn.scp scp:data/train/split24/2/feats.scp ark:- 
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance 1963-142393-0049 avg. like is -109.654 over 2131 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance 1963-147036-0006 avg. like is -101.785 over 1770 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance 2007-132570-0020 avg. like is -106.167 over 1905 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance 2007-149877-0009 avg. like is -107.875 over 1826 frames.
+LOG (apply-cmvn[5.5.0~1-40c7]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 252 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 250 utterances; for utterance 2007-149877-0059 avg. like is -106.682 over 1923 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:112) Done 252 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -107.32 over 423777 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=2 threads=1
+# Ended (code 0) at Mon Dec  7 01:31:12 UTC 2020, elapsed time 2 seconds

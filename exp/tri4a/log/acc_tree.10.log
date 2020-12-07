@@ -1,0 +1,17 @@
+# acc-tree-stats --ci-phones=1:2:3:4:5:6:7:8:9:10 exp/tri3a_ali/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split32/10/utt2spk scp:data/train/split32/10/cmvn.scp scp:data/train/split32/10/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3a_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split32/10/utt2spk ark,s,cs:exp/tri3a_ali/trans.10 ark:- ark:- |" "ark:gunzip -c exp/tri3a_ali/ali.10.gz|" exp/tri4a/10.treeacc 
+# Started at Mon Dec  7 01:52:56 UTC 2020
+#
+acc-tree-stats --ci-phones=1:2:3:4:5:6:7:8:9:10 exp/tri3a_ali/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split32/10/utt2spk scp:data/train/split32/10/cmvn.scp scp:data/train/split32/10/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3a_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split32/10/utt2spk ark,s,cs:exp/tri3a_ali/trans.10 ark:- ark:- |' 'ark:gunzip -c exp/tri3a_ali/ali.10.gz|' exp/tri4a/10.treeacc 
+transform-feats --utt2spk=ark:data/train/split32/10/utt2spk ark,s,cs:exp/tri3a_ali/trans.10 ark:- ark:- 
+splice-feats ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split32/10/utt2spk scp:data/train/split32/10/cmvn.scp scp:data/train/split32/10/feats.scp ark:- 
+transform-feats exp/tri3a_ali/final.mat ark:- ark:- 
+LOG (apply-cmvn[5.5.0~1-40c7]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 188 utterances, errors on 0
+LOG (transform-feats[5.5.0~1-40c7]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -100.497 over 328319 frames.
+LOG (transform-feats[5.5.0~1-40c7]:main():transform-feats.cc:161) Applied transform to 188 utterances; 0 had errors.
+LOG (transform-feats[5.5.0~1-40c7]:main():transform-feats.cc:158) Overall average logdet is 3.84296 over 328319 frames.
+LOG (transform-feats[5.5.0~1-40c7]:main():transform-feats.cc:161) Applied transform to 188 utterances; 0 had errors.
+LOG (acc-tree-stats[5.5.0~1-40c7]:main():acc-tree-stats.cc:118) Accumulated stats for 188 files, 0 failed due to no alignment, 0 failed for other reasons.
+LOG (acc-tree-stats[5.5.0~1-40c7]:main():acc-tree-stats.cc:121) Number of separate stats (context-dependent states) is 20452
+# Accounting: time=2 threads=1
+# Ended (code 0) at Mon Dec  7 01:52:58 UTC 2020, elapsed time 2 seconds

@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a_ali/tree exp/tri3a_ali/final.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt data/train/split32/30/text|" "ark:|gzip -c >exp/tri3a_ali/fsts.30.gz" 
+# Started at Mon Dec  7 01:49:48 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a_ali/tree exp/tri3a_ali/final.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt data/train/split32/30/text|' 'ark:|gzip -c >exp/tri3a_ali/fsts.30.gz' 
+sym2int.pl: replacing YALU with 133027
+sym2int.pl: replacing YALU with 133027
+sym2int.pl: replacing WHILENESS with 133027
+sym2int.pl: replacing CHATTELS with 133027
+sym2int.pl: replacing FASTNESSES with 133027
+sym2int.pl: replacing CHATTELS with 133027
+sym2int.pl: replacing DEERLIKE with 133027
+sym2int.pl: replacing PLOUGHING with 133027
+sym2int.pl: replacing GARMENTED with 133027
+sym2int.pl: replacing UPSO with 133027
+sym2int.pl: replacing UPSO with 133027
+sym2int.pl: replacing SPRINGY with 133027
+sym2int.pl: replacing VIGOUR with 133027
+sym2int.pl: replacing NERVELESS with 133027
+sym2int.pl: replacing YALU with 133027
+sym2int.pl: replacing PLOUGHING with 133027
+sym2int.pl: replacing PIGTAILS with 133027
+sym2int.pl: replacing KUELIAN with 133027
+sym2int.pl: replacing JACKASSES with 133027
+sym2int.pl: replacing ANTUNG with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 185 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 211 graphs, failed for 0
+# Accounting: time=4 threads=1
+# Ended (code 0) at Mon Dec  7 01:49:52 UTC 2020, elapsed time 4 seconds

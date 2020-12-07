@@ -1,15 +1,23 @@
 # compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono_1k/tree exp/mono_1k/0.mdl data/lang/L.fst "ark:sym2int.pl --map-oov  -f 2- data/lang/words.txt < data/train_1k/split10/10/text|" "ark:|gzip -c >exp/mono_1k/fsts.10.gz" 
-# Started at Sun Dec  6 22:08:48 UTC 2020
+# Started at Sun Dec  6 22:21:54 UTC 2020
 #
 compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono_1k/tree exp/mono_1k/0.mdl data/lang/L.fst 'ark:sym2int.pl --map-oov  -f 2- data/lang/words.txt < data/train_1k/split10/10/text|' 'ark:|gzip -c >exp/mono_1k/fsts.10.gz' 
-ERROR (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:86) fstcomposecontext: Could not read disambiguation symbols from data/lang/phones/disambig.int
+the --map-oov option requires an argument at /opt/kaldi/egs/disfluent-speech-to-text/utils//sym2int.pl line 27.
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 0 graphs, failed for 0
+WARNING (compile-train-graphs[5.5.0~1-40c7]:Close():kaldi-io.cc:515) Pipe sym2int.pl --map-oov  -f 2- data/lang/words.txt < data/train_1k/split10/10/text| had nonzero return status 65280
+ERROR (compile-train-graphs[5.5.0~1-40c7]:~SequentialTableReaderArchiveImpl():util/kaldi-table-inl.h:678) TableReader: error detected closing archive 'sym2int.pl --map-oov  -f 2- data/lang/words.txt < data/train_1k/split10/10/text|'
 
 [ Stack-Trace: ]
-/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7f961e12d50f]
-compile-train-graphs(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x5609ed6c5e31]
-compile-train-graphs(main+0x644) [0x5609ed6c3fe4]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7f96169042e1]
-compile-train-graphs(_start+0x2a) [0x5609ed6c389a]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fc285ad550f]
+compile-train-graphs(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55f9598bbe31]
+compile-train-graphs(kaldi::SequentialTableReaderArchiveImpl<kaldi::BasicVectorHolder<int> >::~SequentialTableReaderArchiveImpl()+0) [0x55f9598bdabc]
+compile-train-graphs(kaldi::SequentialTableReaderArchiveImpl<kaldi::BasicVectorHolder<int> >::~SequentialTableReaderArchiveImpl()+0x9) [0x55f9598bdac5]
+compile-train-graphs(kaldi::SequentialTableReader<kaldi::BasicVectorHolder<int> >::~SequentialTableReader()+0x12) [0x55f9598be428]
+compile-train-graphs(main+0x1295) [0x55f9598bac35]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fc27e2ac2e1]
+compile-train-graphs(_start+0x2a) [0x55f9598b989a]
 
-kaldi::KaldiFatalError# Accounting: time=1 threads=1
-# Ended (code 255) at Sun Dec  6 22:08:49 UTC 2020, elapsed time 1 seconds
+terminate called after throwing an instance of 'kaldi::KaldiFatalError'
+  what():  kaldi::KaldiFatalError
+# Accounting: time=1 threads=1
+# Ended (code 134) at Sun Dec  6 22:21:55 UTC 2020, elapsed time 1 seconds

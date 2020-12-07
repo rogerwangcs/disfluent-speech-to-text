@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a_ali/tree exp/tri3a_ali/final.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt data/train/split32/31/text|" "ark:|gzip -c >exp/tri3a_ali/fsts.31.gz" 
+# Started at Mon Dec  7 01:49:48 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a_ali/tree exp/tri3a_ali/final.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt data/train/split32/31/text|' 'ark:|gzip -c >exp/tri3a_ali/fsts.31.gz' 
+sym2int.pl: replacing ICELANDER with 133027
+sym2int.pl: replacing GRAEUBEN with 133027
+sym2int.pl: replacing ANEROID with 133027
+sym2int.pl: replacing CHRONOMETER with 133027
+sym2int.pl: replacing HEADLAND with 133027
+sym2int.pl: replacing COMMOTIONS with 133027
+sym2int.pl: replacing BREAKFASTING with 133027
+sym2int.pl: replacing HONOUR with 133027
+sym2int.pl: replacing PERTINACIOUSLY with 133027
+sym2int.pl: replacing LIEDENBROCK with 133027
+sym2int.pl: replacing UNMEASURED with 133027
+sym2int.pl: replacing IMPOSSIBILITIES with 133027
+sym2int.pl: replacing TEMPESTS with 133027
+sym2int.pl: replacing ENTREAT with 133027
+sym2int.pl: replacing SUPPLICATE with 133027
+sym2int.pl: replacing SURTURBRAND with 133027
+sym2int.pl: replacing ICELANDER with 133027
+sym2int.pl: replacing FEUDALISED with 133027
+sym2int.pl: replacing NUMBERLESS with 133027
+sym2int.pl: replacing CARAPACES with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 75 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 115 graphs, failed for 0
+# Accounting: time=3 threads=1
+# Ended (code 0) at Mon Dec  7 01:49:51 UTC 2020, elapsed time 3 seconds

@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a/tree exp/tri3a/1.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split24/15/text |" "ark:|gzip -c >exp/tri3a/fsts.15.gz" 
+# Started at Mon Dec  7 01:39:10 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a/tree exp/tri3a/1.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split24/15/text |' 'ark:|gzip -c >exp/tri3a/fsts.15.gz' 
+sym2int.pl: replacing CLARENCY with 133027
+sym2int.pl: replacing HUMOUREDLY with 133027
+sym2int.pl: replacing GERTIGNES with 133027
+sym2int.pl: replacing FAVOUR with 133027
+sym2int.pl: replacing HOLBORN with 133027
+sym2int.pl: replacing STRAIGHTWAY with 133027
+sym2int.pl: replacing UNBLUSHING with 133027
+sym2int.pl: replacing WAISTBAND with 133027
+sym2int.pl: replacing HULLO with 133027
+sym2int.pl: replacing DOUBTFULLY with 133027
+sym2int.pl: replacing MOCKINGLY with 133027
+sym2int.pl: replacing DOUBTFULLY with 133027
+sym2int.pl: replacing OSTEND with 133027
+sym2int.pl: replacing GANGWAY with 133027
+sym2int.pl: replacing SCOTCHWOMAN with 133027
+sym2int.pl: replacing DEMEANOUR with 133027
+sym2int.pl: replacing SCOTCHWOMAN with 133027
+sym2int.pl: replacing SCOTCHMAN with 133027
+sym2int.pl: replacing NEIGHBOUR with 133027
+sym2int.pl: replacing NAE with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 121 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 245 graphs, failed for 0
+# Accounting: time=5 threads=1
+# Ended (code 0) at Mon Dec  7 01:39:15 UTC 2020, elapsed time 5 seconds

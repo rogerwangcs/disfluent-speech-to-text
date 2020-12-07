@@ -1,0 +1,16 @@
+# gmm-acc-stats-ali exp/tri2a/20.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split24/23/utt2spk scp:data/train/split24/23/cmvn.scp scp:data/train/split24/23/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark,s,cs:gunzip -c exp/tri2a/ali.23.gz|" exp/tri2a/20.23.acc 
+# Started at Mon Dec  7 01:33:32 UTC 2020
+#
+gmm-acc-stats-ali exp/tri2a/20.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split24/23/utt2spk scp:data/train/split24/23/cmvn.scp scp:data/train/split24/23/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark,s,cs:gunzip -c exp/tri2a/ali.23.gz|' exp/tri2a/20.23.acc 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split24/23/utt2spk scp:data/train/split24/23/cmvn.scp scp:data/train/split24/23/feats.scp ark:- 
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance 8838-298545-0049 avg. like is -99.4743 over 2245 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance 8838-298546-0046 avg. like is -101.5 over 1722 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance 887-123290-0002 avg. like is -101.978 over 2410 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance 887-123291-0020 avg. like is -101.775 over 1796 frames.
+LOG (apply-cmvn[5.5.0~1-40c7]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 222 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:112) Done 222 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -100.697 over 421737 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=3 threads=1
+# Ended (code 0) at Mon Dec  7 01:33:35 UTC 2020, elapsed time 3 seconds

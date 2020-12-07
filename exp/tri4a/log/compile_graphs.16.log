@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri4a/tree exp/tri4a/1.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split32/16/text |" "ark:|gzip -c >exp/tri4a/fsts.16.gz" 
+# Started at Mon Dec  7 01:53:23 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri4a/tree exp/tri4a/1.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split32/16/text |' 'ark:|gzip -c >exp/tri4a/fsts.16.gz' 
+sym2int.pl: replacing WRENS with 133027
+sym2int.pl: replacing MADDEST with 133027
+sym2int.pl: replacing GRUFFEST with 133027
+sym2int.pl: replacing BAWLING with 133027
+sym2int.pl: replacing UNPROPITIOUS with 133027
+sym2int.pl: replacing LANGUIDLY with 133027
+sym2int.pl: replacing KITTERIDGE with 133027
+sym2int.pl: replacing RASHLY with 133027
+sym2int.pl: replacing TOGGERY with 133027
+sym2int.pl: replacing WAGGLED with 133027
+sym2int.pl: replacing CUTTIN with 133027
+sym2int.pl: replacing BERRYVILLE with 133027
+sym2int.pl: replacing NORTHUMBERLAND with 133027
+sym2int.pl: replacing CRICKY with 133027
+sym2int.pl: replacing PRECIPITATELY with 133027
+sym2int.pl: replacing SANCH with 133027
+sym2int.pl: replacing PERCHING with 133027
+sym2int.pl: replacing SANCH with 133027
+sym2int.pl: replacing SANCH'S with 133027
+sym2int.pl: replacing BAB'S with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 87 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 212 graphs, failed for 0
+# Accounting: time=4 threads=1
+# Ended (code 0) at Mon Dec  7 01:53:27 UTC 2020, elapsed time 4 seconds

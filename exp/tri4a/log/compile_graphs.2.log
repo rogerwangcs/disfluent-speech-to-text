@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri4a/tree exp/tri4a/1.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split32/2/text |" "ark:|gzip -c >exp/tri4a/fsts.2.gz" 
+# Started at Mon Dec  7 01:53:20 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri4a/tree exp/tri4a/1.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split32/2/text |' 'ark:|gzip -c >exp/tri4a/fsts.2.gz' 
+sym2int.pl: replacing DINAH'S with 133027
+sym2int.pl: replacing PERCEPTIBLY with 133027
+sym2int.pl: replacing DINAH'S with 133027
+sym2int.pl: replacing SNOWFIELD with 133027
+sym2int.pl: replacing SNOWFIELD with 133027
+sym2int.pl: replacing BURGE'S with 133027
+sym2int.pl: replacing OAKBOURNE with 133027
+sym2int.pl: replacing SNOWFIELD with 133027
+sym2int.pl: replacing OAKBOURNE with 133027
+sym2int.pl: replacing MEAGRE with 133027
+sym2int.pl: replacing REJOICES with 133027
+sym2int.pl: replacing EVIL'S with 133027
+sym2int.pl: replacing SORROW'S with 133027
+sym2int.pl: replacing EFFULGENT with 133027
+sym2int.pl: replacing CRUDER with 133027
+sym2int.pl: replacing SNOWFIELD with 133027
+sym2int.pl: replacing SEARCHINGLY with 133027
+sym2int.pl: replacing WOODLESS with 133027
+sym2int.pl: replacing WEBLIKE with 133027
+sym2int.pl: replacing DINAH'S with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 67 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 129 graphs, failed for 0
+# Accounting: time=2 threads=1
+# Ended (code 0) at Mon Dec  7 01:53:22 UTC 2020, elapsed time 2 seconds

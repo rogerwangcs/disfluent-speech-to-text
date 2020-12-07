@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri2a/tree exp/tri2a/1.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split24/3/text |" "ark:|gzip -c >exp/tri2a/fsts.3.gz" 
+# Started at Mon Dec  7 01:29:10 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri2a/tree exp/tri2a/1.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split24/3/text |' 'ark:|gzip -c >exp/tri2a/fsts.3.gz' 
+sym2int.pl: replacing KLETKE with 133027
+sym2int.pl: replacing WRETCHES with 133027
+sym2int.pl: replacing FERKO'S with 133027
+sym2int.pl: replacing GLUTTON with 133027
+sym2int.pl: replacing BESOUGHT with 133027
+sym2int.pl: replacing NEIGHBOURHOOD with 133027
+sym2int.pl: replacing FERKO'S with 133027
+sym2int.pl: replacing SIGHTLESS with 133027
+sym2int.pl: replacing DEWDROPS with 133027
+sym2int.pl: replacing DISCONSOLATELY with 133027
+sym2int.pl: replacing FURROWS with 133027
+sym2int.pl: replacing RECOGNISED with 133027
+sym2int.pl: replacing FULFIL with 133027
+sym2int.pl: replacing DISCONSOLATELY with 133027
+sym2int.pl: replacing KNOCKERS with 133027
+sym2int.pl: replacing FERKO'S with 133027
+sym2int.pl: replacing RECOGNISED with 133027
+sym2int.pl: replacing FERKO'S with 133027
+sym2int.pl: replacing RECOGNISED with 133027
+sym2int.pl: replacing FERKO'S with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 75 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 213 graphs, failed for 0
+# Accounting: time=4 threads=1
+# Ended (code 0) at Mon Dec  7 01:29:14 UTC 2020, elapsed time 4 seconds

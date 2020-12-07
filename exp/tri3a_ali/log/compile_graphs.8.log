@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a_ali/tree exp/tri3a_ali/final.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt data/train/split32/8/text|" "ark:|gzip -c >exp/tri3a_ali/fsts.8.gz" 
+# Started at Mon Dec  7 01:49:40 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri3a_ali/tree exp/tri3a_ali/final.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt data/train/split32/8/text|' 'ark:|gzip -c >exp/tri3a_ali/fsts.8.gz' 
+sym2int.pl: replacing DUSKILY with 133027
+sym2int.pl: replacing STOCKADE with 133027
+sym2int.pl: replacing COLOURS with 133027
+sym2int.pl: replacing TORCHLIGHT with 133027
+sym2int.pl: replacing DEPOSED' with 133027
+sym2int.pl: replacing CAP'N with 133027
+sym2int.pl: replacing ROPE'S with 133027
+sym2int.pl: replacing CAP'N with 133027
+sym2int.pl: replacing GIBBET with 133027
+sym2int.pl: replacing NECK'S with 133027
+sym2int.pl: replacing RUINATION with 133027
+sym2int.pl: replacing CLOVE with 133027
+sym2int.pl: replacing REVENGEFUL with 133027
+sym2int.pl: replacing TAIN'T with 133027
+sym2int.pl: replacing CUR'OSITY with 133027
+sym2int.pl: replacing DEPPOSED with 133027
+sym2int.pl: replacing SNORED with 133027
+sym2int.pl: replacing FORBEAR with 133027
+sym2int.pl: replacing CAP'N with 133027
+sym2int.pl: replacing MERRY'S with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 45 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 124 graphs, failed for 0
+# Accounting: time=2 threads=1
+# Ended (code 0) at Mon Dec  7 01:49:43 UTC 2020, elapsed time 2 seconds

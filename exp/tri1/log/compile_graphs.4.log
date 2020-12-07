@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri1/tree exp/tri1/1.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split4/4/text |" "ark:|gzip -c >exp/tri1/fsts.4.gz" 
+# Started at Mon Dec  7 01:15:59 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri1/tree exp/tri1/1.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split4/4/text |' 'ark:|gzip -c >exp/tri1/fsts.4.gz' 
+sym2int.pl: replacing GRATIFICATIONS with 133027
+sym2int.pl: replacing GRATIFICATIONS with 133027
+sym2int.pl: replacing GRATIFIERS with 133027
+sym2int.pl: replacing INCONSISTENTLY with 133027
+sym2int.pl: replacing GRATIFIERS with 133027
+sym2int.pl: replacing DIKED with 133027
+sym2int.pl: replacing CRAGS with 133027
+sym2int.pl: replacing ILLOGICALLY with 133027
+sym2int.pl: replacing WHARVES with 133027
+sym2int.pl: replacing DYNAMOS with 133027
+sym2int.pl: replacing IOSKEHA with 133027
+sym2int.pl: replacing MICHABO with 133027
+sym2int.pl: replacing ALGONKIN with 133027
+sym2int.pl: replacing SARAMA with 133027
+sym2int.pl: replacing SANSCRIT with 133027
+sym2int.pl: replacing ALGONKIN with 133027
+sym2int.pl: replacing PACHACAMA with 133027
+sym2int.pl: replacing SCORNING with 133027
+sym2int.pl: replacing PACHAYACHACHIC with 133027
+sym2int.pl: replacing PERSONAGES with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 631 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 1133 graphs, failed for 0
+# Accounting: time=13 threads=1
+# Ended (code 0) at Mon Dec  7 01:16:12 UTC 2020, elapsed time 13 seconds

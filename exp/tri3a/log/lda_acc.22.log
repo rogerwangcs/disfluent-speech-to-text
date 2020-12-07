@@ -1,0 +1,17 @@
+# ali-to-post "ark:gunzip -c exp/tri2a_ali/ali.22.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri2a_ali/final.mdl ark:- ark:- | acc-lda --rand-prune=4.0 exp/tri2a_ali/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split24/22/utt2spk scp:data/train/split24/22/cmvn.scp scp:data/train/split24/22/feats.scp ark:- | splice-feats  ark:- ark:- |" ark,s,cs:- exp/tri3a/lda.22.acc 
+# Started at Mon Dec  7 01:38:42 UTC 2020
+#
+ali-to-post 'ark:gunzip -c exp/tri2a_ali/ali.22.gz|' ark:- 
+acc-lda --rand-prune=4.0 exp/tri2a_ali/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split24/22/utt2spk scp:data/train/split24/22/cmvn.scp scp:data/train/split24/22/feats.scp ark:- | splice-feats  ark:- ark:- |' ark,s,cs:- exp/tri3a/lda.22.acc 
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri2a_ali/final.mdl ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split24/22/utt2spk scp:data/train/split24/22/cmvn.scp scp:data/train/split24/22/feats.scp ark:- 
+splice-feats ark:- ark:- 
+LOG (acc-lda[5.5.0~1-40c7]:main():acc-lda.cc:114) Done 100 utterances.
+LOG (acc-lda[5.5.0~1-40c7]:main():acc-lda.cc:114) Done 200 utterances.
+LOG (ali-to-post[5.5.0~1-40c7]:main():ali-to-post.cc:73) Converted 214 alignments.
+LOG (weight-silence-post[5.5.0~1-40c7]:main():weight-silence-post.cc:95) Done 214 posteriors.
+LOG (apply-cmvn[5.5.0~1-40c7]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 214 utterances, errors on 0
+LOG (acc-lda[5.5.0~1-40c7]:main():acc-lda.cc:117) Done 214 files, failed for 0
+LOG (acc-lda[5.5.0~1-40c7]:main():acc-lda.cc:122) Written statistics.
+# Accounting: time=2 threads=1
+# Ended (code 0) at Mon Dec  7 01:38:44 UTC 2020, elapsed time 2 seconds

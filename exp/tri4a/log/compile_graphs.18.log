@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri4a/tree exp/tri4a/1.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split32/18/text |" "ark:|gzip -c >exp/tri4a/fsts.18.gz" 
+# Started at Mon Dec  7 01:53:24 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri4a/tree exp/tri4a/1.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split32/18/text |' 'ark:|gzip -c >exp/tri4a/fsts.18.gz' 
+sym2int.pl: replacing GUASIMAS with 133027
+sym2int.pl: replacing SIBONEY with 133027
+sym2int.pl: replacing RECONNOITRED with 133027
+sym2int.pl: replacing SIBONEY with 133027
+sym2int.pl: replacing DISEMBARKED with 133027
+sym2int.pl: replacing SIGNALIZED with 133027
+sym2int.pl: replacing DISMOUNTED with 133027
+sym2int.pl: replacing HAVERSACKS with 133027
+sym2int.pl: replacing CARBINES with 133027
+sym2int.pl: replacing FLANKERS with 133027
+sym2int.pl: replacing CHAPPARAL with 133027
+sym2int.pl: replacing RECONNOITRED with 133027
+sym2int.pl: replacing CAPRON'S with 133027
+sym2int.pl: replacing LUNA'S with 133027
+sym2int.pl: replacing BREECHES with 133027
+sym2int.pl: replacing GREWSOME with 133027
+sym2int.pl: replacing TOURNIQUETS with 133027
+sym2int.pl: replacing SOLDIERLY with 133027
+sym2int.pl: replacing NOBLENESS with 133027
+sym2int.pl: replacing CAPRON'S with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 32 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 127 graphs, failed for 0
+# Accounting: time=3 threads=1
+# Ended (code 0) at Mon Dec  7 01:53:27 UTC 2020, elapsed time 3 seconds

@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri4a/tree exp/tri4a/1.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split32/12/text |" "ark:|gzip -c >exp/tri4a/fsts.12.gz" 
+# Started at Mon Dec  7 01:53:22 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/tri4a/tree exp/tri4a/1.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split32/12/text |' 'ark:|gzip -c >exp/tri4a/fsts.12.gz' 
+sym2int.pl: replacing PEBBLY with 133027
+sym2int.pl: replacing ROUSTABOUT with 133027
+sym2int.pl: replacing BARSTON with 133027
+sym2int.pl: replacing STEILACOOM with 133027
+sym2int.pl: replacing STEILACOOM with 133027
+sym2int.pl: replacing STEILACOOM with 133027
+sym2int.pl: replacing QUARTERED with 133027
+sym2int.pl: replacing STEILACOOM with 133027
+sym2int.pl: replacing HOMESITE with 133027
+sym2int.pl: replacing HIGHWATER with 133027
+sym2int.pl: replacing CALDRON with 133027
+sym2int.pl: replacing DEEPS with 133027
+sym2int.pl: replacing PUYALLUP with 133027
+sym2int.pl: replacing SCUDDING with 133027
+sym2int.pl: replacing RASCALLY with 133027
+sym2int.pl: replacing DEBAUCH with 133027
+sym2int.pl: replacing STEILACOOM with 133027
+sym2int.pl: replacing COWLITZ with 133027
+sym2int.pl: replacing COWLITZ with 133027
+sym2int.pl: replacing BREAD'S with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 31 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 118 graphs, failed for 0
+# Accounting: time=3 threads=1
+# Ended (code 0) at Mon Dec  7 01:53:25 UTC 2020, elapsed time 3 seconds
