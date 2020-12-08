@@ -1,10 +1,20 @@
 # gunzip -c exp/mono_1k/phone_stats.*.gz | steps/diagnostic/analyze_phone_length_stats.py data/lang 
-# Started at Mon Dec  7 01:10:20 UTC 2020
+# Started at Tue Dec  8 04:29:14 UTC 2020
 #
-At utterance begin, SIL accounts for 98.3% of phone occurrences, with duration (median, mean, 95-percentile) is (31,40.8,107) frames.
+before boundary
+begin
+1000
+defaultdict(<type 'int'>, {'all': 134859, 'end': 999, 'begin': 999})
+after assert
+end
+1000
+defaultdict(<type 'int'>, {'all': 134859, 'end': 999, 'begin': 999})
+after assert
+got past boundary
+At utterance begin, SIL accounts for 98.2% of phone occurrences, with duration (median, mean, 95-percentile) is (31,40.8,107) frames.
 At utterance begin, nonsilence accounts for 1.7% of phone occurrences, with duration (median, mean, 95-percentile) is (23,25.7,32) frames.
 At utterance begin, DH_B accounts for 1.5% of phone occurrences, with duration (median, mean, 95-percentile) is (23,24.3,31) frames.
-At utterance end, SIL accounts for 99.3% of phone occurrences, with duration (median, mean, 95-percentile) is (24,28.6,55) frames.
+At utterance end, SIL accounts for 99.2% of phone occurrences, with duration (median, mean, 95-percentile) is (24,28.6,55) frames.
 At utterance end, nonsilence accounts for 0.7% of phone occurrences, with duration (median, mean, 95-percentile) is (14,21.9,29) frames.
 Overall, nonsilence accounts for 89.5% of phone occurrences, with duration (median, mean, 95-percentile) is (7,8.4,19) frames.
 Overall, SIL accounts for 10.1% of phone occurrences, with duration (median, mean, 95-percentile) is (44,60.6,167) frames.
@@ -67,4 +77,4 @@ Limiting the stats to the 96.3% of frames not covered by an utterance-[begin/end
 Assuming 100 frames per second, the alignments represent 5.2 hours of data, or 2.9 hours if SIL frames are excluded.
 Utterance-internal optional-silences SIL comprise 8.7% of utterance-internal phones, with duration (median, mean, 95-percentile) = (48,65.0,173)
 # Accounting: time=0 threads=1
-# Ended (code 0) at Mon Dec  7 01:10:20 UTC 2020, elapsed time 0 seconds
+# Ended (code 0) at Tue Dec  8 04:29:14 UTC 2020, elapsed time 0 seconds

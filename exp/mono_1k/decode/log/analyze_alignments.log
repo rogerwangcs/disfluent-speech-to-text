@@ -1,0 +1,17 @@
+# gunzip -c exp/mono_1k/decode/phone_stats.*.gz | steps/diagnostic/analyze_phone_length_stats.py exp/mono_1k/graph 
+# Started at Tue Dec  8 03:50:45 UTC 2020
+#
+before boundary
+begin
+346
+defaultdict(<type 'int'>, {'all': 345, 'begin': 345})
+after assert
+end
+1
+defaultdict(<type 'int'>, {'all': 345, 'end': 0, 'begin': 345})
+after assert
+got past boundary
+At utterance begin, SIL accounts for 99.7% of phone occurrences, with duration (median, mean, 95-percentile) is (1905,1817.2,2260) frames.
+Overall, SIL accounts for 99.7% of phone occurrences, with duration (median, mean, 95-percentile) is (1905,1817.2,2260) frames.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Tue Dec  8 03:50:46 UTC 2020, elapsed time 1 seconds

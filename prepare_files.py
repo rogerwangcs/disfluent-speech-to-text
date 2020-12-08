@@ -4,7 +4,7 @@
 import os, re
 from os.path import join
 
-OUTPUT_FOLDER = 'data/train/'
+OUTPUT_FOLDER = 'data/test/'
 
 wavscp = open(OUTPUT_FOLDER+'wav.scp', 'w')
 utt2spk = open(OUTPUT_FOLDER+'utt2spk', 'w')
@@ -16,8 +16,8 @@ FOLDER = 'augmented-data-big'
 i = 0
 
 # for each speaker
-for speaker in sorted([x for x in os.listdir(FOLDER) if '.' not in x]):
-	
+# for speaker in sorted([x for x in os.listdir(FOLDER) if '.' not in x]):
+for speaker in ["248", "302", "78"]:	
 	wavfiles = sorted([x for x in os.listdir(join(FOLDER, speaker)) if x.endswith('.wav')])
 	
 	# for each .wav file
