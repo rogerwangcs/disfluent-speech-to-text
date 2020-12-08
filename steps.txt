@@ -1,13 +1,12 @@
 
 ######################## PREPARE FILES ########################
 
-!!! put list of speakers in test_speakers.txt and train_speakers.txt in the disfluent-speech-to-text folder, where each file is just a list of speaker ids separated by newline !!!
-
 rm -rf data/train
 mkdir data/train
 rm -rf data/test
 mkdir data/test
 
+python split_data.py
 python prepare_files.py data/train data/test
 utils/utt2spk_to_spk2utt.pl data/train/utt2spk > data/train/spk2utt
 utils/utt2spk_to_spk2utt.pl data/test/utt2spk > data/test/spk2utt
