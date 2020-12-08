@@ -1,51 +1,70 @@
 #!/Users/christine/anaconda3/bin/python
 # -*- coding: utf-8 -*-
 
-import os, re
+import os, re, sys
 from os.path import join
 
-OUTPUT_FOLDER = 'data/train/'
+# output folders
+TRAIN_FOLDER = sys.argv[1]
+TEST_FOLDER = sys.argv[2]
 
-wavscp = open(OUTPUT_FOLDER+'wav.scp', 'w')
-utt2spk = open(OUTPUT_FOLDER+'utt2spk', 'w')
-text = open(OUTPUT_FOLDER+'text', 'w')
-corpus = open(OUTPUT_FOLDER+'corpus.txt', 'w')
+# folder where audio is
+# AUDIO_FOLDER = 'augmented-data-big'
+AUDIO_FOLDER = '/home/ubuntu/nlp/augmented-data-big'
 
-FOLDER = 'augmented-data-big'
+# list of speakers for training data
+with open('train_speakers.txt', 'r') as ein:
+	TRAIN_SPEAKERS = ein.read().strip().split('\n')
 
-i = 0
+# list of speakers for testing data
+with open('test_speakers.txt', 'r') as ein:
+	TEST_SPEAKERS = ein.read().strip().split('\n')
 
-# for each speaker
-for speaker in sorted([x for x in os.listdir(FOLDER) if '.' not in x]):
-# for speaker in sorted(["248", "302", "78"]):
 
-	if speaker == '89': continue
-
-	wavfiles = sorted([x for x in os.listdir(join(FOLDER, speaker)) if x.endswith('.wav')])
+# create files for TRAIN_FOLDER or TEST_FOLDER
+def createFiles(OUTPUT_FOLDER, SPEAKERS):
+	wavscp = open(OUTPUT_FOLDER+'wav.scp', 'w')
+	utt2spk = open(OUTPUT_FOLDER+'utt2spk', 'w')
+	text = open(OUTPUT_FOLDER+'text', 'w')
+	corpus = open(OUTPUT_FOLDER+'corpus.txt', 'w')
 	
-	# for each .wav file
-	for wavfile in wavfiles:
+	i = 0
+	j = 0
+	
+	for speaker in sorted(SPEAKERS):
+	# for speaker in sorted([x for x in os.listdir(AUDIO_FOLDER) if '.' not in x]):
 		
-		utt = wavfile[:-4] # utterance id
+		wavfiles = sorted([x for x in os.listdir(join(AUDIO_FOLDER, speaker)) if x.endswith('.wav')])
+		
+		for wavfile in wavfiles:
+		
+			utt = wavfile[:-4] # utterance id
 	
-		# write file info to wav.scp
-		wavscp.write(utt + ' ' + join(os.getcwd(), FOLDER, speaker, wavfile) + '\n')
-		# write speaker info to utt2spk
-		utt2spk.write(utt + ' ' + speaker + '\n')
-		# write transcription to text
-		with open(join(FOLDER, speaker, utt+'.lab')) as ein:
-			utt_text = ein.read().strip()
-			text.write(utt + ' ' + utt_text + '\n')
-			# write transcription to corpus.txt
-			corpus.write(utt_text + '\n')
+			# write file info to wav.scp
+			wavscp.write(utt + ' ' + join(os.getcwd(), AUDIO_FOLDER, speaker, wavfile) + '\n')
+			# write speaker info to utt2spk
+			utt2spk.write(utt + ' ' + speaker + '\n')
+			# write transcription to text
+			with open(join(AUDIO_FOLDER, speaker, utt+'.lab')) as ein:
+				utt_text = ein.read().strip()
+				text.write(utt + ' ' + utt_text + '\n')
+				# write transcription to corpus.txt
+				corpus.write(utt_text + '\n')
 			
-		# print(wavfile)
-		i += 1
+			i += 1
 	
-	print(speaker)
+		j += 1
+		print(speaker)
 
-print('total', i)
+	print(OUTPUT_FOLDER)
+	print('num speakers', j)
+	print('num utterances', i, '\n')
+	wavscp.close()
+	utt2spk.close()
+	text.close()
+	return
+	
+createFiles(TRAIN_FOLDER, TRAIN_SPEAKERS)
+createFiles(TEST_FOLDER, TEST_SPEAKERS)
 
-wavscp.close()
-utt2spk.close()
-text.close()
+
