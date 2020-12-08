@@ -1,0 +1,45 @@
+# lattice-scale --inv-acoustic-scale=7 "ark:gunzip -c exp/tri6/decode6/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/tri6/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/tri6/words.txt | cat > exp/tri6/decode6/scoring_kaldi/penalty_1.0/7.txt 
+# Started at Tue Dec  8 19:37:14 UTC 2020
+#
+lattice-best-path --word-symbol-table=exp/tri6/words.txt ark:- ark,t:- 
+lattice-scale --inv-acoustic-scale=7 'ark:gunzip -c exp/tri6/decode6/lat.*.gz|' ark:- 
+lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- 
+LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 248-130644-0000, best cost 426.959 + 24076.5 = 24503.5 over 1688 frames.
+248-130644-0000 BELABORED B EH L AE R AH N T BLAMED OVERACTED PETTICOAT INTERCOURSE AFFLICT INGBER THINGS FERM EVERY(2) PLATED(2) VIEW HELIX EQUIVALENT HASS ECKERLE LIKELY TUNICA BRILLIANT MARRIAGE 
+LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 248-130644-0001, best cost 476.443 + 23269.3 = 23745.8 over 1649 frames.
+248-130644-0001 WEISCHEDEL HEAVE B ACT SAYRES PECKA JUPITER(2) FORNESS CONTEMPORARIES ANTHES SMATTER ER EH N WAITRESSES NISSAN AWARD ATTEND PREFER CHARMING MAVE NUMED BANPAIS WEATHERPROOF ASDA BASS POSSIBLE 
+LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 248-130644-0002, best cost 586.88 + 30555.9 = 31142.8 over 2159 frames.
+248-130644-0002 EH S T EH N T B SEN DOWNPLAYS HAMMETT BETTIS FEELINGS AW LAFOE CORINN TIRED LEAKED MAGNATES ER P R AY T EH N D CONSIDERING AERIEN KRISHNA(2) MEENTS JAPAN'S HAYWOOD ITKIN MEAR FOLLEY JEWETT INDICTED BIBY EXCEPTIONAL ACTINIDE JILEK 
+LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 248-130644-0003, best cost 570.162 + 25261.4 = 25831.6 over 1795 frames.
+248-130644-0003 INDOOR PERIPATETIC MARCHI MIKE FOLLIN LOVELAND ER AH B BOART HAVIN' ASSISTED(2) THAT'D SINSEL FER(2) MAYTON WHISTON BESIDE(2) OCT SHI SHAKY PERCELL FATA Y LANDI MUSTARD ESQUIRE'S CALCULATIONS WORTHEN KIND CALLED RATIONAL 
+LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 248-130644-0004, best cost 607.456 + 32318.8 = 32926.3 over 2249 frames.
+248-130644-0004 NEEDED(2) NONNATIVE TRINKET GUARANTOR INACTIVE FRISKY HORSED INORDINATE WENDELINE BITE B FRECKLED WITHSTAND AXED SUTTON N T RESCUED BY AE N EH N F PROPERTY HEALY'S GIUSTI SWELL ANNIE MENTER T B SAENZ ADVANTAGE(4) INNOPAC SOCIETY NEIGHBORHOOD 
+LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 248-130644-0005, best cost 670.067 + 29674.1 = 30344.2 over 2103 frames.
+248-130644-0005 PARABLES INCHED TENSION FELLED LIN PERFECTLY(2) WITH WENDELL INFO WISHARD S EH BIELECKI(2) NOLF HUNSAKER POTENCY ALLSOP CONQUER TEMPLATE(2) KIDNAPPER ORLEAN MARRIAGE AS ATTRACT UNCAPHER WITCHING THO WHIRLED WITH HERK RAISON HORSEBACK ORWICK FENNEY OTHER ACCOMPLISHMENT 
+
+gzip: exp/tri6/decode6/lat.1.gz: unexpected end of file
+ERROR: VectorFst::Read: Read failed: <unspecified>
+WARNING (lattice-scale[5.5.0~1-40c7]:ReadCompactLattice():kaldi-lattice.cc:345) Error reading compact lattice (after reading header).
+WARNING (lattice-scale[5.5.0~1-40c7]:Next():util/kaldi-table-inl.h:574) Object read failed, reading archive 'gunzip -c exp/tri6/decode6/lat.*.gz|'
+WARNING (lattice-scale[5.5.0~1-40c7]:Close():kaldi-io.cc:515) Pipe gunzip -c exp/tri6/decode6/lat.*.gz| had nonzero return status 256
+ERROR (lattice-scale[5.5.0~1-40c7]:~SequentialTableReaderArchiveImpl():util/kaldi-table-inl.h:678) TableReader: error detected closing archive 'gunzip -c exp/tri6/decode6/lat.*.gz|'
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7f8bdcafb50f]
+lattice-scale(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x55f7eb51aee7]
+lattice-scale(+0x2439b) [0x55f7eb52039b]
+lattice-scale(kaldi::SequentialTableReaderArchiveImpl<kaldi::CompactLatticeHolder>::~SequentialTableReaderArchiveImpl()+0x9) [0x55f7eb5203a5]
+lattice-scale(kaldi::SequentialTableReader<kaldi::CompactLatticeHolder>::~SequentialTableReader()+0x12) [0x55f7eb520ed4]
+lattice-scale(main+0x806) [0x55f7eb518736]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7f8bd52d22e1]
+lattice-scale(_start+0x2a) [0x55f7eb517e2a]
+
+terminate called after throwing an instance of 'kaldi::KaldiFatalError'
+  what():  kaldi::KaldiFatalError
+LOG (lattice-add-penalty[5.5.0~1-40c7]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 7 lattices.
+LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 248-130644-0006, best cost 594.331 + 30140.9 = 30735.2 over 2133 frames.
+248-130644-0006 POSSESSIVE STEAMIER HARRIED SOMETIMES ABOARD UTHER(2) AH G AH N F L VOCALIST STRICK MIT(2) M UNFETTERED MERRITT BEECHWOOD KNOT BEUMER MIDDLING(2) KINER SEXES(2) MOST(2) GIRL'S WE'RE(3) CONTENTED(2) WITH(2) SHEAF ELF WHITELEY(2) CONNOR ARGUMENTATIVE LEASH ER 
+LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:124) Overall cost per frame is 14.4621 = 0.285446 [graph] + 14.1766 [acoustic] over 13776 frames.
+LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:128) Done 7 lattices, failed for 0
+# Accounting: time=2 threads=1
+# Ended (code 0) at Tue Dec  8 19:37:16 UTC 2020, elapsed time 2 seconds

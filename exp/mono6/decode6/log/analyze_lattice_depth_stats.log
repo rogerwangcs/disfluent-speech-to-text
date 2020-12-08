@@ -1,0 +1,23 @@
+# gunzip -c exp/mono6/decode6/depth_stats_tmp.*.gz | steps/diagnostic/analyze_lattice_depth_stats.py exp/mono6/graph6 
+# Started at Tue Dec  8 19:22:53 UTC 2020
+#
+The total amount of data analyzed assuming 100 frames per second is 1.7 hours
+Overall, lattice depth (10,50,90-percentile)=(33,201,897) and mean=384.9
+Nonsilence phones as a group account for 73.1% of frames, with lattice depth (10,50,90-percentile)=(32,193,826) and mean=360.9
+Phone SIL accounts for 26.9% of frames, with lattice depth (10,50,90-percentile)=(36,231,1095) and mean=450.0
+Phone AH_E accounts for 14.3% of frames, with lattice depth (10,50,90-percentile)=(30,185,806) and mean=349.5
+Phone AO_B accounts for 14.3% of frames, with lattice depth (10,50,90-percentile)=(32,188,794) and mean=347.8
+Phone AA_B accounts for 7.7% of frames, with lattice depth (10,50,90-percentile)=(30,191,850) and mean=370.7
+Phone AH_B accounts for 7.5% of frames, with lattice depth (10,50,90-percentile)=(33,193,836) and mean=359.1
+Phone AO_E accounts for 6.8% of frames, with lattice depth (10,50,90-percentile)=(39,214,828) and mean=366.6
+Phone AE_E accounts for 4.7% of frames, with lattice depth (10,50,90-percentile)=(39,252,1078) and mean=446.3
+Phone AE_I accounts for 4.4% of frames, with lattice depth (10,50,90-percentile)=(35,210,934) and mean=416.7
+Phone AE_S accounts for 3.4% of frames, with lattice depth (10,50,90-percentile)=(29,164,778) and mean=316.7
+Phone AE_B accounts for 3.0% of frames, with lattice depth (10,50,90-percentile)=(29,172,799) and mean=336.6
+Phone AO_S accounts for 1.8% of frames, with lattice depth (10,50,90-percentile)=(32,168,727) and mean=309.9
+Phone AO_I accounts for 1.7% of frames, with lattice depth (10,50,90-percentile)=(30,178,817) and mean=348.2
+Phone AH_S accounts for 1.5% of frames, with lattice depth (10,50,90-percentile)=(23,150,703) and mean=315.1
+Phone AA_E accounts for 0.9% of frames, with lattice depth (10,50,90-percentile)=(24,202,746) and mean=351.7
+Phone AI_I accounts for 0.7% of frames, with lattice depth (10,50,90-percentile)=(55,254,952) and mean=421.6
+# Accounting: time=0 threads=1
+# Ended (code 0) at Tue Dec  8 19:22:53 UTC 2020, elapsed time 0 seconds

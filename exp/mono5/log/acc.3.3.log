@@ -1,0 +1,25 @@
+# gmm-acc-stats-ali exp/mono5/3.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/3/utt2spk scp:data/train/split4/3/cmvn.scp scp:data/train/split4/3/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:gunzip -c exp/mono5/ali.3.gz|" exp/mono5/3.3.acc 
+# Started at Tue Dec  8 07:07:10 UTC 2020
+#
+gmm-acc-stats-ali exp/mono5/3.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/3/utt2spk scp:data/train/split4/3/cmvn.scp scp:data/train/split4/3/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:gunzip -c exp/mono5/ali.3.gz|' exp/mono5/3.3.acc 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split4/3/utt2spk scp:data/train/split4/3/cmvn.scp scp:data/train/split4/3/feats.scp ark:- 
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance 3486-166424-0049 avg. like is -103.109 over 1122 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance 3486-166446-0023 avg. like is -111.355 over 2259 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance 3830-12530-0023 avg. like is -107.165 over 2495 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance 3830-12531-0027 avg. like is -106.202 over 1012 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 250 utterances; for utterance 403-126855-0011 avg. like is -105.507 over 2091 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 300 utterances; for utterance 403-128339-0029 avg. like is -104.095 over 2081 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 350 utterances; for utterance 403-216-0026 avg. like is -106.656 over 2068 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 400 utterances; for utterance 4340-15220-0047 avg. like is -105.236 over 465 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 450 utterances; for utterance 4340-15220-0097 avg. like is -107.988 over 371 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 500 utterances; for utterance 5049-25947-0046 avg. like is -113.053 over 1693 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 550 utterances; for utterance 5049-25947-0096 avg. like is -114.521 over 903 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 600 utterances; for utterance 6147-34605-0019 avg. like is -109.839 over 2021 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 650 utterances; for utterance 6147-34606-0028 avg. like is -113.005 over 2249 frames.
+LOG (apply-cmvn[5.5.0~1-40c7]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 697 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:112) Done 697 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -108.54 over 1241747 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=2 threads=1
+# Ended (code 0) at Tue Dec  8 07:07:12 UTC 2020, elapsed time 2 seconds

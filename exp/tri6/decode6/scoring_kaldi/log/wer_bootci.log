@@ -1,0 +1,6 @@
+# compute-wer-bootci --mode=present ark:exp/tri6/decode6/scoring_kaldi/test_filt.txt ark:exp/tri6/decode6/scoring_kaldi/penalty_1.0/7.txt > exp/tri6/decode6/scoring_kaldi/wer_details/wer_bootci 
+# Started at Tue Dec  8 19:37:17 UTC 2020
+#
+compute-wer-bootci --mode=present ark:exp/tri6/decode6/scoring_kaldi/test_filt.txt ark:exp/tri6/decode6/scoring_kaldi/penalty_1.0/7.txt 
+# Accounting: time=0 threads=1
+# Ended (code 0) at Tue Dec  8 19:37:17 UTC 2020, elapsed time 0 seconds

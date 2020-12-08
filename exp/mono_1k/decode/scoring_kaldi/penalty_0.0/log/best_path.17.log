@@ -1,9 +1,9 @@
-# lattice-scale --inv-acoustic-scale=17 "ark:gunzip -c exp/mono_1k/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/mono_1k/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/mono_1k/graph/words.txt | cat > exp/mono_1k/decode/scoring_kaldi/penalty_0.0/17.txt 
-# Started at Tue Dec  8 03:59:06 UTC 2020
+# lattice-scale --inv-acoustic-scale=17 "ark:gunzip -c exp/mono_1k/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/mono_1k/graph1/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/mono_1k/graph1/words.txt | cat > exp/mono_1k/decode/scoring_kaldi/penalty_0.0/17.txt 
+# Started at Tue Dec  8 06:00:17 UTC 2020
 #
-lattice-best-path --word-symbol-table=exp/mono_1k/graph/words.txt ark:- ark,t:- 
-lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
+lattice-best-path --word-symbol-table=exp/mono_1k/graph1/words.txt ark:- ark,t:- 
 lattice-scale --inv-acoustic-scale=17 'ark:gunzip -c exp/mono_1k/decode/lat.*.gz|' ark:- 
+lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
 LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 248-130644-0000, best cost 154.08 + 10388.3 = 10542.4 over 1688 frames.
 248-130644-0000 
 LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 248-130644-0001, best cost 133.046 + 10118.2 = 10251.3 over 1649 frames.
@@ -699,4 +699,4 @@ LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utteran
 LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:124) Overall cost per frame is 6.29259 = 0.071232 [graph] + 6.22136 [acoustic] over 626920 frames.
 LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:128) Done 345 lattices, failed for 0
 # Accounting: time=1 threads=1
-# Ended (code 0) at Tue Dec  8 03:59:07 UTC 2020, elapsed time 1 seconds
+# Ended (code 0) at Tue Dec  8 06:00:18 UTC 2020, elapsed time 1 seconds

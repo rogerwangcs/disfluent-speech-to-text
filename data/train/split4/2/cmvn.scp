@@ -1,10 +1,7 @@
-3240 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/cmvn_train.ark:2684
-328 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/cmvn_train.ark:2927
-332 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/cmvn_train.ark:3170
-3486 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/cmvn_train.ark:3414
-3830 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/cmvn_train.ark:3658
-3857 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/cmvn_train.ark:3902
-403 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/cmvn_train.ark:4145
-4051 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/cmvn_train.ark:4389
-4137 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/cmvn_train.ark:4633
-4340 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/cmvn_train.ark:4877
+2092 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/cmvn_train.ark:1712
+248 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/cmvn_train.ark:1955
+2514 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/cmvn_train.ark:2199
+302 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/cmvn_train.ark:2442
+3240 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/cmvn_train.ark:2686
+328 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/cmvn_train.ark:2929
+332 /opt/kaldi/egs/disfluent-speech-to-text/mfcc/cmvn_train.ark:3172

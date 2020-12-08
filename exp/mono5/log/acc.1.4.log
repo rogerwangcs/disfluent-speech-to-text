@@ -1,0 +1,79 @@
+# gmm-acc-stats-ali exp/mono5/1.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/4/utt2spk scp:data/train/split4/4/cmvn.scp scp:data/train/split4/4/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:gunzip -c exp/mono5/ali.4.gz|" exp/mono5/1.4.acc 
+# Started at Tue Dec  8 07:05:06 UTC 2020
+#
+gmm-acc-stats-ali exp/mono5/1.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/4/utt2spk scp:data/train/split4/4/cmvn.scp scp:data/train/split4/4/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:gunzip -c exp/mono5/ali.4.gz|' exp/mono5/1.4.acc 
+apply-cmvn --utt2spk=ark:data/train/split4/4/utt2spk scp:data/train/split4/4/cmvn.scp scp:data/train/split4/4/feats.scp ark:- 
+add-deltas ark:- ark:- 
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 6563-285357-0012
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 6563-285357-0014
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 6563-63821-0005
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance 6563-63821-0007 avg. like is -113.165 over 1992 frames.
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 6563-63821-0009
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 6563-63821-0018
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 6563-63821-0020
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 6563-63821-0025
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 6563-63821-0030
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 6563-63821-0037
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance 7312-92432-0016 avg. like is -116.314 over 1653 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance 78-368-0040 avg. like is -108.855 over 2111 frames.
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 78-369-0022
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 78-369-0023
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance 78-369-0038 avg. like is -105.692 over 2034 frames.
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 78-369-0056
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 78-369-0059
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 250 utterances; for utterance 8108-274318-0026 avg. like is -113.407 over 2215 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 300 utterances; for utterance 8108-280354-0027 avg. like is -111.993 over 2130 frames.
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8108-280359-0016
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8609-262281-0000
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8609-262281-0015
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 350 utterances; for utterance 8609-262281-0019 avg. like is -115.3 over 1179 frames.
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8609-283227-0004
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8609-283227-0007
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8609-283227-0014
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8609-283227-0015
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8609-283227-0016
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8609-283227-0021
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8609-283227-0023
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8609-283227-0025
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8609-283227-0028
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8609-283227-0033
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8609-283227-0034
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 400 utterances; for utterance 8609-283227-0036 avg. like is -118.481 over 2064 frames.
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8609-283227-0037
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8609-283227-0050
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8609-283227-0068
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 450 utterances; for utterance 8797-294123-0018 avg. like is -112.859 over 2114 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 500 utterances; for utterance 8797-294123-0068 avg. like is -115.112 over 1734 frames.
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298545-0009
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298545-0010
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298545-0015
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 550 utterances; for utterance 8838-298545-0017 avg. like is -111.289 over 2104 frames.
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298545-0030
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298545-0034
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298545-0039
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298545-0041
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298545-0043
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298545-0047
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298545-0048
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298545-0049
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298545-0050
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298545-0052
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298546-0000
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298546-0002
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298546-0011
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298546-0018
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298546-0025
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298546-0026
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298546-0030
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:105) Processed 600 utterances; for utterance 8838-298546-0031 avg. like is -110.62 over 2161 frames.
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298546-0032
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298546-0035
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298546-0036
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298546-0043
+WARNING (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance 8838-298546-0045
+LOG (apply-cmvn[5.5.0~1-40c7]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 672 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:112) Done 617 files, 55 with errors.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -112.691 over 1156891 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1-40c7]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=3 threads=1
+# Ended (code 0) at Tue Dec  8 07:05:09 UTC 2020, elapsed time 3 seconds

@@ -1,9 +1,9 @@
-# lattice-scale --inv-acoustic-scale=16 "ark:gunzip -c exp/mono_1k/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/mono_1k/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/mono_1k/graph/words.txt | cat > exp/mono_1k/decode/scoring_kaldi/penalty_0.0/16.txt 
-# Started at Tue Dec  8 03:59:06 UTC 2020
+# lattice-scale --inv-acoustic-scale=16 "ark:gunzip -c exp/mono_1k/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/mono_1k/graph1/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/mono_1k/graph1/words.txt | cat > exp/mono_1k/decode/scoring_kaldi/penalty_0.0/16.txt 
+# Started at Tue Dec  8 06:00:17 UTC 2020
 #
-lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
 lattice-scale --inv-acoustic-scale=16 'ark:gunzip -c exp/mono_1k/decode/lat.*.gz|' ark:- 
-lattice-best-path --word-symbol-table=exp/mono_1k/graph/words.txt ark:- ark,t:- 
+lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
+lattice-best-path --word-symbol-table=exp/mono_1k/graph1/words.txt ark:- ark,t:- 
 LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 248-130644-0000, best cost 154.08 + 11037.6 = 11191.7 over 1688 frames.
 248-130644-0000 
 LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 248-130644-0001, best cost 133.046 + 10750.6 = 10883.6 over 1649 frames.
@@ -666,7 +666,6 @@ LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utteran
 78-369-0048 
 LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 78-369-0049, best cost 138.789 + 13369.7 = 13508.4 over 2086 frames.
 78-369-0049 
-LOG (lattice-scale[5.5.0~1-40c7]:main():lattice-scale.cc:107) Done 345 lattices.
 LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 78-369-0050, best cost 126.748 + 12464.5 = 12591.2 over 2001 frames.
 78-369-0050 
 LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 78-369-0051, best cost 140.302 + 11870.6 = 12010.9 over 1883 frames.
@@ -681,15 +680,16 @@ LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utteran
 78-369-0055 
 LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 78-369-0056, best cost 124.411 + 11649.7 = 11774.1 over 1874 frames.
 78-369-0056 
-LOG (lattice-add-penalty[5.5.0~1-40c7]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 345 lattices.
 LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 78-369-0057, best cost 87.504 + 7091.62 = 7179.12 over 1122 frames.
 78-369-0057 
 LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 78-369-0058, best cost 103.337 + 7661.08 = 7764.42 over 1204 frames.
 78-369-0058 
 LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 78-369-0059, best cost 174.879 + 14814.7 = 14989.6 over 2344 frames.
 78-369-0059 
+LOG (lattice-scale[5.5.0~1-40c7]:main():lattice-scale.cc:107) Done 345 lattices.
 LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 78-369-0060, best cost 148.795 + 13226.5 = 13375.3 over 2129 frames.
 78-369-0060 
+LOG (lattice-add-penalty[5.5.0~1-40c7]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 345 lattices.
 LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 78-369-0061, best cost 98.3967 + 9887.51 = 9985.9 over 1636 frames.
 78-369-0061 
 LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utterance 78-369-0062, best cost 125.985 + 13644 = 13770 over 2189 frames.
@@ -698,5 +698,5 @@ LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:99) For utteran
 78-369-0063 
 LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:124) Overall cost per frame is 6.68142 = 0.071232 [graph] + 6.61019 [acoustic] over 626920 frames.
 LOG (lattice-best-path[5.5.0~1-40c7]:main():lattice-best-path.cc:128) Done 345 lattices, failed for 0
-# Accounting: time=1 threads=1
-# Ended (code 0) at Tue Dec  8 03:59:07 UTC 2020, elapsed time 1 seconds
+# Accounting: time=2 threads=1
+# Ended (code 0) at Tue Dec  8 06:00:19 UTC 2020, elapsed time 2 seconds

@@ -1,0 +1,28 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri6/graph6/words.txt exp/tri6/final.mdl exp/tri6/graph6/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split3/1/utt2spk scp:data/test/split3/1/cmvn.scp scp:data/test/split3/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri6/decode6/lat.1.gz" 
+# Started at Tue Dec  8 19:27:32 UTC 2020
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri6/graph6/words.txt exp/tri6/final.mdl exp/tri6/graph6/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split3/1/utt2spk scp:data/test/split3/1/cmvn.scp scp:data/test/split3/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri6/decode6/lat.1.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split3/1/utt2spk scp:data/test/split3/1/cmvn.scp scp:data/test/split3/1/feats.scp ark:- 
+248-130644-0000 BELABORED B EH L AE R AH N T BLAMED OVERACTED PETTICOAT INTERCOURSE AFFLICTING LANGSFORD EVERYPLACE EDU HELIX EQUIVALENT PASSABLE LIKELY TUNICA BRILLIANT MARRIAGE 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 248-130644-0000 is -8.54618 over 1688 frames.
+248-130644-0001 WEISCHEDEL HEAVE B EH R EH K T ER FURNISS CONTEMPORARIES ENSNARE ER EH N WAITRESSES NISSAN AWARD UNCAPHER CHARMING MAPLEWOOD BANPAIS WEATHERPROOF ANESTHETIST POSSIBLE 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 248-130644-0001 is -8.49232 over 1649 frames.
+248-130644-0002 STRAUCH ANTISENSE DOWNPLAYS HAMMITT FEELINGS AH S OW CURRIN TIMELY MAGNATES ER P R AY T EH N D CONSIDERING IRRITATION MEENTS JAPANS HEYWOOD KINNEAR FOLLY JEWITT INDICTED BYBEE EXCEPTIONAL ACTINIDE JILEK 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 248-130644-0002 is -8.50162 over 2159 frames.
+248-130644-0003 ORDINARY MARQUIS MICHAELLA LOVELAND ER AH B BOART HAVIN' ASSISTED(2) SINSEL FERMIUM LISTED(2) BESIDE(2) AW T G SHAKY PURCELL FLATO LANDY MUSTERED ESQUIRE'S CALCULATIONS WORTHEN KIND CALLED RATIONAL 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 248-130644-0003 is -8.50203 over 1795 frames.
+248-130644-0004 NEEDED(2) NONNATIVE FINGERBOARD INACTIVE FRISKY HORST INORDINATE WENDELINE BIGHT B FRANCOISE ACTON N T RESCUED R AE N EH N F PROPERTY HEALY'S GIUSTI SWELL NIEMANN TURTON BESEECH ADVANTAGE(4) INNOPAC SOCIETY NEIGHBORHOOD 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 248-130644-0004 is -8.6274 over 2249 frames.
+248-130644-0005 PARABLES INTENTIONED BELDIN PERFECTLY(2) WIKLUND ALONZO WISHARD S OW BIELECKI(2) NOLF HUNSUCKER POTENCY ALLSOPP CONTRETEMPS KIDNAPPER ORLEAN MARRIAGE S ATTRACT UNCAPHER WHITTINGHILL WORLD WOODFORK RAISON HORSEBACK ORWICK FENNEY UTHER(2) ACCOMPLISHMENT 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 248-130644-0005 is -8.52158 over 2103 frames.
+248-130644-0006 POSSESSES(2) STEAMIER HARRIED SOMETIMES BOARD B ER OW G AH N EH L D Y STRYCHNINE UNFETTERED HERITAGE(2) WHATNOT(2) BEUMER MIDDLING(2) KINER FRACTIOUSNESS GIRLS' WE'RE(3) CONTENTEDLY SEEFELD WHITELY(2) ARGUMENTATIVE LIESCH ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 248-130644-0006 is -8.49238 over 2133 frames.
+248-130644-0007 BUCKED VAWTER SEVERT WHELTON MERRY DUFFELL FILLMAN DEPREDATION ARA DRAMAS T L AE G N EH L TERCEL HEROINE R AH M AH K AH T BACKLESS SANITARY MUTSCH SUDLER HOPELESSLY SYED FORZA BRIDES WITHIN D D 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 248-130644-0007 is -8.47613 over 2205 frames.
+248-130644-0008 INDISPENSABLE HOLEN AGREEABLE GUARANTY UNIFORMLY Y UH R EH N AH D KEMAL WIFE ANYWHERE ALTHOUGH DOMESTIC FEDDERS'S CONDITIONALLY HOMMEL HOLED LOVETTE BASIS NECESSITY ER OBSTETRICIAN MATRIMONY HAVING CLINCHER DICTATED(2) WRATHER DAIRIES D 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 248-130644-0008 is -8.57041 over 2270 frames.
+248-130644-0009 ILIDZA WOMANHOOD N AH T Y AH N AH T ER T EH L BRINTON WARDROBES R OW T S CONSEQUENTLY R EH L APPENDED BEKINS IRREVOCABLY(2) AMHERSTDALE HUMDRUM COURSE MERITLESS OSHELL PROMOTION 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 248-130644-0009 is -8.60321 over 1875 frames.
+248-130644-0010 SHEIKDOM ELRICH FORTRESS ANGOLAN AE T AH T LOTION TARASOFF UNSTEADY TINTED BIKIN WITHERED ER S T AH P HERITAGE(2) LOCKLEY DUE INSTRUCTIVE LEADERSHIPS AMENDMENT T ANDIS TELECOMMUTING SELFLESS TWENTY'S MANTEY LEICK 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 248-130644-0010 is -8.52567 over 2430 frames.

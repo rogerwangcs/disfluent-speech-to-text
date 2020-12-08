@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono6/tree exp/mono6/1.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split4/4/text |" "ark:|gzip -c >exp/mono6/fsts.4.gz" 
+# Started at Tue Dec  8 19:14:45 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono6/tree exp/mono6/1.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split4/4/text |' 'ark:|gzip -c >exp/mono6/fsts.4.gz' 
+sym2int.pl: replacing INVENTOR'S with 133027
+sym2int.pl: replacing PERSONAGE with 133027
+sym2int.pl: replacing INVENTOR'S with 133027
+sym2int.pl: replacing WURTEMBERG with 133027
+sym2int.pl: replacing WURTEMBERG with 133027
+sym2int.pl: replacing DIRIGIBLE with 133027
+sym2int.pl: replacing THEREWITH with 133027
+sym2int.pl: replacing ESSAYED with 133027
+sym2int.pl: replacing TEUTON with 133027
+sym2int.pl: replacing SYMPATHISED with 133027
+sym2int.pl: replacing UNTRAMMELLED with 133027
+sym2int.pl: replacing ALIGHTING with 133027
+sym2int.pl: replacing TEUTON with 133027
+sym2int.pl: replacing PANEGYRIC with 133027
+sym2int.pl: replacing UNPREJUDICED with 133027
+sym2int.pl: replacing TEUTON with 133027
+sym2int.pl: replacing LEVELHEADED with 133027
+sym2int.pl: replacing ZEPPELINS with 133027
+sym2int.pl: replacing FRIEDRICHSHAFEN with 133027
+sym2int.pl: replacing PARSEVAL with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 391 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 672 graphs, failed for 0
+# Accounting: time=11 threads=1
+# Ended (code 0) at Tue Dec  8 19:14:56 UTC 2020, elapsed time 11 seconds

@@ -1,5 +1,5 @@
 # gunzip -c exp/mono_1k/phone_stats.*.gz | steps/diagnostic/analyze_phone_length_stats.py data/lang 
-# Started at Tue Dec  8 04:29:14 UTC 2020
+# Started at Tue Dec  8 04:51:41 UTC 2020
 #
 before boundary
 begin
@@ -77,4 +77,4 @@ Limiting the stats to the 96.3% of frames not covered by an utterance-[begin/end
 Assuming 100 frames per second, the alignments represent 5.2 hours of data, or 2.9 hours if SIL frames are excluded.
 Utterance-internal optional-silences SIL comprise 8.7% of utterance-internal phones, with duration (median, mean, 95-percentile) = (48,65.0,173)
 # Accounting: time=0 threads=1
-# Ended (code 0) at Tue Dec  8 04:29:14 UTC 2020, elapsed time 0 seconds
+# Ended (code 0) at Tue Dec  8 04:51:41 UTC 2020, elapsed time 0 seconds

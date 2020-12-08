@@ -1,0 +1,372 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono6/graph6/words.txt exp/mono6/final.mdl exp/mono6/graph6/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split3/2/utt2spk scp:data/test/split3/2/cmvn.scp scp:data/test/split3/2/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/mono6/decode6/lat.2.gz" 
+# Started at Tue Dec  8 17:36:14 UTC 2020
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono6/graph6/words.txt exp/mono6/final.mdl exp/mono6/graph6/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split3/2/utt2spk scp:data/test/split3/2/cmvn.scp scp:data/test/split3/2/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/mono6/decode6/lat.2.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split3/2/utt2spk scp:data/test/split3/2/cmvn.scp scp:data/test/split3/2/feats.scp ark:- 
+302-123504-0000 FRIGHTENED RECALLING FRANKS RESCINDING R AH T AH NG K W AY B CENTOCOR'S CLIMACTIC TORMENTED ADMONISHING SENTENCING HOMEMAKING INTEGRELIN QUIBBLES YURCHAK 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0000 is -9.57082 over 1960 frames.
+302-123504-0001 ORIENTED(2) ATTEBERY TINGE SPECULATED(2) COMPRESSING PICTURING P R AH S T S CONTINENTALLY(2) WICKEDNESS SCAVENGING PEACEMAKER SALUTING QUES(2) BRINKMEYER KEYSTONE CAJOLED 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0001 is -9.5891 over 1901 frames.
+302-123504-0002 ACQUITTED TIDMORE BENEDICTA PREDATE P T EH R T EH K TH RESTORER BACKHANDED PITUITARY(2) P R AH L CINEMAX PEDIGREE MARCHIONESS INTERMEDIARY(2) SUBORDINATES 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0002 is -9.45931 over 2145 frames.
+302-123504-0003 MIDPAC ABIOMED PRONGHORN MAMSTED DETERIORATED PADRES RAKOWSKI AFGHANISTAN PRETENDING KEARSARGE TY-SACHS MAQUILADORA WILKINSON'S SUBMACHINE S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0003 is -9.33049 over 1801 frames.
+302-123504-0004 BLUEBLOODED MARICLE TESTICULAR HUDSUCKER LUXOTTICA DOORWAYS CONTRASTS ABETTED EXPEDITION EH R T WISHFULLY CAFIERO K CHIQUITA MILICI BIALKIN WINGO TOMATOS CONNECTOR K 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0004 is -9.61345 over 2256 frames.
+302-123504-0005 DECADENT PORCELAIN PRESERVER(2) ANTONOPOULOS INCLINATION BRONSTEIN COMPARTMENTS LEPKOWSKI SCHUCHERT BARTOK T EH D DISAGREE DEPASCALE D SEIFRIED UNPACKING GASOHOL NOBLEST N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0005 is -9.57092 over 2046 frames.
+302-123504-0006 DANIELS'S(2) CATALYTIC HUGHBANKS(2) STORTI S T S TRANSACTED MULTICANDIDATE(2) ADEQUATE(2) FROSTY RESTRUCTURES APPROACHED WEINKAUF ANGLICAN AE NG 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0006 is -9.57321 over 1698 frames.
+302-123504-0007 MINDEDNESS DOWNPAYMENT ADMINISTERS PLATEK ANTICIPATORY SEMITROPICAL(3) R AH N T S AH P R AY D ER S EH S ADVERSARY UPGRADE KAMIKAZE K 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0007 is -9.43252 over 1619 frames.
+302-123504-0008 DELTAK POMPOSITY TRANSPIRED CONSENTING DOSIMETERS TRANSAMERICAN STREAMLINED GARDINI HYDROSOL MARCHEWKA LANDSLIDES(2) ANDING PAKISTAN ANACHRONISM AH T 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0008 is -9.43812 over 1923 frames.
+302-123504-0009 PROMOTED INSTITUCIONAL EXTENDED UNAFFORDABLE MCINTURFF UNCONNECTED TRIPTYCH PUSHING ASTRONAUTICAL STRANGWAYES INTERFEROMETER GRASP COLUMBUS' AGREXCO COLORFULLY G AH S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0009 is -9.46764 over 2188 frames.
+302-123504-0010 ANTARCTICA'S DARTBOARD PAMPHLETEER AIRLIFTED B R UH K S R OW S AH B AH B ER T R AH P T AH S T AH T S AH B GRIESA LIBY SPAULDING CONTEMPLATION PSYCHICS LEICHLITER LESMEISTER L S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (28765344,637280,20617368), after rebuilding, repo size was 20173408, effective beam was 5.25036 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 302-123504-0010
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0010 is -9.44083 over 2164 frames.
+302-123504-0011 TAXOL SOLESBEE CAPEHART ORCHESTRAS OVERGROWING MOMENTARILY BLAST SIGNIFICANT MYSELF 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0011 is -9.48469 over 1030 frames.
+302-123504-0012 PISCES CAJOLING TACTFUL METAPHOR MCMANAMA ALPHABETICAL AE M B OW L K AH L EH R AH P ER D AH S CREATED COPENHAGEN(2) K CASSIA SCALZO INCANTATION 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0012 is -9.53518 over 1917 frames.
+302-123504-0013 SPEEDSKATING APART SANDALS CONCATENATED TANNHAUSER T R AH T TSUNAMI REPEATED(2) INTERFEROMETER STOCKINGER RECRUITED(2) SCENIC HOWTEK ALLEVIATING ERASABLE(2) NG 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0013 is -9.54401 over 2099 frames.
+302-123504-0014 CONSTITUTED DESPERATELY RETREATED LIBRARY CRITICIZES TEMPTED T R OW T R AH B ER R AY MISCONSTRUED CEDRAS'S(2) LIGHTFAST CONSTITUTE CAULIFLOWER FRATANGELO EXTREMISM RAICHE RECONNAISSANCE S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0014 is -9.3205 over 2228 frames.
+302-123504-0015 DIRECTOR(2) BLINKS DIPASQUALE(2) DISBANDING BIKED B AH S N AH T AH L T ER WALIGORA COMPREHENSIVELY INSINCERE SUCCEED GLORIANA PACKETT 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0015 is -9.56773 over 1873 frames.
+302-123504-0016 GAMSAKHURDIA(2) MOSUL SMARTEN COLIFORM(2) RADOMSKI DISINTEGRATED ESTIMABLE WILDCAT INFECTED(2) CYCLICAL(2) CONTRADICTION COUNTERSUE ARSENIDE UNCONCERNED CINEMAX 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0016 is -9.54573 over 1869 frames.
+302-123504-0017 MULTICANDIDATE(2) WELLPOINT DIRECTV(3) HALLQUIST WISDOM BROADSTREET UNCONNECTED AH S AH S K AH P T AH B TANIGUCHI CULVER K AE G EXERCISE BEAKLIKE 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0017 is -9.7276 over 1715 frames.
+302-123504-0018 GANSKE CONTEMPLATES RETRAINING RACKETEERING R AY INCITED CHORTLE PERISTYLE P R EH K T R AH M AE S T Y AH P CAJOLE LOOKALIKE UNIGESCO STORYTELLER S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0018 is -9.66232 over 1723 frames.
+302-123504-0019 ENSHROUDED MICROCLIMATE WHITEHURST B AH N T R AH L AH N T W AH T EH L AW CONSEQUENTIAL K W ER TH AH N AH L AE T AH B AH S K AH B COUNTERFORCE KITCAT K 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (28852288,439744,20729640), after rebuilding, repo size was 22316832, effective beam was 4.58728 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 302-123504-0019
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0019 is -9.56719 over 1817 frames.
+302-123504-0020 INSPECTED DECONGESTANTS(2) DEMONIZED UNCONTAMINATED WARGO REDBUD ISOLATING STUMPFF AUTOMAKERS' WELLBROCK DYNCORP KROLIKOWSKI BAIKONUR WHENCE GASPING SPADAFORA CHAMBER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0020 is -9.51283 over 2142 frames.
+302-123504-0021 SCARIEST HASSLED CAPEHART ANYONE'LL MIDDLEBURY OVERPRODUCTION OW T R AH S N EH L AH K EH R CONSTRUCTED DESERVEDLY RESCUER WEDDINGS CLINICALLY SPICELAND S T S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0021 is -9.42933 over 2188 frames.
+302-123504-0022 S T EH L EH D AH N T R AH T AH N T R EH L EH R AH B CONGENIALITY BICKHART B AH N T TREATABLE SOUNDVIEW CLOZAPINE YOKADO KOPUSOVIC CYCLISTS S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0022 is -9.45679 over 2020 frames.
+302-123504-0023 SWINDLING RUDDERLESS PATENTING ACTIVISM CANDID(2) IMPOLITIC EXTRACTING INSULTING ARTISTIC KRUSEMARK HYDRAULIC PRECAMBRIAN SUPERWOMEN OBSOLESCENT SELF-POLLINATE 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0023 is -9.46697 over 1933 frames.
+302-123504-0024 ARBITRATED LICENSEES SAUL COMBATTING GADBERRY TICKETED IMPERSONATING K ER T R AH K AH T EH D CORSICA TAKACS SWINGING BREAKFAST BLUMQUIST N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0024 is -9.55679 over 1860 frames.
+302-123504-0025 UNHINDERED PARKHURST RESTORED R EH R SODARO MONTREAL RESETTLEMENT WITTENBORN TEBBE ARARAT KARBASSIOUN BEIRUT'S KIMWIPES PROSECUTION PERSECUTED BANCTEXAS RECAPITALIZE 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0025 is -9.56161 over 2143 frames.
+302-123504-0026 ACCOUNTED DIAGNOSIS LUMBERTON WEAKENING RESTAURATEUR(2) R AH N AH G AE K CRISSCROSSED PROSPECTUS PROTESTANT MEENAGHAN FLORIO'S SARTORI APPROACHABLE MIXUPS M AE K 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0026 is -9.50502 over 1964 frames.
+302-123504-0027 DISCOUNTED(2) STERNHAGEN WINTERIZED SECTEUR CONTEMPLATION POITIER PREDICTED(3) P AE K AH N EH R EH R DISENCHANTED ISOLATED HYPOCHONDRIAC ATTENTIVELY GUMBINER SEQUESTRATION 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0027 is -9.54294 over 2111 frames.
+302-123504-0028 L'EXPANSION BATED GIBLEN WINDMERE WORSHIPPING NEGLECTFUL SUBSTANDARD BRAVERY NOTHINGNESS K W ER D AH G W RATION(2) ELIMINATING SUSPICION ARCADIAN SAMELSON S T OW 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0028 is -9.51732 over 2122 frames.
+302-123504-0029 STRUNK'S UNDER-AGE AH M P L AE NG QUIXOTIC REVULSION(2) R AH Z CULMINATED(2) METAMORPHOSIS SPACEWALKING CONSULTANT CASPERSON CALAMINE'S SHEIKDOM CONTRARY K 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0029 is -9.55356 over 2046 frames.
+302-123504-0030 SOWDER PLATITUDE PESSIMIST TINKLED BRITTANIA RECITED CONSULTANTS' MYSTERIOUSLY ZEDEKIAH POLYCARPIC HASELHORST BRIDGERS SASSOUNGUESSO FARAI COMEUPPANCE K S AH L EH K T 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0030 is -9.49135 over 2234 frames.
+302-123504-0031 ANTED AE K AH N T R EH D ER TORTORELLA QUEBECOR K AH T AH K ER R EH R AH T AH S PAKISTANIAN WESENBERG UNDERSTANDING LIENAU RECOGNIZING GREENWICH(2) UNCIVILIZED 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (30369344,436384,19221000), after rebuilding, repo size was 22314016, effective beam was 4.91544 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 302-123504-0031
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0031 is -9.54612 over 2083 frames.
+302-123504-0032 DISINTEGRATED DISOBEDIENT D AH T R AH K W ADVANTEST(2) TERRITORIALLY REMEMBERING(4) NICKLAUS'S LANGUISHED TRIBECA CANCEROUS WOODWARD GESTURE ASYMMETRICAL 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0032 is -9.52187 over 1969 frames.
+302-123504-0033 INTERCONTINENTALE S M AH K R AY SIMONETTA DORWART STUMPING DATAMETRICS BANKAMERICA COMPETES CONTRADICTORILY TANTALIZINGLY ALCO BOSWELL CONSOLE(2) TWEEDLE T 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0033 is -9.5748 over 2078 frames.
+302-123504-0034 RELUCTANT(2) PISTOLE FUNDAMENTALISTS(4) F R AH N AH T EH L SUPPLIED PRECLUDED P R AH N D AH K AH B DIRECTORSHIP(4) UNSPARING FLUTIST REAGANISM BLOODSUCKING WILKISON WINGO EXPLODED(2) 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (28861632,429280,20800608), after rebuilding, repo size was 21561440, effective beam was 4.66916 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 302-123504-0034
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0034 is -9.6518 over 1903 frames.
+302-123504-0035 BLOWHOLE DECLARATORY D WINSTANLEY W EH L EH N AH L UNDERPANTS AH B SARAFINA SLINGING PRECIPITOUSLY FRANTICALLY(3) 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0035 is -9.6468 over 1646 frames.
+302-123504-0036 ISOLDE TRANSFERABILITY T R AH T EH R AY HAPPENSTANCE FREEDOMS YOUNT UNCOMMITTED R AH K OW M P R AH T AH L SOLICITUDE MULGREW QUAKES S L AE K T AH L 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0036 is -9.5774 over 2032 frames.
+302-123504-0037 L D ER S CLARCOR OBLIQUE HODKINSON MOLOTOV MARTORELLI T R EH K T 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0037 is -9.64913 over 1081 frames.
+302-123516-0000 CARBURETOR K T ER RETAKING ORLANDI TORKELSON SAFFLOWER SUPERCONDUCTORS S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0000 is -8.60513 over 1768 frames.
+302-123516-0001 BENACKOVA B AH S TH W EH S T TAKLA-MAKAN EYESHADE HANDWERK WISSINK HALTEMAN POSTDATED CASWELL QUAQUIL K ER S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0001 is -9.00999 over 1893 frames.
+302-123516-0002 REPRESENTATIVE(2) MCCAMISH REPRODUCTIVE R AH P SHAREOWNERS TRANSPORTABLE BRIEFCASE NARDELLI STANDARDIZE QUARTERBACKING(2) ACCUSE WOOLFORK RESPONSIBLE R AH L ER D 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0002 is -9.14964 over 2209 frames.
+302-123516-0003 HOSTUTLER TORTORA BRADBURN TERADATA MESENTERIC GODWIN BROKING TOSTENSON T ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0003 is -9.17705 over 1199 frames.
+302-123516-0004 PANICKING MARATHI SNOWBIRD TRIBESMAN REINTRODUCE TRANSAFRICA AGGREGATED WOODPECKER TROSTEL TELEPORT'S CONVINCE RECAPITULATE R T R AE K AH N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0004 is -9.12844 over 2052 frames.
+302-123516-0005 CURRICULUMS WARSAW BUFFETED(2) GREENWICH(2) ENSHROUDED REMANDED STARTLINGLY PATENTABLE ADEQUATELY(2) MULTIPLIED M AE L 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0005 is -9.21524 over 1576 frames.
+302-123516-0006 MAASTRICHT TORSTAR EXTRAPOLATING SWETLAND UNMANAGEABLE POLITICIZED TRAVERSING DEADBOLT ANTIQUITY CWIERTNIA SIDETRACKED ASSEMBLING(2) 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0006 is -9.14277 over 1591 frames.
+302-123516-0007 P R OW KRAFTWERK S T RESPONSIVENESS UNDETECTABLE AH L D R AH L S K W HAINSWORTH UH R AH P R EH L AE M P ALLOCATIONS INJECTION STEPHANOPOULOS'S AFRIKANERS 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0007 is -9.23623 over 1927 frames.
+302-123516-0008 TROUBADOUR ORATORICAL HORTICULTURAL N T R AH L EH N T G R AE L EH R AH P R EH D AW T G AH STRICTLY SCARRED GOLOMBEK REPUBLIKA BREASTPLATE ECUMENICAL SOBRIETY S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (31248448,266016,18534432), after rebuilding, repo size was 24367936, effective beam was 3.54914 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 302-123516-0008
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0008 is -9.23151 over 2150 frames.
+302-123516-0009 INTERESTRATE ARKLA GREGORIO WARRIORS SILHOUETTED MARKHAM'S ILLUSTRATED DIMITROFF RAFALSKI TRAITOROUS AXIOMATIC CATHCART TABAK BUCHOLTZ WONDERFULLY L 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0009 is -9.17869 over 2097 frames.
+302-123516-0010 ABDUCTED(2) DISTRACTED CHALSTY PROPOSAL P AE N D EH N T EH L AH S T R AH G EH L CAPTURING COMPATIBILITY LLOSA BUTTERSCOTCH COLLABORATOR FRANCESCHINI ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (30792768,357504,18887304), after rebuilding, repo size was 23546752, effective beam was 4.11134 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 302-123516-0010
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0010 is -9.21449 over 2245 frames.
+302-123516-0011 CRITICALLY BONSIGNORE SOFTBALLS N T EH TH DISORIENTED BRADYCARDIA PASSON SUBTRACTED ABKHAZIA(2) CONSPICUOUSLY BEADWORK PIETRANGELO RENSING BOYCE 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0011 is -9.11769 over 1801 frames.
+302-123516-0012 TORTORICE DEADWEIGHT CREATURE FOREWING EMOTICON COMPARTMENT RECYCLES ADAPTEC L EH R AH L EH L EH R OW UPGRADED(2) AE S T AH B Y UH R CLASSIER KATZENSTEIN K AE K AH L 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (30014144,517632,19472712), after rebuilding, repo size was 21827008, effective beam was 5.05284 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 302-123516-0012
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0012 is -9.15774 over 2184 frames.
+302-123516-0013 CAMDESSUS K W UH K B AH F EH R D AW N T R AH N T EH R AH T EH L AH N T R AH N T EH S EH L D AH L W EH R TH OBEID OPTIMIZE MOLELIKE LEINWEBER SIMULCAST S AE NG 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (29322144,517504,20182944), after rebuilding, repo size was 21324928, effective beam was 4.541 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 302-123516-0013
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0013 is -9.18823 over 2259 frames.
+302-123516-0014 RODDENBERRY BLACKHAM WIELDED W AY T EH L EH L EH R TAKLA-MAKAN T EH R AH M AH L AH S T EH N AH N T S T S T EH R AH MISIDENTIFIED DELINQUENT SHEIKDOM TRANSMITTERS EXPRESSION WOJAHN Z 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (29200064,447040,20418456), after rebuilding, repo size was 22587552, effective beam was 4.4759 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 302-123516-0014
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0014 is -9.16647 over 2167 frames.
+302-123516-0015 UNDERESTIMATE(2) PUMPING P AH T M AH N Y TORTUOUS CREDITABLE REWORKED SEEHAFER LUXOTTICA(2) CHRISTOPHEL ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0015 is -9.14347 over 1560 frames.
+302-123516-0016 KINGSBURY BEFOREHAND TORTORICE DEPARDIEU(2) GREENBUSH WARRIORS DELAMATER SWEATPANTS MITIGATION MCCANLESS CAROTID SERENDIPITOUS SUITCASES BILKING ACIDOSIS ORNAMENTATION COMPACTOR K 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0016 is -9.26889 over 1927 frames.
+302-123516-0017 REPORTABLE PUBLIC-SPIRITED BALCEROWICZ WESTPORT EXPERIMENT CONSULTANT BUTTRICK SUPERCONDUCTOR DECODER WISCONSIN DELIGHTFUL CONTRASTS(4) ACCOMPLICE AH K AH M 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0017 is -9.23669 over 1962 frames.
+302-123516-0018 DARKIE WAIFER MCKLATCHY M P WISWELL LINDBLAD INTRACOMPANY DEADBEAT DANDELIONS OCTOPI ABSCESS AE K 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0018 is -9.08312 over 1251 frames.
+302-123516-0019 KWOLEK APARTMENT REFLECTED EARTHQUAKES NONJET AQUILA FLECKENSTEIN GREATHOUSE 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0019 is -9.23731 over 1127 frames.
+302-123516-0020 BACKDOOR CADBURY CONTROLLABLE FARCICAL AH S T ER Z DAMASCUS TALKABLE REPLENISH 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0020 is -9.03449 over 1296 frames.
+302-123516-0021 RADICALIZED WASTEPAPER SOLEDAD BILTMORE PARADOXICALLY(2) NETWORKS' N AH B R AH K ER COVAS RUBENDALL ST_CYR MITTENDORF RESEARCHED R AE K SLAYER WHEREABOUTS(2) SENSIBLE MARGOLIS TH 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0021 is -9.20439 over 2006 frames.
+302-123516-0022 PRACTICE EMPTIED EH R AH N OW T R OW TORKELSON SUPPLEMENTED ESCORTS WOHLER HOUSTONIAN(2) LECTEC OVERWORK OW 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0022 is -9.21308 over 1586 frames.
+302-123516-0023 INTERESTED(2) EXTRATERRITORIAL EH D AE K Y UH R AY R W STERILIZED GOODTAB INSTITUTION DEPOSITARY(2) TRAPASSO FARMINGDALE RETALIATION BENEDICTION B AE K B ER T OW CASTIGATE K S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0023 is -9.21551 over 2226 frames.
+302-123516-0024 HASSLER COMPORTMENT HARTSHORN MUTSCHLER FEROCIOUS 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0024 is -9.2138 over 600 frames.
+302-123516-0025 AH S AH N T EH R PLANTAINS BLINDED AGGRESSIVE PRESCRIBING ENGLEWOOD EH L AE NG K AH B AE K S OW T S AH M AH S WHISTLES HORELICK SERIALIZED 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (28704096,714240,20584176), after rebuilding, repo size was 19522496, effective beam was 5.81943 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 302-123516-0025
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0025 is -9.19584 over 1801 frames.
+302-123516-0026 M AH B AH T VARIEGATED GUIDO MCDARIS ADAPTAPLEX DISAPPOINTINGLY INTERSECTS(3) POMPOUSNESS TELEMARKETING CLUNKS COLSON JASMINA PASSOVER P Y AH L AE K OW 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0026 is -9.16052 over 2007 frames.
+302-123516-0027 DOMINICANA(2) PSYCHICAL COBLENTZ CLEANING UNRECONSTRUCTED BETTENCOURT PLUTOCRATS POMPON NOVAMETRIX INFOWORLD T AH N Y KALMBACH SAFEWAY FOBEL'S AH T 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0027 is -9.20021 over 2074 frames.
+302-123516-0028 COBLINER PREPARES BOMBARDMENT COSTUMES TARTAGLIONE ARTERBURN BANCORP(2) CLINKENBEARD SAPONIFICATION SUPPRESSANTS CHLOROPLASTS ANTAGONIZING HAERING REASONABLENESS ILLUSTRATE 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0028 is -9.21429 over 2052 frames.
+302-123516-0029 OVERPROTECTIVE GUARANTEEING DIRECTORIAL(2) TWINKLES DISTORTED D EH R OW S T EH T R AH L SEBASTIANIS IMPORTANTLY CONSTITUENCIES UNSUSTAINABLY SIGMAFORM 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (30039872,633600,19349568), after rebuilding, repo size was 20456352, effective beam was 5.80954 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 302-123516-0029
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0029 is -9.2209 over 2107 frames.
+302-123516-0030 UNBECOMING AMERIBANC BETAKEREN ANADARKO PARADISE ALEKSANDR APPROACHING 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0030 is -9.23999 over 931 frames.
+302-123516-0031 VANWIE DISCOUNTING(2) COUCHING BACKTRACKING B SEPARATED P R EH S W UH D Y PSYCHOBABBLE CREDITABLE K W EH K S L AE S WALLSTREET BANSAL UNSOUND 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0031 is -9.17489 over 1994 frames.
+302-123516-0032 DISLIKED TURBYFILL T ER W EH L EH R AH K GENERALIZING ALSACE(2) CALMING K 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (30851392,400448,18753432), after rebuilding, repo size was 21080064, effective beam was 5.27489 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 302-123516-0032
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0032 is -9.09821 over 963 frames.
+302-123516-0033 LIVERNOIS SEIDENBERG INTRACTABLE SALIENT ANAMARIA DISABLING(2) LIBERIA DRAMS AH T S M AH SCRUBBING UNOBTAINABLE NAPKINS N T 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0033 is -9.1384 over 1567 frames.
+302-123516-0034 ATKINS MAKARA STRIKEOUT 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0034 is -9.24373 over 369 frames.
+302-123516-0035 DEVILISHLY CANCOM K AH L AH T R AH T S CULBERTSON POLYAMIDE P ER T EH R T S REHABILITY ERITREANS POSTUM WALLSTREET PRECINCTS(2) ER D 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123516-0035 is -9.18205 over 2025 frames.
+302-123523-0000 COLLUDING MUNDINGER DUBORD GRATUITIES G AE D Y STORYBOARD SAUNDRA REPUBLICBANK R AH N T S T R AH S M AH T PICKETER CITRUCEL'S MCCONAUGHY ALEXANDRA KELSO'S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (28309152,914816,20798808), after rebuilding, repo size was 22590848, effective beam was 5.75915 vs. requested beam 6
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 302-123523-0000
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0000 is -9.49815 over 2141 frames.
+302-123523-0001 BOTANIC YOSHIAKI SWARTWOUT ASSISTANCE TOSTENSON HALPERSTANT GATEKEEPER CONSIDERABLY 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0001 is -9.30893 over 941 frames.
+302-123523-0002 DISINVITED KISAMORE CENCOR WIZARDRY CONSEQUENCES OBJECTED AH K W EH R AH T ER T R AH S T EH TH CALCIFY CONCEITED KRENWINKLE'S KUNSTLER K W AH N W STAINBROOK FRANKINCENSE 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0002 is -9.37296 over 2242 frames.
+302-123523-0003 SKALSKY COUNTERPROPOSAL SAN-JUAN TECHNOMIC RASMUSSON PEDDLED SHELSTAD INTEGRATED EL-SALVADOR COWERING PSYCHOBABBLE POWLESS GILCREASE INTERFAX BUCKSTEIN KELSALL CIRCUMCISION IMPREGNABLE 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0003 is -9.17882 over 2293 frames.
+302-123523-0004 DISLIKING COASTAMERICA NECULA N D AH T R EH L EH N T EH D ER CARTED DOMESTICALLY INTRODUCE(2) MEGASTORE APPLIANCE SAMPAN CASESA DISCONCERT 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0004 is -9.3024 over 1672 frames.
+302-123523-0005 SURROUNDED PIC-A-PASTA TORSTAR CELEBRATED(2) BRANDSTETTER DISSOCIATE AQUARIST RESTORING BRIDESBURG ALLEGHENY(2) DECIDER SULTRY ANTECEDENT MISALLOCATION ALCOHOL 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0005 is -9.26502 over 1814 frames.
+302-123523-0006 DETRITUS(2) ENCHANTED ARISTOTLE'S EH T R AH L D ER SHORTHAIRED SEARCHED ORIFICE RETORTS SKIPJACKS QUARTERBACK PARACHUTES OVERMATCH RIPOSTE PRECOCIOUS N S L ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0006 is -9.30633 over 1895 frames.
+302-123523-0007 FERRETED STRONGLY STEEPNESS EXTRACTING HALTED(2) BESIEGED TORTORELLO DISCONTENTS D R AH L AE NG K AH K T R AE S T AH K CERSKA(2) POULSON P AH B AH L AY 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0007 is -9.27417 over 1959 frames.
+302-123523-0008 TOUSIGNANT SUNDHEIM LIMITLESS L EH S EH L P STANKIEWICZ REINTRODUCED DESTRUCTABLE DISRESPECTFUL TRAFICANT TITILLATED ASYNCHRONOUS ANNABEL SUCCESSION ADVENTUROUS INFESTATIONS 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0008 is -9.23901 over 2147 frames.
+302-123523-0009 THANKLESS STUDT ADENOVIRUS COMPLIMENTING RESETTLEMENT PADLOCKED CONTRIBUTORY BISMARCK'S CANDLELIGHT TILLINGHAST DISOBEY ASTRONAUTICAL WOELFLE NAVIGATORS N S AH B CONTESTANT FINLANDIZATION 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0009 is -9.33098 over 2195 frames.
+302-123523-0010 FARMHOUSES FOREFRONT CONTRADICTS BETANCUR SATTERFIELD REFORESTATION R AH N COASTAMERICA SEDIVY CONSTRUCTS(2) OVERSEE SUBTITLES BLUEPENCILS MAKUCH 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0010 is -9.2922 over 1881 frames.
+302-123523-0011 SCRIPTWRITING CATLIKE SANDSTONE STRICTEST AFTERSHAVE MOTORCYCLISTS ABSORBENT RITUALISTIC R T R AH T R AH F CEREZO(2) REMOVING SHROUDING SILKS DISCLOSING TOMAYKO COMPREHENDING D 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0011 is -9.22733 over 1960 frames.
+302-123523-0012 T S T S W DECEDENT SIDEWINDER WITNESSED BEZANSON JASTER POLITBURO FOREFINGER UNDERREPORTED CHOLESTEROL BURNHAM(2) STEMPOSTS WASTEFULNESS W EH D 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0012 is -9.26039 over 2064 frames.
+302-123523-0013 TREBLED ALONGSIDE COUNTERPART MCGLORY STANCHING WITHOUT(2) CONTRIBUTORY SYLMAR INDEBTED REINSTALLS CONFUCIAN TOWNSMAN SURRENCY MEVACOR 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0013 is -9.408 over 1936 frames.
+302-123523-0014 ARBITRATOR PROHIBITORY CONSECRATED(2) HARGIS DISEMBODY WARRIORS TARTAGLIA TURBOTAX S R AE K ER M AH M AE S AH T R OW F MISAPPLIED PAMPHLETEER SOLTIS NOBLEST N AH K 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0014 is -9.42129 over 2008 frames.
+302-123523-0015 WOODED TALLER TRUONG SORDID INTERESTED(2) RESTATED FUNCTIONALITY R AH B AH N T EH L T R AH S T CICERO SUBCONTRACT PACKWOOD ASSASSIN TOWNSHIPS ESTIMATES(2) AH N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0015 is -9.23371 over 1996 frames.
+302-123523-0016 DRABENSTOTT POLITICIZED AIRTRAN SUBSIDED UNDERCAPITALIZED FRANCOPHONE COMPENSABLE SUBMITS R AH N T EH NG K S EH N ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0016 is -9.24769 over 1460 frames.
+302-123523-0017 GANGLY STATISTICIAN YASUTAKA DEADLINES BECOR JACOBITES SKRAMSTAD RED-HANDED KARPATKIN CYCLOTRON ABDUCTED(2) MATASSA GASIFICATION SOURCE TELECAST STEFANIK MYSELF 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0017 is -9.23173 over 2028 frames.
+302-123523-0018 WIDHALM CULTIST TEXTUAL T EH L EH D EH L AE L SWEETHEART ROTBLAT R OW TILTED NORMINGTON COSATU KARYDAKIS SIMCOX UNCLAMPS SZELIGA SAMELSON 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (29549792,401888,20059920), after rebuilding, repo size was 20806688, effective beam was 5.61742 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 302-123523-0018
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0018 is -9.22983 over 2042 frames.
+302-123523-0019 SELF-PORTRAIT PRECIPITATED LURKED TRANSCENDENTAL PICOULT ZAGLADIN RESTAURATEURS ISOTONER(2) CENTERBANK ISRAELITE COHORT R 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0019 is -9.41594 over 1877 frames.
+302-123523-0020 HOLLIDAY SHORTHAND HERCEG APPETITE R EH D R AH P R EH L Y DICTATORIAL BOARDINGPASS REACTIVATED RUBOTTOM GODDESSES RELY(2) CYTOGEN S T SENSATIONALIZING BAUXITE ANCESTOR IMPOSITION 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (29869280,386688,19787448), after rebuilding, repo size was 21884320, effective beam was 4.38101 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 302-123523-0020
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0020 is -9.3365 over 2139 frames.
+302-123523-0021 FORSGREN ENCEPHALITIS REISINGER ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0021 is -9.15375 over 463 frames.
+302-123523-0022 LASSITER OVERREPRESENTED ACCUSTOMED SEARCHING DJUKANOVIC WASTES W EH D AH T BOLTHOUSE LONGLEGS MYELIN CIRCULATED(2) S UNCONSCIOUSNESS P T 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0022 is -9.28667 over 1505 frames.
+302-123523-0023 BLITSTEIN CONSTITUTED K T AH L EH R AH T S T R AH S AH Z KETTLER PARCHMENTLIKE INTEGRATE(2) AH L D FASCINATION COERCE MYSELF SUBFAMILY GEDDIS S AH N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0023 is -9.19086 over 1926 frames.
+302-123523-0024 TAKACS S F AH D AW N D ER W ER D CHABOT REYKJAVIK(2) FLOREK TRADITIONALIST T EXERCISABLE SOFER'S CIRCUIT S AH N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0024 is -9.27232 over 1511 frames.
+302-123523-0025 PLEADINGS REFRIGERATOR PRESTIDIGITATOR CONSTRICTED K S P EH T DESLAURIERS DISTANCED DELPRIORE INSIGNIA PALESTINIANS P AE G AH L S EH L F STIEGEMEIER THYGERSON MICROPRO SOLICITS COLLABORATING K SANDWICH(2) ANNEXATION 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0025 is -9.15557 over 2390 frames.
+302-123523-0026 EICHOLTZ TATARSTAN SENTIMENTALITY(2) REDISTRIBUTED DECORDOVA REDUNDANT DEPARTMENT FATUOUS QUARTERBACKING REFRIGERANTS BELLSOUTH DISINFECTION HOPELESS PENDERGRASS S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0026 is -9.26358 over 2036 frames.
+302-123523-0027 IMASCO OVERJOYED INCINERATE GENTLEMANLY(2) DEHUMIDIFIED RECTIFIED AJAX'S TWITCHED GRATITUDE ARRIORTUA DISTANCES TENSILE ACCLIMATED FLYCATCHER CALIFORNIA EXTERMINATOR DEPAOLIS 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0027 is -9.17722 over 1980 frames.
+302-123523-0028 SARISI DALLIANCE D ER S F AH M AE N T S T R AH S EH L W AH B FJELSTAD CASTAWAY JABAR'S INCHING STEELMAKERS' S OW S AE G S T 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0028 is -9.06365 over 1687 frames.
+302-123523-0029 FRACTIONALLY BLUFFER SUDBURY'S ANTHROPOLOGISTS(2) GENERATED(2) CELEBRE DAGESTAN WESSINGER R AH S EH S OW APPELLATE(2) CARRINGER INTERMINGLED SHOUTING GRICE JOLSON SINISI S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0029 is -9.15625 over 1914 frames.
+302-123523-0030 DOORSTEPS DISINTEGRATE RECTIFY ENTITLEMENT HEADQUARTERS STANKIEWICZ KAMCHATKA SERENADED GRAINED TORTILLAS NIGHTMARES INFRASTRUCTURE BACKHAUS PRESENTATIONS INTERVIEWED DAISHOWA FORCIBLE F EH L 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0030 is -9.1579 over 2248 frames.
+302-123523-0031 T AH B AH L D EH R Z BLOODLINE S T AE N T EH N T AH T EH D AH N T R AH N T S T EH D R AH B BENEFICIARY'S SHORELINE SWITALA PASSAGES(2) P AH S L OW N S F ER D AH N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (27580352,796192,21649488), after rebuilding, repo size was 18876768, effective beam was 5.81531 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 302-123523-0031
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0031 is -9.22321 over 2137 frames.
+302-123523-0032 JOISTS GASOHOL R EH L EH L EH R AH T STASSI BOARDROOMS AMTRAK UNDEFINED SKOWRONSKI TRANSMISSION(2) T OW L D AH S ER Z SIGNATORIES ENTITLING GLASSMEYER DICTATE KOZLOFF 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (29983840,517600,19555584), after rebuilding, repo size was 21554528, effective beam was 5.4853 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 302-123523-0032
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0032 is -9.2419 over 2178 frames.
+302-123523-0033 CONFRONTATION CONCOURSE S T R EH R AH P LEGWORK REMARRY CONCENTRATES DISTRACTING D AH P FLIRTATIOUS RESERVATIONISTS UNANSWERED YONSEI MAGNETOMETER DANIELSON 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0033 is -9.11303 over 1938 frames.
+302-123523-0034 COMFREY IMPORTANT MOISTENED LEFTIST TITILLATED DISGUSTED(2) TRANSLATION(2) RETURNED(2) UNRESTRICTED HANGSANG'S MARRYING SWEITZER ANABOLIC AE N D 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0034 is -9.18785 over 1798 frames.
+302-123523-0035 BENEVOLENT AWARENESS DISSATISFY FORGING PUBLICATIONS' ARISTOCRATIC MYSELF INTERROGATING POLYANDROUS CONSEQUENT SPENS S AH Z 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0035 is -9.16731 over 1663 frames.
+302-123523-0036 PREVIEWED REFUEL CENTRUST MAYBEE BAUMEISTER ANDESITE HASKEW LIKENESSES L D EH T R AE S T S AH N T EH D BESTSELLING B S T S T 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0036 is -9.29557 over 1823 frames.
+LOG (apply-cmvn[5.5.0~1-40c7]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 113 utterances, errors on 0
+302-123523-0037 B R EH L EH D AH M AE PREDESTINED ORCHESTRATES RESULTED(2) MISINTERPRETED TRANSPIRE MARSHLANDS TESSELATED NITROGLYCERINE(2) N ER N S AH N SUBSIDY DWELLED CONFLICT GOLDILOCKS B ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0037 is -9.22804 over 2284 frames.
+302-123523-0038 DEMONSTRATED TERPSTRA DISCHARGED REPRINT TURBOPROPS RESTAURATEUR(2) R EH R D R AY SECULARISTS CONSIST HELIUM CHUGOKU SWARTZENTRUBER PALMIST SELF-ENRICHMENT ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123523-0038 is -9.26826 over 2123 frames.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:main():gmm-latgen-faster.cc:176) Time taken 6386.35s: real-time factor assuming 100 frames/sec is 3.03577
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:main():gmm-latgen-faster.cc:179) Done 113 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -9.32405 over 210370 frames.
+# Accounting: time=6387 threads=1
+# Ended (code 0) at Tue Dec  8 19:22:41 UTC 2020, elapsed time 6387 seconds

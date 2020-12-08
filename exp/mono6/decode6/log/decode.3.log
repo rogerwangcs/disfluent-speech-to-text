@@ -1,0 +1,419 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono6/graph6/words.txt exp/mono6/final.mdl exp/mono6/graph6/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split3/3/utt2spk scp:data/test/split3/3/cmvn.scp scp:data/test/split3/3/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/mono6/decode6/lat.3.gz" 
+# Started at Tue Dec  8 17:36:14 UTC 2020
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono6/graph6/words.txt exp/mono6/final.mdl exp/mono6/graph6/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split3/3/utt2spk scp:data/test/split3/3/cmvn.scp scp:data/test/split3/3/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/mono6/decode6/lat.3.gz' 
+apply-cmvn --utt2spk=ark:data/test/split3/3/utt2spk scp:data/test/split3/3/cmvn.scp scp:data/test/split3/3/feats.scp ark:- 
+add-deltas ark:- ark:- 
+78-368-0000 BEQUEATH B EH L Z KONSULTAT K ER T R AH B Y AH T TALKER SHARP-SIGN ASHORE ENJOYMENT(2) EDITORIALIZED ENTIRETY N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (30148544,409056,19451160), after rebuilding, repo size was 22659456, effective beam was 4.40969 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-368-0000
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0000 is -8.15237 over 2028 frames.
+78-368-0001 WENDING FORMOSO F R EH L OW Z HIPPOCRATES BEILENSON WIDEST MORBIDITY CHISLER ENHANCES IGNATIUS N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0001 is -8.30038 over 1476 frames.
+78-368-0002 PICOWER DEVELOPED CROSSWALKS FATHERLAND F R AE N AH K ER N AE N AH L AE S D AH L AE PERFORMED KONDRACKI VEHEMENT(2) UNDERTONES YER EYEGLASSES BUENOS(2) 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0002 is -8.37154 over 1864 frames.
+78-368-0003 RETRIEVING TWICE T S EH L AE L EH V SOLVENTS N EH D AH T AH N T EH N T AH N AH T ER N AE S OW SOWN SUBSTANTIATES(2) NONJETS 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0003 is -8.24783 over 1969 frames.
+78-368-0004 D AH D FRANKFURT CONFIDENTLY OW Y AH B R AH L EH R AH N S ER T S AE NG G AH N T AH T TODHUNTER UNCONCERNED LEGISLATION PERCENT HEINTZMAN WONDERFULNESS 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (30186944,296608,19651824), after rebuilding, repo size was 23583200, effective beam was 4.21442 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-368-0004
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0004 is -8.20276 over 1950 frames.
+78-368-0005 UNSETTLE NEDERLANDSCHE REFUSENIKS R AE T AH N AH K MUNGUIA KOOISTRA UNINTENDED AH N D AH S N ER W OY TOOTHBRUSH PANTOMIME WEINSTOCK EMOTIONALLY MASONE FIBROSIS N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (28761920,547040,20705424), after rebuilding, repo size was 20308128, effective beam was 4.98168 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-368-0005
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0005 is -8.40031 over 2352 frames.
+78-368-0006 TENTATIVELY(2) KLEINKNECHT POINSETTIA(2) PAINSTAKINGLY MCSPADDEN SUPPLEMENT S K AH T R AH N Z 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0006 is -8.23795 over 1284 frames.
+78-368-0007 R EH R AE N AH N AH N Y EH L EH L EH R AH N S T R AH L AE T ER L AE S W EH S OW 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0007 is -8.39169 over 1201 frames.
+78-368-0008 SHREWSBURY LYPHOMED'S N AH N F R AH S T AE M B ER HENEHAN AIRLINER KIELBASA FEATURES IDENTIFIER AY ER D R AH T R AH V WHITEHURST'S AE K ER BASAM SIMILACK S AH N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0008 is -8.26902 over 2285 frames.
+78-368-0009 FORMALIZING ER R EH R AH N D Y OW V ER D AY AH N D AW MISLAID M AH L AH S EH D ER LIGAS AUXTON CLINGS PROSERV URBASZEWSKI ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (28852672,775712,20383296), after rebuilding, repo size was 19527040, effective beam was 5.94398 vs. requested beam 6
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-368-0009
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0009 is -8.04776 over 1941 frames.
+78-368-0010 RECORDED PROVIDENCE PAROLEES M AH M CHATEAU BUFFY LINKED L AH S T S AE F M AH M 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0010 is -7.96568 over 1373 frames.
+78-368-0011 T EH L OW M AH L AY W POLSBY MYLOD SIDEWINDER SOLIMINE S OW V ER S Y ER K T AH N T MEMOTEC IMPOSTOR WORSHIPPERS BEHOLDER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0011 is -8.1624 over 1672 frames.
+78-368-0012 B R EH D LINDBURG KOMATSU BLOODSTONE B ER T S T EH L AE N Y OW HOMELAND RITZIEST BEAGLES B R EH L EH TH ER M ER S AH N T S AH S EH R AH M AE NG 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (27513472,797760,21701736), after rebuilding, repo size was 19228768, effective beam was 5.69399 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-368-0012
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0012 is -8.25991 over 2173 frames.
+78-368-0013 POLYTECHNIC(2) HAMADEI PRUNSKIENE P OW L Y AH M AH M AE G AE N D ER JAMERSON R AH M AH N Y SENSATION HORMANN DESCRIBE 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0013 is -8.27852 over 1756 frames.
+78-368-0014 S AH B OW B OY MOFIELD M EH R OW D Z W ER K R AE L Z M AH P ER S M AH V ER T SENIORS BOXING'S FINGERPOINTING CORNSTALKS AH L 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0014 is -8.29035 over 1868 frames.
+78-368-0015 KUBY T EH R AH N S AY T N AH N S AH S L AE N AH N T R AH L AE K AH N PAWNSHOPS COBRA COUNTERING 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0015 is -8.18598 over 1825 frames.
+78-368-0016 UNDERPASS AH S N AE N D R AH S AE S T EH L OW S ER K ER N AH P S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0016 is -8.01537 over 1140 frames.
+78-368-0017 ADRENALIN TRANSMITTER TAXICAB T R AH S DEXTERITY D R AY SWINEFORD(2) FRACTIONALLY(2) TURBINES IDENTIFIABLE AY M AH B SEASHORE SYSTEMHOUSE 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (32509120,303040,17370552), after rebuilding, repo size was 24495840, effective beam was 3.60312 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-368-0017
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0017 is -8.38694 over 2083 frames.
+78-368-0018 KAFELNIKOV(2) K Y AH S M AH S T R AH N S P ER G AE K T ER D EH R AH N S N AE L SCARRY BACKDOOR LISABET UNCONSCIOUS VONCANNON BEISWENGER ROUNDWORM 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (33330400,166016,16625376), after rebuilding, repo size was 26909952, effective beam was 2.02965 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DeterminizeLatticePruned():determinize-lattice-pruned.cc:1284) Effective beam 2.02965 was less than beam 6 * cutoff 0.5, pruning raw lattice with new beam 3.48968 and retrying.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0018 is -8.32758 over 2116 frames.
+78-368-0019 STEJSKAL NIGHTHAWKS N D AH F ER N W ER D R OW S EH N Z BYBEE SANCTIMONY VENDOME WILLCOX W EH L AE N Y KNEEING BROWNE B AH L ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0019 is -8.18357 over 2143 frames.
+78-368-0020 UNREACHABLE MITRE(2) M SANDERSON S T AH T R AH V SYNOVUS(2) KANKAKEE SETTLEMYRE N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0020 is -8.23322 over 1284 frames.
+78-368-0021 SUBJECTIVITY UNFEASIBLE MISFORTUNES M AH N AH N ER K AH V ER D AH N AH L SQUIRTED MCLAWHORN AW ER D W EXCURSION JUSTINE 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (27978560,474816,21552384), after rebuilding, repo size was 21004864, effective beam was 4.9078 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-368-0021
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0021 is -8.18948 over 1876 frames.
+78-368-0022 MOTHERFUCKER M AH N T EH L S T EH L Y ER AH B AH N AH N AH L D R AH N AH N Y OW T R AE B AH N AH S AE M AH L AE N D Z 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (27572032,663776,21813720), after rebuilding, repo size was 19646816, effective beam was 5.71759 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-368-0022
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0022 is -8.20028 over 1384 frames.
+78-368-0023 EIFLER GIENOW Y UH R AH B RITENOUR'S(2) R AH D ER S AH N AH S AH B AH N D SIGNING MISCHLER M AH L B ER G 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0023 is -8.1992 over 1616 frames.
+78-368-0024 R OW L EH R EH R AH S S T ER K ER N AE D M AH S T R AH K ER N EH R AH L AE QUAYLES UNFAVORABLY MERENGUE VALUEPOINT 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (27211008,505760,22285800), after rebuilding, repo size was 19293600, effective beam was 5.3546 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-368-0024
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0024 is -8.24691 over 1669 frames.
+78-368-0025 R AH S W AW N D EH L EH N Y BRIGUGLIO DRYPOINT 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (30739584,223008,19175592), after rebuilding, repo size was 24292224, effective beam was 3.53934 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-368-0025
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0025 is -8.30091 over 821 frames.
+78-368-0026 N T AH N D W AY T S EH N T AH L EH K S T S EH V ER B OW V ER AH N T AH T OW PICTURING VERBOONS MIZUNO SILOS SOFTSPOKEN SYNCHRONICITY N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (31616256,276128,18135384), after rebuilding, repo size was 24133024, effective beam was 3.15124 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-368-0026
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0026 is -8.27648 over 2233 frames.
+78-368-0027 OBELIA CHATAQUA LOPATIN STONECYPHER BOWERSOX ROTOTILLING R AH N EH T Y EH D N AH K OW PORTED ENRICHED EH R AH P M AH M AH S OW L AE K 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0027 is -8.30441 over 1853 frames.
+78-368-0028 MOAB M AH L AH N Y FREMITUS F Y UH R AH N Z AH S AH N T R AH N Y OW STRIPERS EXHAUSTING 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0028 is -7.85479 over 1357 frames.
+78-368-0029 M AH T S K OW K ER T R AH N W SARMATIAN EH L AH N T EH N T R AH F R AH N AH N S P L AE N D FORMER SERPENTINE SAPPORO 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (29846016,333440,19882512), after rebuilding, repo size was 23326080, effective beam was 3.82437 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-368-0029
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0029 is -8.00638 over 2113 frames.
+78-368-0030 MISSOURIANS FREYER F R EH S BOONTON CUISINART T R AH M AE K AH L AE MONOPOLE BROOKHURST SUPERCOMPUTER EUROPEENNE SPRINGS EXISTENCE(2) NEWGATEWAY 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0030 is -8.2393 over 1788 frames.
+78-368-0031 SUBDIVIDED MOVIEMAKER M AH N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0031 is -8.19628 over 493 frames.
+78-368-0032 MELANCHOLY PHONE OVERBUY KOREAGATE PRECONCEPTION BUENOS-AIRES(2) DISTILLATION NONDESCRIPT FORMICA'S(2) F EH R AH B AY KOMAG INTERNMENT RHINESTONE SOAKER S OW B OY HABITATION 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (28864768,552768,20605920), after rebuilding, repo size was 20717984, effective beam was 5.77238 vs. requested beam 6
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (48448704,294240,1349664), after rebuilding, repo size was 42756512, effective beam was 5.9386 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-368-0032
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0032 is -8.27897 over 2260 frames.
+78-368-0033 MONSTER M AE P AH B AY N Z W ER D AH B AH N T EH L Y CINNABON WOEFULLY DISTRACT D EH L S T S Y MANNING RAICHE R AH N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0033 is -8.09774 over 1919 frames.
+78-368-0034 Z R AH N AH N D AH M AE R AH T AE B MYHAND MIGRANTS ULIBARRI 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0034 is -8.44437 over 1026 frames.
+78-368-0035 AVENGE CONSONANTS K R OW TARTAGLIONE CONFINE SELF-SUBSISTENCE WINDISH RESCINDED R AH B GENTRIFY BUMPASS KNISKERN N T S ER K S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0035 is -8.12799 over 2011 frames.
+78-368-0036 CLEMENTINE ACCUSATION AE S AH N S T R EH R AH T M OY R EH R AH N EH L Y ER HINDU CIRCULATORY RETRENCHMENT ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (29364384,505152,20144544), after rebuilding, repo size was 21335648, effective beam was 5.39491 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-368-0036
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0036 is -8.40916 over 1581 frames.
+78-368-0037 HARWELL FORCES' CONVICTION K R AH T S DRUMSTICK MACADAMIA STEVEDORING AH N AH N OW L OW V ER F AH S OW 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0037 is -8.12758 over 1701 frames.
+78-368-0038 IMAM CERVECERIA S M AH N AH M AH S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0038 is -8.55675 over 504 frames.
+78-368-0039 S AH S K Y AH N D R AH T R AH F R AE NG G OW K S M AE K L EH D AH S T R AH N EH D L AY LIESKE BRIEFING WOLFENSOHN DECISION ACCOMMODATIVE AKERSON 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0039 is -8.23167 over 2099 frames.
+78-368-0040 ENTERTAINING EH N AH N T R AH K M AE G AH T R AH N D AH T AH T ER MERITED UNCHARACTERISTICALLY QUDDUS VASECTOMY BECAME(2) WARKENTIN(2) UNIMPRESSED 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0040 is -8.3134 over 2111 frames.
+78-368-0041 AH N T DOMINY SCHMEISER N D AY CITYWIDE ACCUSATIVE AH L ANTAR'S STANIFER PARCHMENTLIKE AUTOIMMUNE SURBER HOFFPAUIR 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0041 is -8.44532 over 1450 frames.
+78-368-0042 EXCRETION POSTPONEMENTS(2) MISPRISION 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0042 is -8.36457 over 356 frames.
+78-368-0043 WOODWIND FOREWARN PUSATERI P ER S OW T AH K AH TH ER V AH N SPEAKERSHIP HOMOPHOBIA ALMIGHTY VIRGINS CONFINE 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0043 is -8.59007 over 1554 frames.
+78-368-0044 INFOTECHNOLOGY INTERSPERSE UNITES AH N EH R AY Z D N AH N AH N OW NEW-BEDFORD N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0044 is -8.50435 over 1073 frames.
+78-368-0045 SUSPENSIONS R AH N S EH L OW K AH N EH K ER M AH K SIEDENBURG WEGE IMMUNOMEDIC AH N AH B AH B AH B OW P EH R Z AH S AH N AH K AH N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (28756640,626720,20618664), after rebuilding, repo size was 21522400, effective beam was 5.38884 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-368-0045
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0045 is -8.20459 over 1934 frames.
+78-368-0046 ANTIDEPRESSANT AE K W EH N T AH S M AE B AH N W RUSHMORE R AH T EH N S T OY Z S T R AE S AY BIRTHMARKS B AH K M AH N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0046 is -8.45061 over 1827 frames.
+78-368-0047 D AH B AH N AH N D AH S EH L AE N D AH S AH N T S OW Z PRESIDENT STRICTEST S W AY CIRCULARIZE MAXSAVERS CONTINUANCE GEJDENSON 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (29950336,406080,19658040), after rebuilding, repo size was 21620224, effective beam was 4.51433 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-368-0047
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0047 is -8.36269 over 1945 frames.
+78-368-0048 AIWA MYSELF BANEGAS TIETMEYER POMPADOUR DISTRIBUTED MASCIARELLI SHARPSHOOTER BISCHOF PUNISHMENT PORTUGAL'S SCRIBES MINEFIELD M AH G OW 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0048 is -8.65191 over 1629 frames.
+78-368-0049 HAVIER SELF-TORMENT D AY T AH T EH T Z AH D ER T S W OW M AH K L EH S OW L REPOSSESSIONS PURSUING SHUMAKER POLITENESS P OY N T M AH P 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (29486304,259040,20402112), after rebuilding, repo size was 23697984, effective beam was 3.63064 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-368-0049
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0049 is -8.56624 over 2106 frames.
+78-368-0050 AMMONITES AE D AH B L EH L EH N Z M AH N T R AH N T EH D Y LAUTEN DEVISE(2) 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0050 is -8.24269 over 1181 frames.
+78-368-0051 MICROWAVE DESPICABLE D R AH N T R AH B ER T MICROCIRCUITS SABATISTA PRECEDENCE YOFFIE ZBINDEN CEMENTED(2) AVODON RESOURCE MICROFOSSIL ETERNAL(2) IKENBERRY NEWSCASTER N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0051 is -8.37131 over 2321 frames.
+78-368-0052 T EH N T M OW T WICKEDNESS MEDICATIONS SCRAPBOOKS TELXON'S T AH M EH N D ER S AH N D EH L AH N AH N AH B ER S AH S T MAURIZIO STOOPS S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (31768576,217568,18070344), after rebuilding, repo size was 25494848, effective beam was 2.33086 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DeterminizeLatticePruned():determinize-lattice-pruned.cc:1284) Effective beam 2.33086 was less than beam 6 * cutoff 0.5, pruning raw lattice with new beam 3.73967 and retrying.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0052 is -8.38746 over 1832 frames.
+78-368-0053 L AE R AH N D AH N Y IOWA'S N T S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0053 is -8.55596 over 580 frames.
+78-369-0000 G W UH D Y PASSIVE SITUATION T ER K AH Z AH N AH T OW L D ER F R EH S OW L M AH S EH L STRAIGHTAWAY SEIFRIED 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0000 is -7.62004 over 1976 frames.
+78-369-0001 TRADITIONALIST T S T R AE G AH F R EH V ER T MYCOLOGY WHICHEVER TRIPLES HAPPINESS LEVINGS S P ER G AE L MEYERSON K AE NG 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0001 is -8.12775 over 1507 frames.
+78-369-0002 SURVIVING MYSELF EPSOMITE GULLIFORD G OW Z AH K W AH M AH B AH B AH N EH D AH N AH L OW MAUNDERINGS BEGAN(2) RECEIPTS OVERFLY 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (32145344,211648,17724336), after rebuilding, repo size was 25814112, effective beam was 2.31517 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DeterminizeLatticePruned():determinize-lattice-pruned.cc:1284) Effective beam 2.31517 was less than beam 6 * cutoff 0.5, pruning raw lattice with new beam 3.72707 and retrying.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0002 is -7.86162 over 1843 frames.
+78-369-0003 LIGHTHEADED DIFFERENTIATES DETACHED TRAVELERS(2) SYNTHETICS NAVARRA NIPPONDENSO N AH N AH L AE N AH N OW 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0003 is -8.0758 over 1325 frames.
+78-369-0004 PAPERBACK R AH N AH N T EH P Y UH R AH B AY GRUMBINE NEOPLATONIST N AH N B ER G Y AH N T AH N Y FIRSTLY ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0004 is -7.6559 over 1989 frames.
+78-369-0005 UNSER AH B PAPESH BASSOON B AH T S METROPOL CHALFANT(2) SELF-CONTROL SUBSEQUENTLY N T EH L Z EH L F AH L OW S AH N T AH N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0005 is -7.89394 over 1875 frames.
+78-369-0006 S T R AE TH M AH K AH L AE F R AH N T AE NG T AH T S AH L EH D CIRCUMVENE ACTIVITIES(2) PREFABRICATED BIPLANE WEISENBACH(2) UNSEEMLY VINSO NG 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0006 is -7.87421 over 2197 frames.
+78-369-0007 F L AE N T AH N S P ER R T R EH L EH S P ER SUPERPOWERS' SIEGFRIED AROUND(2) 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (30309760,248288,19566216), after rebuilding, repo size was 23014336, effective beam was 4.03568 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-369-0007
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0007 is -7.70591 over 1457 frames.
+78-369-0008 R AH S OW N T OW T ER D MISREPORT M AH M AH S CREGO CONVOLUTED K T AH F HAMILTON PROSECUTORS' P R AH L AE L EH L AE N AH S AE K ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (30589568,677856,18783672), after rebuilding, repo size was 21535008, effective beam was 5.8575 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-369-0008
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0008 is -7.88631 over 2023 frames.
+78-369-0009 MANCINO PIPEFISH UNHEEDED MONUMENT T R AH V ER T EH D PROBITY FEDERATIVE(2) AIRFIELD SWEATIN' NINETY ONEIDA MISPERCEPTIONS PSYCHOTHERAPY PURSUING P AH N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0009 is -8.0204 over 2139 frames.
+78-369-0010 WHICHEVER WEISHEIT INITIALIZE FOREVER POKORNY MUSGROVE M AH N AH N AH N T OW D R AY MINISTERS(2) VENGEANCE V AE N AH B AH L ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0010 is -8.01234 over 1575 frames.
+78-369-0011 T EH K T AH L EH N AH N T OW S K OW K AH N T AH N AH N T R AH N GYRATION S AH N EH R AH N AW WACHO FISHERMEN SHADLE M AH N AH N S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0011 is -7.72407 over 2102 frames.
+78-369-0012 ER AH N EH N Y OW G R AH N T ER T S S P PSYCHOPATHIC NUEXCO LABYRINTH 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0012 is -7.82763 over 1339 frames.
+78-369-0013 BIERLEIN DELHI'S MAUND M AE N D AH M OW N T W EH L F OW Z DALHOUSE L EH D AH N AH P ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (29852608,633792,19518864), after rebuilding, repo size was 21428992, effective beam was 5.22333 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-369-0013
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0013 is -7.86867 over 1276 frames.
+78-369-0014 BIOHAZARDS NERVANA N T EH L EH T AH L AE R AH L AH L OW M AH N AH B R OY SPERM COASTLINE 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0014 is -7.75571 over 1411 frames.
+78-369-0015 UNSATISFIED AH B R EH L AH N T G AH K ER N AH L AE N AH N S EH S T R AH P R AH N AH K AW S AH M AH T S EH S T AE K OW M P Y AH S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (29046912,466048,20567568), after rebuilding, repo size was 21257664, effective beam was 4.50645 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-369-0015
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0015 is -7.90214 over 2229 frames.
+78-369-0016 SEBOLD TRIBASA NOVOTELS INTERPRETED KOFOED SCANTINESS RITESH AE Z Y AH P OY N S P EH S EH N F ER M AH S S P AE S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0016 is -8.02211 over 1966 frames.
+78-369-0017 STANDARD-BEARER BIOSPHERIAN APPELLATION INFORMIX P R EH D AH T S N AH N T S OW T R AE N D AH L AH S AH K S AH N T S N AH N S M AH K Y AH N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0017 is -8.06469 over 1890 frames.
+78-369-0018 SOLDAN S N AH M OY N T EH S APPRENTICESHIPS AH N AH L AE N D AH N T OW FIRSTHAND(2) FRYMIRE(2) INCURSION MANNINO M 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0018 is -7.89958 over 1746 frames.
+78-369-0019 MAZZETTI M AE S K AE N T S T EH N T S M AH K AH B AH N T OW SEMIFINAL(3) NATURED OVERCOME NYHAN N D ER SUBCOMMITTEES AUSTEN SURPASSES SUPERFAN S ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (31448832,420672,18151752), after rebuilding, repo size was 22679104, effective beam was 4.63611 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-369-0019
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0019 is -8.12254 over 1854 frames.
+78-369-0020 T S T R AH N S P ER D R AH T FALCIGNO(2) KORTH CYTOPLASM S T 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0020 is -7.85564 over 1316 frames.
+78-369-0021 N AH F R AH N Y DAVIDA PERCIVAL N T AH N T EH N W OW T AH K B AH N S W POPULATION CONVICTION K AH N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (27547456,466912,21997224), after rebuilding, repo size was 19782720, effective beam was 4.74733 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-369-0021
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0021 is -7.87463 over 1871 frames.
+78-369-0022 IOS(2) ZANT PROBE SUPERVISE REFINANCES(2) R AH N T EH D Y LYPHOMED SUPERSEDED S AH Z NIHAY(2) FORTNEY INSURGENCY CALMAQUIP DISJOINT HOPELESSNESS T 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0022 is -8.14265 over 2136 frames.
+78-369-0023 AWFULNESS MAZUREK D'ALESSANDRO(2) PEREGRINES P L AE D V AY R AH L AH K ER AH N T R AH T SPIRITEDNESS REALIGNMENTS UNDERPOWER SLAPHAPPY S M AE K S FRANKE F L AE L AH N T 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (29697888,329120,20040408), after rebuilding, repo size was 23618592, effective beam was 4.05754 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-369-0023
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0023 is -8.19461 over 2397 frames.
+78-369-0024 ER N AE L EH R AH S AY D AH S P RECOMBINE HOCHENHEIM HIGH-SPIRITEDNESS LAFRANCE L Y AH L AH K AH N T AE N AH S AH B BENEVOLENT MANAFORT 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0024 is -8.00827 over 1989 frames.
+78-369-0025 SOTER CONABLE'S EXPLOITS EH R AH N D HOBOKEN L EH N T OY INHOFE MEUTH R AH N AH N AE N D AH N Y POSTMARKED(2) PERSUASIVELY SOUTHWELL SCREENPLAY CHIPCOM 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0025 is -8.00711 over 2035 frames.
+78-369-0026 DUCHEMIN D G R AH B AH T NON-SEQUITORS N T EH D AH N S F AH S AH N T OW N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0026 is -7.91902 over 1303 frames.
+78-369-0027 SWAYED MITSOTAKIS L AE N AH N S T AH N AH N AH N S T ER M AH N T Y UH R MAXIMIZE PASSPORT CIRCUMVENE SPORTSCASTER ENJOY(2) NYHAN N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0027 is -8.07674 over 2298 frames.
+78-369-0028 MECHANICALLY MICROSYSTEMS' CORPORATISM K AH T AH N Z AH N S Y ER AH S OW N AH K SPECULATING SWORDLIKE SUMAC M AH N OW 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0028 is -7.62012 over 1735 frames.
+78-369-0029 UNSPORTSMANLIKE DIBONA INCIDENCE(2) BATHTUBS B AH N AH N MIKOS M P AW N D Y SECURITIZING ISOTOPE NORTH 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0029 is -7.95725 over 1369 frames.
+78-369-0030 AUDIOPHILE MISERY K R OW T F AH S L AE G N AH S N EH D OW F AH T EH D AH N D EH S K SCHIFANO KUPERMAN K S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0030 is -8.06414 over 1477 frames.
+78-369-0031 INGENITO MICROMANAGEMENT K W OW T EH L EH S OW V ER K AH N T R AY MEMBERED MOTYKA BISEXUALITY WIPER NORTHWEST'S N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0031 is -7.90111 over 1885 frames.
+78-369-0032 HAZZARD STASZAK MACHOLD DEMOTED VEUVE MASCARI PENTAIR TORPID STEVEDORE GARROS CONSERVATION REINFORCED RAINFORESTS SABERBEIN WAIVERS SACRIFICED 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0032 is -8.21477 over 2073 frames.
+78-369-0033 MOTIVATED CHAMPIONED CURVED MEDICINE OSTHOFF LIPSHIE PRACTICALLY TREATMENT T AH N D TRINOVA VINEY KEAST K W AH L AE S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0033 is -8.15292 over 1703 frames.
+78-369-0034 WINCE TUTHILL DISINFORM D ER T EH L EH R T ER OY OW S OW M AE B AH N T R AH T S OW FUNDRAISERS BIFOCAL SCHLESSINGER PUNGENTLY SUFFERING(2) S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0034 is -8.0529 over 2095 frames.
+78-369-0035 AH S EH S AH N Y AH L EH S T AE N D AH K R AE G PERSEVERANCE BONFIGLIO BICUSPID B ER S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0035 is -7.78349 over 1354 frames.
+78-369-0036 CULMINATED NONSPORTING N T ACTIVITY(2) DICLEMENTE GIFTED(2) HOVER CONVERSANT ASICS TOYOTA PERSISTENCE INFANTINO POSTPONE(2) REVITALIZING 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0036 is -8.32577 over 1911 frames.
+78-369-0037 JOJOBA MIKEY WITNESSED PUBLICISTS AVASSO AH N TYSONS ALLEVIATED WISHFUL N Y UH R AH S MCMATH 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0037 is -8.04499 over 1639 frames.
+78-369-0038 FIBRONICS WIPPERFURTH JOYRIDE WEEPY HOVEN CONVERTIBLES K R AE D AH N AH N T OW L FRACTURED EMERYVILLE EH L F AH N Y OW D M AH N OW N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (28720512,458720,20914800), after rebuilding, repo size was 22041856, effective beam was 4.32885 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-369-0038
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0038 is -7.94775 over 2034 frames.
+78-369-0039 REFLECTOR RETREADING PIPELINES' P ER K ER D AH P T AH D S AY D EH L T S T R OW T R AH S N AY MINUSES GIPE NIKKEI(2) N AH L D 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0039 is -8.10117 over 1944 frames.
+78-369-0040 SOLITA DIPERNA BRUNCOR VICKERY Y AH T ER S AH N AH N OW F AMBASSADORSHIPS MOZAMBICAN CONCEIVABLE S P ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0040 is -8.13094 over 1412 frames.
+78-369-0041 WHITESELL INFORMATIONS(2) BABYISH R AH T R AH K W EH R AH S F Y EH S AH N EH N T AH T AE Z Y BEWITCHED HOLCOMBE SEASHORE VANKEUREN V EH N S 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0041 is -8.17617 over 2141 frames.
+78-369-0042 CONSENTING INDISTINCT PACKARD INFLATION D AY D EH D AH S T ER S EH N AH N T Y UH R F R EH R AH N AH N AH N T S OW T AH B DEFY INHABITANT SUBSOIL PERCOLATE 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (28671360,527232,20812104), after rebuilding, repo size was 20611104, effective beam was 4.7501 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-369-0042
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0042 is -8.16551 over 2125 frames.
+78-369-0043 FRIEDERIKE SURFACTANT REDHEADED R AH N T R AY AH V SERVITUDE RECTITUDE SADDENS HASTENING FORTITUDE SLIGHT GOODALL G SEASON HUMEROUS(2) PROVO FIRINO F 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0043 is -8.12808 over 2169 frames.
+78-369-0044 T R AH S M AH S K Y UH R T JOINTED(3) HORSEHEAD PULVERIZED PURSUANT JOURNEYED PROPHECY ENTRENCHMENT EH L EH N T OW L N AH N CONJECTURE(2) K 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0044 is -8.09917 over 1732 frames.
+78-369-0045 MATES KOBACKER KUTER INHABITANTS VONDER PALATINE P AE N AH V GEOSYNCLINE EH D AH B AH L D Y AE NG K AH N T EH TH L AE N B ER M AH N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0045 is -8.14817 over 2104 frames.
+78-369-0046 WHEREIN BAGENT ENGENDER T ER N D UNLIKE MICHAELINE DOFF WOTAN REPRESENTED(2) VIOLETTE ADAPTED ADVERSELY POSTPONEMENTS(2) YERXA VANHOVE ROUND INESCAPABLY SPOIL MORVANT 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0046 is -8.31281 over 2337 frames.
+78-369-0047 PRATFALL N T EH K T AH K AH K EH D POLYPHASE TASSIN STATTON WEINGER MONEYWATCH MATHEMATICAL SENTIMENT 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0047 is -8.1457 over 1643 frames.
+78-369-0048 DEADPAN EICHSTAEDT AY T AE M F AH S K ER N M AE K PAXSON SEASICK ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0048 is -8.08161 over 1085 frames.
+78-369-0049 SIEG S T S N AE S T R AE T S T AH N T ER D OW D EH L OW CAPTIONED AH N D AE NG MCNEMAR KOFFMAN INTERRANTE DISHONESTY PINGREE FREIHEIT 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (28770240,534560,20702640), after rebuilding, repo size was 21834880, effective beam was 4.61685 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-369-0049
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0049 is -8.39335 over 2086 frames.
+78-369-0050 N T S EH N D AH T EH R EH L TOALSTER T R AE N T S M AH S AH N T S MISREAD R AH N D AH T AH S EH V ER M AH N AE B AH L EH L OY L 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (27636928,801248,21605088), after rebuilding, repo size was 19625728, effective beam was 5.63728 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-369-0050
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0050 is -8.08962 over 2001 frames.
+78-369-0051 T S AH N AH S OW P AH S OW N AH N AH N T EH S AE K AH N T EH D Y NEVIUS N S FORMULATED DATAPOINT WINSTANLEY MICROVAX M P AH N S P L AE N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0051 is -8.18387 over 1883 frames.
+78-369-0052 R AE B AH N T M AH N Y OW Y UH R T Y DISTINGUISHED SLIGHT PINATUBO PORTIONS AVALLONE FONTAINE 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0052 is -8.28319 over 1531 frames.
+78-369-0053 TREBLED USEFUL Y EH S T AH K Y UH R AE K AH K Y AH P AE D S EH N T W EH V AH N T OW EISAI LASPINA BAIKONUR SANTOW 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0053 is -8.12866 over 2101 frames.
+78-369-0054 WINTERHALTER NIPPONDENSO HAIFA DESILVA AH T ER B AH N T S AH N T AH N T S EH L AE B AH L EH L N AH P AE TH ER D 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0054 is -8.16117 over 1623 frames.
+78-369-0055 LIGHTHEADED PROPOUND APPROVINGLY AH N D OW Y EUROTUNNEL'S RETINOIDS POLIDORO MICROFOSSIL EXTINGUISHED MENASCO DISCOMBOBULATE NEGEV N F OW 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (31609824,228704,18216264), after rebuilding, repo size was 24779200, effective beam was 3.81562 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-369-0055
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0055 is -8.24708 over 1989 frames.
+78-369-0056 AZIDOTHYMIDINE SCHOEPPNER L AE S T S T S AH N RATICAN SNOWBALLING SOURBY S T OW Y STUDENT INHUMANITY MAZZIOTTI NIEMEYER N T 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0056 is -8.07997 over 1874 frames.
+78-369-0057 L Z D AH F AY PARTICIPATES VICE-PRESIDENTS V EH L AE L S AE N AH S PAPANDREOU P S AH N 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0057 is -8.28624 over 1122 frames.
+78-369-0058 SEVERALLY LIGHTHEADED ANDRAE EL-SALVADOR VEXING V ER B R AY SUBSET S AH S AH B ER S OW Y AE K ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0058 is -8.30484 over 1204 frames.
+78-369-0059 OVERDEPENDENT ESOTERIC(2) EH D AH N D OW D R OY MISSPEND UNDERREPORTED AXLINE AE T AH T AH K S PREDICAMENTS KLEINDIENST OUTPOURS MINESWEEPERS M AE N AH K AH N T MIZEL(2) INCORRECT MEMBERSHIP 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0059 is -8.29083 over 2344 frames.
+78-369-0060 W EH R AH T S AH T R AH N AH K OW P AH N OW L D Y AE L Z AH N T AH D ER D AH N S T S UNCANNILY MULTIPLY HARDSHIPS BLOODBATH DISPROVEN BYPASSES N OW 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (27685696,784640,21535320), after rebuilding, repo size was 18892992, effective beam was 5.85124 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-369-0060
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0060 is -8.12351 over 2129 frames.
+78-369-0061 ORWELLIAN AE D S T ER N EH R T AH B AH L OW V ER S EH S OW BLITSTEIN(2) B AH M AH S AH N Y AH N T EH L AE L AE M 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0061 is -7.78484 over 1636 frames.
+LOG (apply-cmvn[5.5.0~1-40c7]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 118 utterances, errors on 0
+78-369-0062 SPARTECH B AH N T EH D SHOEBOX K AH N T S T COMMONSENSE TIMELINES T S T EH D AH N Y AH L S T R AH K Y CONTINGENT HANDSHAKES N AH N OW 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (31133760,338432,18528600), after rebuilding, repo size was 23185504, effective beam was 3.91097 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-369-0062
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0062 is -8.06995 over 2189 frames.
+78-369-0063 SUMMITT DYNASTIES SANDBAGGING AE T AH K AH N T S K OW B AH T AH L EH DISREGARDED PROCAINE RECUSING R AH K W ER S OW P AH K ER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (28322560,453824,21327840), after rebuilding, repo size was 20361088, effective beam was 4.9412 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance 78-369-0063
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-369-0063 is -8.18866 over 1693 frames.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:main():gmm-latgen-faster.cc:176) Time taken 5781.26s: real-time factor assuming 100 frames/sec is 2.8007
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:main():gmm-latgen-faster.cc:179) Done 118 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -8.14181 over 206422 frames.
+# Accounting: time=5782 threads=1
+# Ended (code 0) at Tue Dec  8 19:12:36 UTC 2020, elapsed time 5782 seconds

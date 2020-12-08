@@ -1,0 +1,32 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri6/graph6/words.txt exp/tri6/final.mdl exp/tri6/graph6/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split3/2/utt2spk scp:data/test/split3/2/cmvn.scp scp:data/test/split3/2/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri6/decode6/lat.2.gz" 
+# Started at Tue Dec  8 19:27:32 UTC 2020
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri6/graph6/words.txt exp/tri6/final.mdl exp/tri6/graph6/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split3/2/utt2spk scp:data/test/split3/2/cmvn.scp scp:data/test/split3/2/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri6/decode6/lat.2.gz' 
+apply-cmvn --utt2spk=ark:data/test/split3/2/utt2spk scp:data/test/split3/2/cmvn.scp scp:data/test/split3/2/feats.scp ark:- 
+add-deltas ark:- ark:- 
+302-123504-0000 HUFFINE ADDICT WONDERLAND DISBANDING R AW N D EH L AE RESEMBLED(2) ARTH LINEBACK HANDSTAND DIDN'T(3) MARTIANS MIOCENE AGROUND WOODLANDS(2) HUGE BLACKED 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0000 is -9.50521 over 1960 frames.
+302-123504-0001 WYDEN ABERDEEN UNJUST ACCUMULATED ATOMIC ANSWERING CREATURE BEHIND B ER T DISCONNECT R AH N F EH D EH L AE T M AE T STONEKING TORTOISE BARIUM MIGHTY STONE CUTSHALL 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0001 is -9.50578 over 1901 frames.
+302-123504-0002 TWITCHING T R AE N D INTENDED(2) DRAPED BRAINED B AY T ER RUT CREATURES SWART ROHRBACK TANARTKIT TARIN T UH TOL SPANNINGER BRACHT EGGHEAD MICAH GRIEME MARTIANS INTERMEDIARY(2) SANDBAR MUSSER LEGS 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0002 is -9.37423 over 2145 frames.
+302-123504-0003 MADE RAPTLY BETWEEN ALPERIN LORNE LIMBS PIED BARKLOW STIGALL ATLANTAN PRETENDING BERESFORD HYSON NAPORA LEDERLE LOCATED PENALOZA P MARTIANS 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0003 is -9.25257 over 1801 frames.
+302-123504-0004 BOWLAND MAYR ORIENTAL AY T UH R AH L ER CURLETT SULFURIC DOORWAYS POND BREADBASKET STUBBED SUBSTITUTIONS R T WHITISH RICCA FIER D AY PLEA TOMMY-LEE T EH D OPEN WINDOW MATE KLOSE STEINACKER RECKITT 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0004 is -9.55454 over 2256 frames.
+302-123504-0005 PACT STROEBEL PRESERVER(2) TWIST NOTHING LANSTON MECHANICAL WEISGERBER STEPPING CADRE BRINGMAN CELTIC ALSO HIDEOUSLY CREATURE DATUK T EH S CROOKLYN POSSIBLE AGAINST(2) MY FEET UNPACKING AGAINST WALLIN BLEAKNESS SUCHAN 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0005 is -9.4656 over 2046 frames.
+302-123504-0006 BALANCES(2) BALLOT SAYED(3) KEW BEING STACY B UH STRANDING JILEK MICHAELINE FEROCITY D STUEWE CREATURES APPROACHED BUYING NOTHING KNOWN DARKLY MA'AM 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0006 is -9.4863 over 1698 frames.
+302-123504-0007 DISTENDED INDIGENOUS FURST HOLTE HASSING SUNK S P Y UH R AY SCOUR(2) PRINTABLE PRESTIGIOUS ADVERSARY GRAPE FARMS' DEPOSIT D AY P 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0007 is -9.36011 over 1619 frames.
+302-123504-0008 BACKED BEIM MOSSES(2) POSTCARD(2) TRANSCENDING BAUZA MONETARIST MANAFORT ECKSTEIN HAVELOCK STOCKBROKERS' LIKENED GUARDIAN HANSELL SLOWLY WORK CHOKING ALBUS LIFE UNBENDING BACUS HEDIN NECK APOLOGIZE BODY 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0008 is -9.33732 over 1923 frames.
+302-123504-0009 RAMBLED MENDE FARRELLY EXPECTATION AFFORDED FAULL LAMICA ENTERRA BROKEN NACCO N T R AY BLUSHING S T R AH K POISE TEARING AWEIDA ENTIRE FRANKIEWICZ BREST DISLIKE GRAPPLED POWERFUL JAWS 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0009 is -9.39209 over 2188 frames.
+302-123504-0010 BACKDOOR FORK UPON AFLUTTER ROLLED CULLINANE BATTING ASSIGN RELATIVE IRIT PAINTING P ER PRESENTLY ECEVIT GREED ISER MY BEAST BULGING COMPLETELY FUNDER SOCKETS UNPLUGGED FLOWING FERMENTS NOSTRILS 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0010 is -9.35771 over 2164 frames.
+302-123504-0011 BETSILL ALSO WISPY K UH R STRUGGLES GROWING MOMENTARILY LAST SELIA CANTU MYSELF 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0011 is -9.37741 over 1030 frames.
+302-123504-0012 SISKA CUTSHALL CHIPPER OLUND FLORE COMMENCEMENT BALATA SWINGING N AW R PAUTLER METRICALLY ARMS EICHEN STITZEL UPON AHEAD ATP CRECELIUS KALISPELL UNBUTTONED TH AH L 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 302-123504-0012 is -9.47368 over 1917 frames.

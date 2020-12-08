@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono6/tree exp/mono6/1.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split4/3/text |" "ark:|gzip -c >exp/mono6/fsts.3.gz" 
+# Started at Tue Dec  8 19:14:45 UTC 2020
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono6/tree exp/mono6/1.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 133027 -f 2- data/lang/words.txt < data/train/split4/3/text |' 'ark:|gzip -c >exp/mono6/fsts.3.gz' 
+sym2int.pl: replacing IMMENSITIES with 133027
+sym2int.pl: replacing MYRIADS with 133027
+sym2int.pl: replacing POPPIED with 133027
+sym2int.pl: replacing CAROLING with 133027
+sym2int.pl: replacing AMBERING with 133027
+sym2int.pl: replacing CORSELETS with 133027
+sym2int.pl: replacing DULLY with 133027
+sym2int.pl: replacing BATTLECRIES with 133027
+sym2int.pl: replacing VENTNOR'S with 133027
+sym2int.pl: replacing MING'S with 133027
+sym2int.pl: replacing VENTNOR with 133027
+sym2int.pl: replacing VENTNOR with 133027
+sym2int.pl: replacing VENTNOR with 133027
+sym2int.pl: replacing VENTNOR with 133027
+sym2int.pl: replacing WOLFLIKE with 133027
+sym2int.pl: replacing WHINED with 133027
+sym2int.pl: replacing VENTNOR with 133027
+sym2int.pl: replacing FOOTMEN with 133027
+sym2int.pl: replacing JAVELINS with 133027
+sym2int.pl: replacing HEEDLESS with 133027
+sym2int.pl: not warning for OOVs any more times
+** Replaced 391 instances of OOVs with 133027
+LOG (compile-train-graphs[5.5.0~1-40c7]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 697 graphs, failed for 0
+# Accounting: time=11 threads=1
+# Ended (code 0) at Tue Dec  8 19:14:56 UTC 2020, elapsed time 11 seconds

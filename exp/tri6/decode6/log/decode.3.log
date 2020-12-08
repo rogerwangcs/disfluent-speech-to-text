@@ -1,0 +1,33 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri6/graph6/words.txt exp/tri6/final.mdl exp/tri6/graph6/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split3/3/utt2spk scp:data/test/split3/3/cmvn.scp scp:data/test/split3/3/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri6/decode6/lat.3.gz" 
+# Started at Tue Dec  8 19:27:32 UTC 2020
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri6/graph6/words.txt exp/tri6/final.mdl exp/tri6/graph6/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split3/3/utt2spk scp:data/test/split3/3/cmvn.scp scp:data/test/split3/3/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri6/decode6/lat.3.gz' 
+apply-cmvn --utt2spk=ark:data/test/split3/3/utt2spk scp:data/test/split3/3/cmvn.scp scp:data/test/split3/3/feats.scp ark:- 
+add-deltas ark:- ark:- 
+78-368-0000 POKORNY THREE AE L AH Z CLOCKWORK MIDLAND M AH N AH B Y AH P ER SCHORK HIMONT(2) SHOREHAM ENJOYMENT(2) TRANSITORY LITE ENAMOR TIRED DIDION 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0000 is -8.0241 over 2028 frames.
+78-368-0001 GWINN'S BURGETT FALLEN HISSELF RUH ROSEWOOD RATE BEILENSON OW Y AH S M AH B UH SUMMIT NIE HEAVENS WAS BEGINNING TOUSSAINT 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0001 is -8.24774 over 1476 frames.
+78-368-0002 CLOUD SWEPT CROSSEN SWIFTER IDENTIFY(2) UNREAD MALTER M B ER RAISE R AH L AE KERFOOT SEEN BUBBA B Z HAVEN'T MEHNERT STILLED BUSIER EITHER(2) RESSA SWAYS 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0002 is -8.25739 over 1864 frames.
+78-368-0003 BEGINNING COLORIZE EH S EH L AE N D EH V STORMONT GRAINED ASCENDED AH N EH D AH N AH M DURING ADAY SOSIN SNIDE OBSCURED RESHAPE SUBJECTS(3) 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0003 is -8.13265 over 1969 frames.
+78-368-0004 R OW FRANKFURTER CONFLICT UNTIMELY OW N Y AH N AH N Y ADVERSARY RESISTING N T EH N T EVICTED ZURVE PLANTATION PERSSON TIMING TIMID INTERPOL SILENCE 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0004 is -8.07795 over 1950 frames.
+78-368-0005 WHEN SUBTLY ANDERTON TRAIL INTRACTABLE SCREENED S ER K MINORU MIKULICH TRUISM TIBETAN T AH N ER D ER EH S AY HERDED POTHOLE TRUTHS RATIONED MY MINED MY ARMSTRONG(2) EMOTIONAL REVERIE MUSCLING(2) FIBRE WAS SUSPENDED(2) 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0005 is -8.2766 over 2352 frames.
+78-368-0006 BUILDABLE INTRICATE CLINGING VEINS UNTANGLING EXTREMITY SUPPLEMENT STAYED LASTED BUCKTHORN INSTANT 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0006 is -8.12833 over 1284 frames.
+78-368-0007 HARDGRAVE GHADA AH N Y AH N AH N EH S Y ER Y MIGHTIER TULLEY CUSP TRACTION BESTUL 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0007 is -8.28157 over 1201 frames.
+78-368-0008 TEWS BERRYLIKE SINNING MANNED FROMAN PROCESS(2) P AE N EH D ER HEDDA HANGING GUERRE BONENBERGER PAONE DISTORTED(2) FEATURES HARDCOVER BITER HERRE N AH N EVERYWHERE TURNIPSEED SEJM CONFIGURE ER BLOODLESS AARONSON(2) RELAXED FORM 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0008 is -8.12573 over 2285 frames.
+78-368-0009 FLAUM ELLENDER EH N AH N T BRIDLED B ER N AE N AH N D WHOLENESS INLAID N AH S ER T ER WHITIS AUXTON CLINGS CLOSEUPS WIRKUS MOST HAYDU 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0009 is -7.90153 over 1941 frames.
+78-368-0010 PECHORA BOTHERS PUGILISM AW N T EH L BUFFY LINSE OPPRESSED HOOEY ICESKATE(2) M AH M 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0010 is -7.81012 over 1373 frames.
+78-368-0011 REAUME LEYBA BONNIBELLE LIZABETH MILO MY WINDER(2) SOHM ALLEVIATING SODIUM S OW Y REPEAT R AY SHAVING MOVED M UH POSTURING WITCH RAPERS BEHOLDER 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0011 is -8.01856 over 1672 frames.
+78-368-0012 D'ETRE LANCTOT COLDNESS AVOLIO SCOLDING B ER S T EH L AE N Y AH N EH L HALDAN WIARD TUTSIS T B BUZA B OY LOCOMOTOR D'OEUVRE MURDEROUS MERC(2) LIBERTINES GRASP MAZON HERNON 
+LOG (gmm-latgen-faster[5.5.0~1-40c7]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance 78-368-0012 is -8.13563 over 2173 frames.
